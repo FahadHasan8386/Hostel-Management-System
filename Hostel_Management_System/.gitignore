@@ -1,0 +1,35 @@
+# বিল্ড আউটপুট ফোল্ডার
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio সেটিংস
+.vs/
+*.user
+*.suo
+*.userprefs
+*.vsp
+
+# NuGet প্যাকেজ
+packages/
+*.nupkg
+.nuget/
+
+# পাবলিশ ফোল্ডার
+publish/
+out/
+
+# ডিবাগ লগ
+*.log
+*.tmp
+*.cache
+
+# অপারেটিং সিস্টেম স্পেসিফিক ফাইল
+Thumbs.db
+.DS_Store
+
+# IDE সেটিংস (Rider/VS Code)
+.idea/
+.vscode/
+
+# এনভায়রনমেন্ট ভেরিয়েবল ফাইল
+*.env
