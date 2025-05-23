@@ -17,9 +17,9 @@ namespace Hostel_Management_System
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_manageroom_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
+            Form3 f3 = new Form3(); 
             f3.Visible = true;
         }
     }
