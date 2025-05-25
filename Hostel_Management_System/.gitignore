@@ -33,3 +33,4 @@ Thumbs.db
 
 # এনভায়রনমেন্ট ভেরিয়েবল ফাইল
 *.env
+/GuiApplicationPic/
