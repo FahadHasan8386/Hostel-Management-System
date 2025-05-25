@@ -22,5 +22,14 @@ namespace Hostel_Management_System
             Form3 f3 = new Form3();
             f3.Visible = true;
         }
+<<<<<<< Updated upstream
+=======
+
+        private void btn_dashboard_close_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
+>>>>>>> Stashed changes
     }
 }
