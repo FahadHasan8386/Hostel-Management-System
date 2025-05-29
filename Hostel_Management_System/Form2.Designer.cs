@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< Updated upstream
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -76,11 +77,18 @@
             this.button7 = new System.Windows.Forms.Button();
             this.btn_studentupdate = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+=======
+            this.btn_StudentLiving = new System.Windows.Forms.Button();
+            this.btn_LeavedStudent = new System.Windows.Forms.Button();
+            this.btn_StudentUpdate = new System.Windows.Forms.Button();
+            this.btn_StudentFees = new System.Windows.Forms.Button();
+>>>>>>> Stashed changes
             this.btn_newstudent = new System.Windows.Forms.Button();
             this.btn_manageroom = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn_NewEmployee = new System.Windows.Forms.Button();
+            this.btn_EmployeeUpdate = new System.Windows.Forms.Button();
             this.lbl_navigation = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
@@ -101,9 +109,44 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "All Student Living";
             this.button6.UseVisualStyleBackColor = true;
+=======
+            this.btn_EmplooyeePayment = new System.Windows.Forms.Button();
+            this.btn_EmplooyeeWorking = new System.Windows.Forms.Button();
+            this.btn_LeavedEmployee = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
-            // button7
+            // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.btn_StudentLiving);
+            this.panel1.Controls.Add(this.btn_LeavedStudent);
+            this.panel1.Controls.Add(this.btn_StudentUpdate);
+            this.panel1.Controls.Add(this.btn_StudentFees);
+            this.panel1.Controls.Add(this.btn_newstudent);
+            this.panel1.Controls.Add(this.btn_manageroom);
+            this.panel1.Location = new System.Drawing.Point(16, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(354, 516);
+            this.panel1.TabIndex = 2;
+            // 
+            // btn_StudentLiving
+            // 
+            this.btn_StudentLiving.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_StudentLiving.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_StudentLiving.Location = new System.Drawing.Point(22, 356);
+            this.btn_StudentLiving.Name = "btn_StudentLiving";
+            this.btn_StudentLiving.Size = new System.Drawing.Size(313, 42);
+            this.btn_StudentLiving.TabIndex = 7;
+            this.btn_StudentLiving.Text = "All Student Living";
+            this.btn_StudentLiving.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
+            // 
+            // btn_LeavedStudent
+            // 
+<<<<<<< Updated upstream
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -116,9 +159,20 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Leaved Student";
             this.button7.UseVisualStyleBackColor = true;
+=======
+            this.btn_LeavedStudent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_LeavedStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LeavedStudent.Location = new System.Drawing.Point(22, 430);
+            this.btn_LeavedStudent.Name = "btn_LeavedStudent";
+            this.btn_LeavedStudent.Size = new System.Drawing.Size(313, 44);
+            this.btn_LeavedStudent.TabIndex = 6;
+            this.btn_LeavedStudent.Text = "Leaved Student";
+            this.btn_LeavedStudent.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
-            // btn_studentupdate
+            // btn_StudentUpdate
             // 
+<<<<<<< Updated upstream
             this.btn_studentupdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_studentupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_studentupdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -131,9 +185,20 @@
             this.btn_studentupdate.TabIndex = 3;
             this.btn_studentupdate.Text = "Update And Delete Student";
             this.btn_studentupdate.UseVisualStyleBackColor = true;
+=======
+            this.btn_StudentUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_StudentUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_StudentUpdate.Location = new System.Drawing.Point(22, 189);
+            this.btn_StudentUpdate.Name = "btn_StudentUpdate";
+            this.btn_StudentUpdate.Size = new System.Drawing.Size(313, 40);
+            this.btn_StudentUpdate.TabIndex = 3;
+            this.btn_StudentUpdate.Text = "Update And Delete Student";
+            this.btn_StudentUpdate.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
-            // button5
+            // btn_StudentFees
             // 
+<<<<<<< Updated upstream
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -146,6 +211,16 @@
             this.button5.TabIndex = 2;
             this.button5.Text = "Student  Fees";
             this.button5.UseVisualStyleBackColor = true;
+=======
+            this.btn_StudentFees.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_StudentFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_StudentFees.Location = new System.Drawing.Point(22, 273);
+            this.btn_StudentFees.Name = "btn_StudentFees";
+            this.btn_StudentFees.Size = new System.Drawing.Size(313, 43);
+            this.btn_StudentFees.TabIndex = 2;
+            this.btn_StudentFees.Text = "Student  Fees";
+            this.btn_StudentFees.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // btn_newstudent
             // 
@@ -178,8 +253,9 @@
             this.btn_manageroom.UseVisualStyleBackColor = true;
             this.btn_manageroom.Click += new System.EventHandler(this.btn_manageroom_Click);
             // 
-            // button8
+            // btn_NewEmployee
             // 
+<<<<<<< Updated upstream
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -192,9 +268,20 @@
             this.button8.TabIndex = 5;
             this.button8.Text = "New Emploee";
             this.button8.UseVisualStyleBackColor = true;
+=======
+            this.btn_NewEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_NewEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NewEmployee.Location = new System.Drawing.Point(20, 30);
+            this.btn_NewEmployee.Name = "btn_NewEmployee";
+            this.btn_NewEmployee.Size = new System.Drawing.Size(313, 46);
+            this.btn_NewEmployee.TabIndex = 5;
+            this.btn_NewEmployee.Text = "New Emploee";
+            this.btn_NewEmployee.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
-            // button9
+            // btn_EmployeeUpdate
             // 
+<<<<<<< Updated upstream
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -207,6 +294,16 @@
             this.button9.TabIndex = 4;
             this.button9.Text = "Update  And Delete Employee";
             this.button9.UseVisualStyleBackColor = true;
+=======
+            this.btn_EmployeeUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_EmployeeUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EmployeeUpdate.Location = new System.Drawing.Point(20, 116);
+            this.btn_EmployeeUpdate.Name = "btn_EmployeeUpdate";
+            this.btn_EmployeeUpdate.Size = new System.Drawing.Size(313, 48);
+            this.btn_EmployeeUpdate.TabIndex = 4;
+            this.btn_EmployeeUpdate.Text = "Update  And Delete Employee";
+            this.btn_EmployeeUpdate.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // lbl_navigation
             // 
@@ -219,8 +316,9 @@
             this.lbl_navigation.TabIndex = 4;
             this.lbl_navigation.Text = "NAVIGTION BAR";
             // 
-            // button10
+            // btn_EmplooyeePayment
             // 
+<<<<<<< Updated upstream
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -233,9 +331,20 @@
             this.button10.TabIndex = 8;
             this.button10.Text = "Employee Payment";
             this.button10.UseVisualStyleBackColor = true;
+=======
+            this.btn_EmplooyeePayment.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_EmplooyeePayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EmplooyeePayment.Location = new System.Drawing.Point(20, 207);
+            this.btn_EmplooyeePayment.Name = "btn_EmplooyeePayment";
+            this.btn_EmplooyeePayment.Size = new System.Drawing.Size(313, 48);
+            this.btn_EmplooyeePayment.TabIndex = 8;
+            this.btn_EmplooyeePayment.Text = "Employee Payment";
+            this.btn_EmplooyeePayment.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
-            // button11
+            // btn_EmplooyeeWorking
             // 
+<<<<<<< Updated upstream
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -248,9 +357,20 @@
             this.button11.TabIndex = 9;
             this.button11.Text = "All Employee Working";
             this.button11.UseVisualStyleBackColor = true;
+=======
+            this.btn_EmplooyeeWorking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_EmplooyeeWorking.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EmplooyeeWorking.Location = new System.Drawing.Point(20, 304);
+            this.btn_EmplooyeeWorking.Name = "btn_EmplooyeeWorking";
+            this.btn_EmplooyeeWorking.Size = new System.Drawing.Size(313, 48);
+            this.btn_EmplooyeeWorking.TabIndex = 9;
+            this.btn_EmplooyeeWorking.Text = "All Employee Working";
+            this.btn_EmplooyeeWorking.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
-            // button12
+            // btn_LeavedEmployee
             // 
+<<<<<<< Updated upstream
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -263,9 +383,20 @@
             this.button12.TabIndex = 10;
             this.button12.Text = "Leaved Employee";
             this.button12.UseVisualStyleBackColor = true;
+=======
+            this.btn_LeavedEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_LeavedEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LeavedEmployee.Location = new System.Drawing.Point(20, 404);
+            this.btn_LeavedEmployee.Name = "btn_LeavedEmployee";
+            this.btn_LeavedEmployee.Size = new System.Drawing.Size(313, 48);
+            this.btn_LeavedEmployee.TabIndex = 10;
+            this.btn_LeavedEmployee.Text = "Leaved Employee";
+            this.btn_LeavedEmployee.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // btn_dashboard_close
             // 
+<<<<<<< Updated upstream
             this.btn_dashboard_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_dashboard_close.Image")));
             this.btn_dashboard_close.Location = new System.Drawing.Point(1303, 91);
             this.btn_dashboard_close.Name = "btn_dashboard_close";
@@ -273,6 +404,18 @@
             this.btn_dashboard_close.TabIndex = 11;
             this.btn_dashboard_close.UseVisualStyleBackColor = true;
             this.btn_dashboard_close.Click += new System.EventHandler(this.btn_dashboard_close_Click);
+>>>>>>> Stashed changes
+=======
+            this.panel2.BackColor = System.Drawing.Color.Bisque;
+            this.panel2.Controls.Add(this.btn_LeavedEmployee);
+            this.panel2.Controls.Add(this.btn_NewEmployee);
+            this.panel2.Controls.Add(this.btn_EmplooyeeWorking);
+            this.panel2.Controls.Add(this.btn_EmployeeUpdate);
+            this.panel2.Controls.Add(this.btn_EmplooyeePayment);
+            this.panel2.Location = new System.Drawing.Point(497, 99);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(348, 516);
+            this.panel2.TabIndex = 5;
 >>>>>>> Stashed changes
             // 
             // Form2
@@ -320,18 +463,25 @@
         private System.Windows.Forms.Button button1;
 =======
         private System.Windows.Forms.Label lbl_navigation;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button btn_studentupdate;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_StudentLiving;
+        private System.Windows.Forms.Button btn_LeavedStudent;
+        private System.Windows.Forms.Button btn_NewEmployee;
+        private System.Windows.Forms.Button btn_EmployeeUpdate;
+        private System.Windows.Forms.Button btn_StudentUpdate;
+        private System.Windows.Forms.Button btn_StudentFees;
         private System.Windows.Forms.Button btn_newstudent;
         private System.Windows.Forms.Button btn_manageroom;
+<<<<<<< Updated upstream
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btn_dashboard_close;
+>>>>>>> Stashed changes
+=======
+        private System.Windows.Forms.Button btn_EmplooyeePayment;
+        private System.Windows.Forms.Button btn_EmplooyeeWorking;
+        private System.Windows.Forms.Button btn_LeavedEmployee;
+        private System.Windows.Forms.Panel panel2;
 >>>>>>> Stashed changes
     }
 }
