@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace Hostel_Management_System
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.Visible = true;
+            FormDashboard dashboard = new FormDashboard(this);
+            dashboard.Visible = true;
+            this.Hide();
         }
     }
 }
