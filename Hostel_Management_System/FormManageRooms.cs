@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace Hostel_Management_System
 {
-    public partial class AddNewRoom : Form
+    public partial class FormManageRooms : Form
     {
-        public AddNewRoom()
+        public FormManageRooms()
         {
             InitializeComponent();
         }
 
         private void AddNewRoom_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
+            this.Location = new Point(595, 300);
+        }
+
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)

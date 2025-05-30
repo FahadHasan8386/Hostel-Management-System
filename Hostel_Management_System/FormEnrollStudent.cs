@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Hostel_Management_System
 {
-    public partial class Form2 : Form
+    public partial class FormEnrollStudent : Form
     {
-        public Form2()
+        public FormEnrollStudent()
         {
             InitializeComponent();
         }
-
-        private void btn_manageroom_Click(object sender, EventArgs e)
-        {
-            AddNewRoom anr = new AddNewRoom();
-            anr.Visible = true;
-        }
-
     }
 }
