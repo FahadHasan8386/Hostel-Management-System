@@ -23,5 +23,10 @@ namespace Hostel_Management_System
             dashboard.Visible = true;
             this.Hide();
         }
+
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
+        }
     }
 }

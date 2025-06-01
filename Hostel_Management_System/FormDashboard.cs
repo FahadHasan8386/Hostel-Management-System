@@ -34,15 +34,19 @@ namespace Hostel_Management_System
         {
             tmrHms.Enabled = true;
             tmrHms.Start();
+            tmrHostelLogo.Enabled = true;
+            tmrHostelLogo.Start();
         }
 
         
-        private void btnEnrollStudent_Click(object sender, EventArgs e)
+        private void btnNewStudent_Click(object sender, EventArgs e)
         {
-
+            FormNewStudent newStudent = new FormNewStudent();
+            newStudent.Show();  
         }
 
         Boolean lavelVisible = true;
+      
         private void tmrHms_Tick(object sender, EventArgs e)
         {
             if(lavelVisible)
@@ -67,6 +71,41 @@ namespace Hostel_Management_System
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCurrentResidents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManageStudentInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFormerResidents_Click(object sender, EventArgs e)
+        {
+
+        }
+        Boolean hostelLogoVisible = true;
+
+        private void picHostelLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tmrHostelLogo_Tick(object sender, EventArgs e)
+        {
+            if (hostelLogoVisible)
+            {
+                picHostelLogo.Visible = true;
+                hostelLogoVisible = false;
+            }
+            else
+            {
+                picHostelLogo.Visible = false;
+                hostelLogoVisible = true;
+            }
         }
     }
 }

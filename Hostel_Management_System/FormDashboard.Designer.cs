@@ -42,7 +42,10 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.tmrHms = new System.Windows.Forms.Timer(this.components);
+            this.picHostelLogo = new System.Windows.Forms.PictureBox();
+            this.tmrHostelLogo = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHostelLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCurrentResidents
@@ -54,12 +57,13 @@
             this.btnCurrentResidents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCurrentResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnCurrentResidents.Image")));
             this.btnCurrentResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCurrentResidents.Location = new System.Drawing.Point(12, 435);
+            this.btnCurrentResidents.Location = new System.Drawing.Point(10, 535);
             this.btnCurrentResidents.Name = "btnCurrentResidents";
             this.btnCurrentResidents.Size = new System.Drawing.Size(243, 42);
             this.btnCurrentResidents.TabIndex = 7;
             this.btnCurrentResidents.Text = "Current Residents";
             this.btnCurrentResidents.UseVisualStyleBackColor = true;
+            this.btnCurrentResidents.Click += new System.EventHandler(this.btnCurrentResidents_Click);
             // 
             // btnFormerResidents
             // 
@@ -70,12 +74,13 @@
             this.btnFormerResidents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormerResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnFormerResidents.Image")));
             this.btnFormerResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnFormerResidents.Location = new System.Drawing.Point(12, 537);
+            this.btnFormerResidents.Location = new System.Drawing.Point(10, 612);
             this.btnFormerResidents.Name = "btnFormerResidents";
             this.btnFormerResidents.Size = new System.Drawing.Size(241, 44);
             this.btnFormerResidents.TabIndex = 6;
             this.btnFormerResidents.Text = "Fromer Residents\r\n";
             this.btnFormerResidents.UseVisualStyleBackColor = true;
+            this.btnFormerResidents.Click += new System.EventHandler(this.btnFormerResidents_Click);
             // 
             // btnManageStudentInfo
             // 
@@ -86,12 +91,13 @@
             this.btnManageStudentInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageStudentInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStudentInfo.Image")));
             this.btnManageStudentInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageStudentInfo.Location = new System.Drawing.Point(12, 256);
+            this.btnManageStudentInfo.Location = new System.Drawing.Point(10, 364);
             this.btnManageStudentInfo.Name = "btnManageStudentInfo";
             this.btnManageStudentInfo.Size = new System.Drawing.Size(241, 40);
             this.btnManageStudentInfo.TabIndex = 3;
             this.btnManageStudentInfo.Text = "Manage Student Info\r\n";
             this.btnManageStudentInfo.UseVisualStyleBackColor = true;
+            this.btnManageStudentInfo.Click += new System.EventHandler(this.btnManageStudentInfo_Click);
             // 
             // btnStudentPayment
             // 
@@ -102,7 +108,7 @@
             this.btnStudentPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentPayment.Image")));
             this.btnStudentPayment.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnStudentPayment.Location = new System.Drawing.Point(12, 346);
+            this.btnStudentPayment.Location = new System.Drawing.Point(10, 454);
             this.btnStudentPayment.Name = "btnStudentPayment";
             this.btnStudentPayment.Size = new System.Drawing.Size(241, 43);
             this.btnStudentPayment.TabIndex = 2;
@@ -119,13 +125,13 @@
             this.btnEnrollStudent.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnEnrollStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrollStudent.Image")));
             this.btnEnrollStudent.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnEnrollStudent.Location = new System.Drawing.Point(12, 175);
+            this.btnEnrollStudent.Location = new System.Drawing.Point(10, 284);
             this.btnEnrollStudent.Name = "btnEnrollStudent";
             this.btnEnrollStudent.Size = new System.Drawing.Size(241, 37);
             this.btnEnrollStudent.TabIndex = 1;
-            this.btnEnrollStudent.Text = "Enroll Student";
+            this.btnEnrollStudent.Text = "New Student";
             this.btnEnrollStudent.UseVisualStyleBackColor = true;
-            this.btnEnrollStudent.Click += new System.EventHandler(this.btnEnrollStudent_Click);
+            this.btnEnrollStudent.Click += new System.EventHandler(this.btnNewStudent_Click);
             // 
             // btnManageRoom
             // 
@@ -136,7 +142,7 @@
             this.btnManageRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnManageRoom.Image")));
             this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnManageRoom.Location = new System.Drawing.Point(12, 90);
+            this.btnManageRoom.Location = new System.Drawing.Point(10, 197);
             this.btnManageRoom.Name = "btnManageRoom";
             this.btnManageRoom.Size = new System.Drawing.Size(241, 41);
             this.btnManageRoom.TabIndex = 0;
@@ -158,10 +164,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(284, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(280, 64);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(954, 615);
+            this.pictureBox1.Size = new System.Drawing.Size(1055, 647);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -184,7 +191,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(1303, 15);
+            this.btnExit.Location = new System.Drawing.Point(1315, 11);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(36, 34);
             this.btnExit.TabIndex = 18;
@@ -201,7 +208,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(1119, 28);
+            this.btnLogout.Location = new System.Drawing.Point(1174, 17);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(119, 30);
             this.btnLogout.TabIndex = 19;
@@ -215,12 +222,31 @@
             this.tmrHms.Interval = 1000;
             this.tmrHms.Tick += new System.EventHandler(this.tmrHms_Tick);
             // 
-            // FormDashbard
+            // picHostelLogo
+            // 
+            this.picHostelLogo.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.picHostelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picHostelLogo.Image = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.Image")));
+            this.picHostelLogo.Location = new System.Drawing.Point(12, 64);
+            this.picHostelLogo.Name = "picHostelLogo";
+            this.picHostelLogo.Size = new System.Drawing.Size(207, 94);
+            this.picHostelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHostelLogo.TabIndex = 20;
+            this.picHostelLogo.TabStop = false;
+            this.picHostelLogo.Click += new System.EventHandler(this.picHostelLogo_Click);
+            // 
+            // tmrHostelLogo
+            // 
+            this.tmrHostelLogo.Interval = 1000;
+            this.tmrHostelLogo.Tick += new System.EventHandler(this.tmrHostelLogo_Tick);
+            // 
+            // FormDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(1363, 723);
+            this.Controls.Add(this.picHostelLogo);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblHms);
@@ -233,11 +259,12 @@
             this.Controls.Add(this.btnManageRoom);
             this.Controls.Add(this.btnEnrollStudent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormDashbard";
+            this.Name = "FormDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.FormDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHostelLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +283,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Timer tmrHms;
+        private System.Windows.Forms.PictureBox picHostelLogo;
+        private System.Windows.Forms.Timer tmrHostelLogo;
     }
 }
