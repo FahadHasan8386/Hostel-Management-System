@@ -1,4 +1,4 @@
-﻿namespace Hostel_Management_System
+﻿namespace HostelManagementSystem
 {
     partial class FormDashboard
     {
@@ -78,7 +78,7 @@
             this.btnFormerResidents.Name = "btnFormerResidents";
             this.btnFormerResidents.Size = new System.Drawing.Size(241, 44);
             this.btnFormerResidents.TabIndex = 6;
-            this.btnFormerResidents.Text = "Fromer Residents\r\n";
+            this.btnFormerResidents.Text = "Former Residents\r\n";
             this.btnFormerResidents.UseVisualStyleBackColor = true;
             this.btnFormerResidents.Click += new System.EventHandler(this.btnFormerResidents_Click);
             // 
@@ -114,6 +114,7 @@
             this.btnStudentPayment.TabIndex = 2;
             this.btnStudentPayment.Text = "Student  Payment";
             this.btnStudentPayment.UseVisualStyleBackColor = true;
+            this.btnStudentPayment.Click += new System.EventHandler(this.btnStudentPayment_Click);
             // 
             // btnEnrollStudent
             // 

@@ -1,4 +1,4 @@
-﻿namespace Hostel_Management_System
+﻿namespace HostelManagementSystem
 {
     partial class FormNewStudent
     {
@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNewStudent));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtEmailId = new System.Windows.Forms.TextBox();
+            this.txtMotherName = new System.Windows.Forms.TextBox();
+            this.txtFatherName = new System.Windows.Forms.TextBox();
+            this.txtMobileNumber = new System.Windows.Forms.TextBox();
+            this.txtRoomNumber = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnExitFormNewStudent = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,64 +45,89 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(428, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Enter Your Name\r\n";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtId.ForeColor = System.Drawing.Color.Gray;
+            this.txtId.Location = new System.Drawing.Point(428, 342);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(280, 20);
+            this.txtId.TabIndex = 2;
+            this.txtId.Text = "ID";
+            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtId.Enter += new System.EventHandler(this.Id_Enter);
+            this.txtId.Leave += new System.EventHandler(this.Id_Leave);
             // 
-            // textBox2
+            // txtAddress
             // 
-            this.textBox2.Location = new System.Drawing.Point(428, 342);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(280, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtAddress.ForeColor = System.Drawing.Color.Gray;
+            this.txtAddress.Location = new System.Drawing.Point(428, 291);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(280, 20);
+            this.txtAddress.TabIndex = 3;
+            this.txtAddress.Text = "Enter Student Address_Enter\r\n";
+            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAddress.Enter += new System.EventHandler(this.Address_Enter);
+            this.txtAddress.Leave += new System.EventHandler(this.Address_Leave);
             // 
-            // textBox3
+            // txtEmailId
             // 
-            this.textBox3.Location = new System.Drawing.Point(428, 291);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(280, 20);
-            this.textBox3.TabIndex = 3;
+            this.txtEmailId.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmailId.Location = new System.Drawing.Point(428, 248);
+            this.txtEmailId.Name = "txtEmailId";
+            this.txtEmailId.Size = new System.Drawing.Size(280, 20);
+            this.txtEmailId.TabIndex = 4;
+            this.txtEmailId.Text = "Enter Studnet Email ID\r\n";
+            this.txtEmailId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmailId.Enter += new System.EventHandler(this.EmailId_Enter);
+            this.txtEmailId.Leave += new System.EventHandler(this.EmailId_Leave);
             // 
-            // textBox4
+            // txtMotherName
             // 
-            this.textBox4.Location = new System.Drawing.Point(428, 248);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(280, 20);
-            this.textBox4.TabIndex = 4;
+            this.txtMotherName.ForeColor = System.Drawing.Color.Gray;
+            this.txtMotherName.Location = new System.Drawing.Point(428, 202);
+            this.txtMotherName.Name = "txtMotherName";
+            this.txtMotherName.Size = new System.Drawing.Size(280, 20);
+            this.txtMotherName.TabIndex = 5;
+            this.txtMotherName.Text = "Enter Student Mother Name\r\n";
+            this.txtMotherName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMotherName.Enter += new System.EventHandler(this.MotherName_Enter);
+            this.txtMotherName.Leave += new System.EventHandler(this.MotherName_Leave);
             // 
-            // textBox5
+            // txtFatherName
             // 
-            this.textBox5.Location = new System.Drawing.Point(428, 202);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(280, 20);
-            this.textBox5.TabIndex = 5;
+            this.txtFatherName.ForeColor = System.Drawing.Color.Gray;
+            this.txtFatherName.Location = new System.Drawing.Point(428, 153);
+            this.txtFatherName.Name = "txtFatherName";
+            this.txtFatherName.Size = new System.Drawing.Size(280, 20);
+            this.txtFatherName.TabIndex = 6;
+            this.txtFatherName.Text = "Enter Student Father Name";
+            this.txtFatherName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFatherName.Enter += new System.EventHandler(this.FatherName_Enter);
+            this.txtFatherName.Leave += new System.EventHandler(this.FatherName_Leave);
             // 
-            // textBox6
+            // txtMobileNumber
             // 
-            this.textBox6.Location = new System.Drawing.Point(428, 153);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(280, 20);
-            this.textBox6.TabIndex = 6;
+            this.txtMobileNumber.ForeColor = System.Drawing.Color.Gray;
+            this.txtMobileNumber.Location = new System.Drawing.Point(428, 107);
+            this.txtMobileNumber.Name = "txtMobileNumber";
+            this.txtMobileNumber.Size = new System.Drawing.Size(280, 20);
+            this.txtMobileNumber.TabIndex = 7;
+            this.txtMobileNumber.Text = "Enter Student Mobile Nubmer";
+            this.txtMobileNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMobileNumber.Enter += new System.EventHandler(this.MobileNumber_Enter);
+            this.txtMobileNumber.Leave += new System.EventHandler(this.MobileNumber_Leave);
             // 
-            // textBox7
+            // txtRoomNumber
             // 
-            this.textBox7.Location = new System.Drawing.Point(428, 107);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(280, 20);
-            this.textBox7.TabIndex = 7;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(428, 387);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(280, 20);
-            this.textBox8.TabIndex = 8;
+            this.txtRoomNumber.ForeColor = System.Drawing.Color.Gray;
+            this.txtRoomNumber.Location = new System.Drawing.Point(428, 387);
+            this.txtRoomNumber.Name = "txtRoomNumber";
+            this.txtRoomNumber.Size = new System.Drawing.Size(280, 20);
+            this.txtRoomNumber.TabIndex = 8;
+            this.txtRoomNumber.Text = "Enter Student Room Number\r\n";
+            this.txtRoomNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtRoomNumber.Enter += new System.EventHandler(this.RoomNumber_Enter);
+            this.txtRoomNumber.Leave += new System.EventHandler(this.RoomNumber_Leave);
             // 
             // button1
             // 
@@ -119,22 +143,22 @@
             this.button1.Text = "Save\n";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // btnExit
+            // btnExitFormNewStudent
             // 
-            this.btnExit.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(800, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(36, 34);
-            this.btnExit.TabIndex = 18;
-            this.btnExit.Text = "\r\n";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnNewStudentExit_Click);
+            this.btnExitFormNewStudent.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnExitFormNewStudent.FlatAppearance.BorderSize = 0;
+            this.btnExitFormNewStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitFormNewStudent.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitFormNewStudent.ForeColor = System.Drawing.Color.White;
+            this.btnExitFormNewStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormNewStudent.Image")));
+            this.btnExitFormNewStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExitFormNewStudent.Location = new System.Drawing.Point(827, 12);
+            this.btnExitFormNewStudent.Name = "btnExitFormNewStudent";
+            this.btnExitFormNewStudent.Size = new System.Drawing.Size(36, 34);
+            this.btnExitFormNewStudent.TabIndex = 18;
+            this.btnExitFormNewStudent.Text = "\r\n";
+            this.btnExitFormNewStudent.UseVisualStyleBackColor = false;
+            this.btnExitFormNewStudent.Click += new System.EventHandler(this.btnExitFormNewStudent_Click);
             // 
             // btnClear
             // 
@@ -161,7 +185,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -179,20 +202,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(859, 473);
+            this.ClientSize = new System.Drawing.Size(875, 512);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnExitFormNewStudent);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRoomNumber);
+            this.Controls.Add(this.txtMobileNumber);
+            this.Controls.Add(this.txtFatherName);
+            this.Controls.Add(this.txtMotherName);
+            this.Controls.Add(this.txtEmailId);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtId);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormNewStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -206,16 +228,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtEmailId;
+        private System.Windows.Forms.TextBox txtMotherName;
+        private System.Windows.Forms.TextBox txtFatherName;
+        private System.Windows.Forms.TextBox txtMobileNumber;
+        private System.Windows.Forms.TextBox txtRoomNumber;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnExitFormNewStudent;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

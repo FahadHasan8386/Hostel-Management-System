@@ -1,4 +1,4 @@
-﻿namespace Hostel_Management_System
+﻿namespace HostelManagementSystem
 {
     partial class FormManageRooms
     {
@@ -45,7 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnExitFormManageRooms = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +60,6 @@
             this.label1.Size = new System.Drawing.Size(174, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Room\r\n";
-           
             // 
             // label2
             // 
@@ -234,22 +233,22 @@
             this.textBox3.Size = new System.Drawing.Size(135, 22);
             this.textBox3.TabIndex = 16;
             // 
-            // btnExit
+            // btnExitFormManageRooms
             // 
-            this.btnExit.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(827, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(36, 34);
-            this.btnExit.TabIndex = 17;
-            this.btnExit.Text = "\r\n";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExitFormManageRooms.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnExitFormManageRooms.FlatAppearance.BorderSize = 0;
+            this.btnExitFormManageRooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitFormManageRooms.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitFormManageRooms.ForeColor = System.Drawing.Color.White;
+            this.btnExitFormManageRooms.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormManageRooms.Image")));
+            this.btnExitFormManageRooms.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExitFormManageRooms.Location = new System.Drawing.Point(827, 12);
+            this.btnExitFormManageRooms.Name = "btnExitFormManageRooms";
+            this.btnExitFormManageRooms.Size = new System.Drawing.Size(36, 34);
+            this.btnExitFormManageRooms.TabIndex = 17;
+            this.btnExitFormManageRooms.Text = "\r\n";
+            this.btnExitFormManageRooms.UseVisualStyleBackColor = false;
+            this.btnExitFormManageRooms.Click += new System.EventHandler(this.btnExitFormManageRooms_Click);
             // 
             // FormManageRooms
             // 
@@ -257,7 +256,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(875, 512);
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnExitFormManageRooms);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label7);
@@ -303,7 +302,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnExitFormManageRooms;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

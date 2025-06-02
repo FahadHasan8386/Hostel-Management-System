@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hostel_Management_System.Properties
+namespace HostelManagementSystem.Properties
 {
 
 

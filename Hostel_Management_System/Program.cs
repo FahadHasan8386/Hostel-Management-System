@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System
+namespace HostelManagementSystem
 {
     internal static class Program
     {
