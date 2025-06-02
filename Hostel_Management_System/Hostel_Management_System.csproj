@@ -50,6 +50,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCurrentResidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurrentResidents.Designer.cs">
+      <DependentUpon>FormCurrentResidents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFormerResidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFormerResidents.Designer.cs">
+      <DependentUpon>FormFormerResidents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageStudentInfo.Designer.cs">
+      <DependentUpon>FormManageStudentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,8 +98,23 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStudentPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudentPayment.Designer.cs">
+      <DependentUpon>FormStudentPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCurrentResidents.resx">
+      <DependentUpon>FormCurrentResidents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFormerResidents.resx">
+      <DependentUpon>FormFormerResidents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageStudentInfo.resx">
+      <DependentUpon>FormManageStudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormNewStudent.resx">
       <DependentUpon>FormNewStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudentPayment.resx">
+      <DependentUpon>FormStudentPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

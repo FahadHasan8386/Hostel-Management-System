@@ -1,4 +1,4 @@
-﻿namespace Hostel_Management_System
+﻿namespace HostelManagementSystem
 {
     partial class Form3
     {

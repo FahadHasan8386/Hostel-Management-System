@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hostel_Management_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,26 +9,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System
+namespace HostelManagementSystem
 {
     public partial class FormDashboard : Form
     {
         private Login login;
+        private FormManageRooms manageRooms;
+        private FormNewStudent newStudent;
+        private FormManageStudentInfo manageStudentInfo;
+        private FormStudentPayment studentPayment;
+        private FormCurrentResidents currentResidents;
+        private FormFormerResidents formerResidents;
+
         public FormDashboard()
         {
             InitializeComponent();
+
         }
 
         public FormDashboard(Login login)
         {
             InitializeComponent();
             this.login = login;
+           
         }
 
         private void btnManageRoom_Click(object sender, EventArgs e)
         {
-            FormManageRooms manageRooms = new FormManageRooms();
-            manageRooms.Show();
+            if (manageRooms == null || manageRooms.IsDisposed)
+            {
+                manageRooms = new FormManageRooms(); // Create a new instance only if it doesn't exist or was disposed
+            }
+            manageRooms.Show(); // Show the form
+            manageRooms.BringToFront();
+
         }
 
         private void FormDashboard_Load(object sender, EventArgs e)
@@ -41,8 +56,14 @@ namespace Hostel_Management_System
         
         private void btnNewStudent_Click(object sender, EventArgs e)
         {
-            FormNewStudent newStudent = new FormNewStudent();
-            newStudent.Show();  
+
+            if (newStudent == null || newStudent.IsDisposed)
+            {
+                newStudent = new FormNewStudent(); 
+            }
+            newStudent.Show();
+            newStudent.BringToFront();
+           
         }
 
         Boolean lavelVisible = true;
@@ -75,18 +96,37 @@ namespace Hostel_Management_System
 
         private void btnCurrentResidents_Click(object sender, EventArgs e)
         {
-
+            if (currentResidents == null || currentResidents.IsDisposed)
+            {
+                currentResidents = new FormCurrentResidents(); 
+            }
+            currentResidents.Show(); 
+            currentResidents.BringToFront();
         }
 
         private void btnManageStudentInfo_Click(object sender, EventArgs e)
         {
+            if (manageStudentInfo == null || manageStudentInfo.IsDisposed)
+            {
+                manageStudentInfo = new FormManageStudentInfo();
+            }
+            manageStudentInfo.Show(); 
+            manageStudentInfo.BringToFront();
+
 
         }
 
         private void btnFormerResidents_Click(object sender, EventArgs e)
         {
+            if (formerResidents == null || formerResidents.IsDisposed)
+            {
+                formerResidents = new FormFormerResidents(); 
+            }
+            formerResidents.Show(); 
+            formerResidents.BringToFront();
 
         }
+
         Boolean hostelLogoVisible = true;
 
         private void picHostelLogo_Click(object sender, EventArgs e)
@@ -106,6 +146,16 @@ namespace Hostel_Management_System
                 picHostelLogo.Visible = false;
                 hostelLogoVisible = true;
             }
+        }
+
+        private void btnStudentPayment_Click(object sender, EventArgs e)
+        {
+            if (studentPayment == null || studentPayment.IsDisposed)
+            {
+                studentPayment = new FormStudentPayment(); // Create a new instance only if it doesn't exist or was disposed
+            }
+            studentPayment.Show(); // Show the form
+            studentPayment.BringToFront();
         }
     }
 }

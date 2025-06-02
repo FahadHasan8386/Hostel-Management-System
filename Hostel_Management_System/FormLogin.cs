@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System
+namespace HostelManagementSystem
 {
     public partial class Login : Form
     {
@@ -27,6 +27,11 @@ namespace Hostel_Management_System
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
+        }
+
+        private void btnExitFormFormLogin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

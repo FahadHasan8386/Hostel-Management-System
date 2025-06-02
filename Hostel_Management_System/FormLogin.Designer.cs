@@ -1,4 +1,4 @@
-﻿namespace Hostel_Management_System
+﻿namespace HostelManagementSystem
 {
     partial class Login
     {
@@ -36,6 +36,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExitFormFormLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,9 +46,9 @@
             this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(102, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 15);
+            this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Username";
+            this.label1.Text = "User Id";
             // 
             // label2
             // 
@@ -111,7 +112,23 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-           
+            // 
+            // btnExitFormFormLogin
+            // 
+            this.btnExitFormFormLogin.BackColor = System.Drawing.Color.Tomato;
+            this.btnExitFormFormLogin.FlatAppearance.BorderSize = 0;
+            this.btnExitFormFormLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitFormFormLogin.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitFormFormLogin.ForeColor = System.Drawing.Color.White;
+            this.btnExitFormFormLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormFormLogin.Image")));
+            this.btnExitFormFormLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExitFormFormLogin.Location = new System.Drawing.Point(431, 12);
+            this.btnExitFormFormLogin.Name = "btnExitFormFormLogin";
+            this.btnExitFormFormLogin.Size = new System.Drawing.Size(36, 34);
+            this.btnExitFormFormLogin.TabIndex = 21;
+            this.btnExitFormFormLogin.Text = "\r\n";
+            this.btnExitFormFormLogin.UseVisualStyleBackColor = false;
+            this.btnExitFormFormLogin.Click += new System.EventHandler(this.btnExitFormFormLogin_Click);
             // 
             // Login
             // 
@@ -119,6 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(479, 390);
+            this.Controls.Add(this.btnExitFormFormLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.btnLogin);
@@ -130,7 +148,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -146,6 +163,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.CheckBox chkShowPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnExitFormFormLogin;
     }
 }
 

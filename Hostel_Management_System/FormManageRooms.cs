@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System
+namespace HostelManagementSystem
 {
     public partial class FormManageRooms : Form
     {
@@ -22,7 +22,7 @@ namespace Hostel_Management_System
             this.Location = new Point(595, 300);
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExitFormManageRooms_Click(object sender, EventArgs e)
         {
             this.Close();
         }
