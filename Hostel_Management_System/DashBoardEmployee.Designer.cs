@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< Updated upstream
             this.label1 = new System.Windows.Forms.Label();
             this.btn_ManageRoomEmployee = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -82,10 +83,35 @@
             this.btn_LogOutEmployee.Text = "Logout";
             this.btn_LogOutEmployee.UseVisualStyleBackColor = true;
             // 
+=======
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(35, 152);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(227, 60);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Manage Room";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(626, 65);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 47);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Log Out";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+>>>>>>> Stashed changes
             // DashBoardEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< Updated upstream
             this.ClientSize = new System.Drawing.Size(1946, 1106);
             this.Controls.Add(this.btn_LogOutEmployee);
             this.Controls.Add(this.button3);
@@ -99,15 +125,28 @@
             this.Text = "DashBoardEmployee";
             this.ResumeLayout(false);
             this.PerformLayout();
+=======
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Name = "DashBoardEmployee";
+            this.Text = "DashBoardEmployee";
+            this.ResumeLayout(false);
+>>>>>>> Stashed changes
 
         }
 
         #endregion
 
+<<<<<<< Updated upstream
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_ManageRoomEmployee;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btn_LogOutEmployee;
+=======
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+>>>>>>> Stashed changes
     }
 }
