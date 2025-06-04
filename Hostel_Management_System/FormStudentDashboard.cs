@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace HostelManagementSystem
 {
-    public partial class FormDashboard : Form
+    public partial class FormStudentDashboard : Form
     {
         private Login login;
         private FormManageRooms manageRooms;
@@ -21,13 +21,13 @@ namespace HostelManagementSystem
         private FormCurrentResidents currentResidents;
         private FormFormerResidents formerResidents;
 
-        public FormDashboard()
+        public FormStudentDashboard()
         {
             InitializeComponent();
 
         }
 
-        public FormDashboard(Login login)
+        public FormStudentDashboard(Login login)
         {
             InitializeComponent();
             this.login = login;
