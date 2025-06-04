@@ -19,7 +19,7 @@ namespace HostelManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FormDashboard dashboard = new FormDashboard(this);
+            FormStudentDashboard dashboard = new FormStudentDashboard(this);
             dashboard.Visible = true;
             this.Hide();
         }

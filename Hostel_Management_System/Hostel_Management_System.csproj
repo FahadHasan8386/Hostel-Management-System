@@ -50,17 +50,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCurrentEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurrentEmployees.Designer.cs">
+      <DependentUpon>FormCurrentEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeSalaries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeSalaries.Designer.cs">
+      <DependentUpon>FormEmployeeSalaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFormerEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFormerEmployees.Designer.cs">
+      <DependentUpon>FormFormerEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewEmployee.Designer.cs">
+      <DependentUpon>FormNewEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCurrentResidents.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCurrentResidents.Designer.cs">
       <DependentUpon>FormCurrentResidents.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEmployeeDashboarde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeDashboarde.Designer.cs">
+      <DependentUpon>FormEmployeeDashboarde.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFormerResidents.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormFormerResidents.Designer.cs">
       <DependentUpon>FormFormerResidents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageEmployeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageEmployeeInfo.Designer.cs">
+      <DependentUpon>FormManageEmployeeInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormManageStudentInfo.cs">
       <SubType>Form</SubType>
@@ -86,11 +122,11 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDashboard.cs">
+    <Compile Include="FormStudentDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDashboard.Designer.cs">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
+    <Compile Include="FormStudentDashboard.Designer.cs">
+      <DependentUpon>FormStudentDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
@@ -124,8 +160,8 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDashboard.resx">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="FormStudentDashboard.resx">
+      <DependentUpon>FormStudentDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStudentPayment.resx">
       <DependentUpon>FormStudentPayment.cs</DependentUpon>

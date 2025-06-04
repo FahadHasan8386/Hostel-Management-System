@@ -24,7 +24,7 @@ namespace Hostel_Management_System
 
         private void FormFormerResidents_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(595, 300);
+            this.Location = new Point(450, 180);
         }
     }
 }

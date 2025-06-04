@@ -1,6 +1,6 @@
 ﻿namespace HostelManagementSystem
 {
-    partial class FormDashboard
+    partial class FormStudentDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStudentDashboard));
             this.btnCurrentResidents = new System.Windows.Forms.Button();
             this.btnFormerResidents = new System.Windows.Forms.Button();
             this.btnManageStudentInfo = new System.Windows.Forms.Button();

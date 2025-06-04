@@ -13,7 +13,7 @@ namespace HostelManagementSystem
 
         private void FormEnrollStudent_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(595, 300);
+            this.Location = new Point(450, 180);
         }
 
         private void btnExitFormNewStudent_Click(object sender, EventArgs e)
