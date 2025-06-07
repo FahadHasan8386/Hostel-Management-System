@@ -142,6 +142,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCurrentEmployees.resx">
+      <DependentUpon>FormCurrentEmployees.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCurrentResidents.resx">
       <DependentUpon>FormCurrentResidents.cs</DependentUpon>
     </EmbeddedResource>
