@@ -148,6 +148,9 @@
     <EmbeddedResource Include="FormCurrentResidents.resx">
       <DependentUpon>FormCurrentResidents.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeDashboarde.resx">
+      <DependentUpon>FormEmployeeDashboarde.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFormerResidents.resx">
       <DependentUpon>FormFormerResidents.cs</DependentUpon>
     </EmbeddedResource>
