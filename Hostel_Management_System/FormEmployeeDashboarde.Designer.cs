@@ -47,10 +47,10 @@
             this.picHostelLogo.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.picHostelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picHostelLogo.Image = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.Image")));
-            this.picHostelLogo.Location = new System.Drawing.Point(13, 100);
-            this.picHostelLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picHostelLogo.Location = new System.Drawing.Point(12, 80);
+            this.picHostelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picHostelLogo.Name = "picHostelLogo";
-            this.picHostelLogo.Size = new System.Drawing.Size(310, 144);
+            this.picHostelLogo.Size = new System.Drawing.Size(276, 116);
             this.picHostelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHostelLogo.TabIndex = 25;
             this.picHostelLogo.TabStop = false;
@@ -64,10 +64,10 @@
             this.btnManageEmployeeInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageEmployeeInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnManageEmployeeInfo.Image")));
             this.btnManageEmployeeInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageEmployeeInfo.Location = new System.Drawing.Point(10, 555);
-            this.btnManageEmployeeInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnManageEmployeeInfo.Location = new System.Drawing.Point(9, 444);
+            this.btnManageEmployeeInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManageEmployeeInfo.Name = "btnManageEmployeeInfo";
-            this.btnManageEmployeeInfo.Size = new System.Drawing.Size(362, 62);
+            this.btnManageEmployeeInfo.Size = new System.Drawing.Size(322, 50);
             this.btnManageEmployeeInfo.TabIndex = 23;
             this.btnManageEmployeeInfo.Text = "Manage Employee Info\r\n";
             this.btnManageEmployeeInfo.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             this.lbl_navigation.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_navigation.Font = new System.Drawing.Font("Cambria", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_navigation.ForeColor = System.Drawing.Color.White;
-            this.lbl_navigation.Location = new System.Drawing.Point(13, 19);
+            this.lbl_navigation.Location = new System.Drawing.Point(12, 15);
             this.lbl_navigation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_navigation.Name = "lbl_navigation";
-            this.lbl_navigation.Size = new System.Drawing.Size(311, 50);
+            this.lbl_navigation.Size = new System.Drawing.Size(258, 42);
             this.lbl_navigation.TabIndex = 24;
             this.lbl_navigation.Text = "NAVIGTION BAR";
             // 
@@ -94,10 +94,10 @@
             this.btnManageRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnManageRoom.Image")));
             this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnManageRoom.Location = new System.Drawing.Point(10, 305);
-            this.btnManageRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnManageRoom.Location = new System.Drawing.Point(9, 244);
+            this.btnManageRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManageRoom.Name = "btnManageRoom";
-            this.btnManageRoom.Size = new System.Drawing.Size(362, 63);
+            this.btnManageRoom.Size = new System.Drawing.Size(322, 50);
             this.btnManageRoom.TabIndex = 21;
             this.btnManageRoom.Text = "Manage Rooms";
             this.btnManageRoom.UseVisualStyleBackColor = true;
@@ -112,10 +112,10 @@
             this.btnEnrollEmployee.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnEnrollEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrollEmployee.Image")));
             this.btnEnrollEmployee.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnEnrollEmployee.Location = new System.Drawing.Point(10, 433);
-            this.btnEnrollEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEnrollEmployee.Location = new System.Drawing.Point(9, 346);
+            this.btnEnrollEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEnrollEmployee.Name = "btnEnrollEmployee";
-            this.btnEnrollEmployee.Size = new System.Drawing.Size(362, 57);
+            this.btnEnrollEmployee.Size = new System.Drawing.Size(322, 46);
             this.btnEnrollEmployee.TabIndex = 22;
             this.btnEnrollEmployee.Text = "New Employee";
             this.btnEnrollEmployee.UseVisualStyleBackColor = true;
@@ -129,10 +129,10 @@
             this.btnEmployeePayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployeePayment.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeePayment.Image")));
             this.btnEmployeePayment.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnEmployeePayment.Location = new System.Drawing.Point(13, 676);
-            this.btnEmployeePayment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEmployeePayment.Location = new System.Drawing.Point(12, 541);
+            this.btnEmployeePayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEmployeePayment.Name = "btnEmployeePayment";
-            this.btnEmployeePayment.Size = new System.Drawing.Size(362, 66);
+            this.btnEmployeePayment.Size = new System.Drawing.Size(322, 53);
             this.btnEmployeePayment.TabIndex = 26;
             this.btnEmployeePayment.Text = "Employee  Payment";
             this.btnEmployeePayment.UseVisualStyleBackColor = true;
@@ -146,10 +146,10 @@
             this.btnEmployeeFormerResidents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployeeFormerResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeFormerResidents.Image")));
             this.btnEmployeeFormerResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnEmployeeFormerResidents.Location = new System.Drawing.Point(13, 925);
-            this.btnEmployeeFormerResidents.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEmployeeFormerResidents.Location = new System.Drawing.Point(12, 740);
+            this.btnEmployeeFormerResidents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEmployeeFormerResidents.Name = "btnEmployeeFormerResidents";
-            this.btnEmployeeFormerResidents.Size = new System.Drawing.Size(362, 68);
+            this.btnEmployeeFormerResidents.Size = new System.Drawing.Size(322, 54);
             this.btnEmployeeFormerResidents.TabIndex = 27;
             this.btnEmployeeFormerResidents.Text = "Former Residents\r\n";
             this.btnEmployeeFormerResidents.UseVisualStyleBackColor = true;
@@ -163,10 +163,10 @@
             this.btnEmployeeCurrentResidents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployeeCurrentResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeCurrentResidents.Image")));
             this.btnEmployeeCurrentResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnEmployeeCurrentResidents.Location = new System.Drawing.Point(13, 801);
-            this.btnEmployeeCurrentResidents.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEmployeeCurrentResidents.Location = new System.Drawing.Point(12, 641);
+            this.btnEmployeeCurrentResidents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEmployeeCurrentResidents.Name = "btnEmployeeCurrentResidents";
-            this.btnEmployeeCurrentResidents.Size = new System.Drawing.Size(364, 65);
+            this.btnEmployeeCurrentResidents.Size = new System.Drawing.Size(324, 52);
             this.btnEmployeeCurrentResidents.TabIndex = 28;
             this.btnEmployeeCurrentResidents.Text = "Current Residents";
             this.btnEmployeeCurrentResidents.UseVisualStyleBackColor = true;
@@ -176,10 +176,10 @@
             this.lblHms.AutoSize = true;
             this.lblHms.Font = new System.Drawing.Font("Cambria", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHms.ForeColor = System.Drawing.Color.White;
-            this.lblHms.Location = new System.Drawing.Point(658, 19);
+            this.lblHms.Location = new System.Drawing.Point(585, 15);
             this.lblHms.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHms.Name = "lblHms";
-            this.lblHms.Size = new System.Drawing.Size(680, 62);
+            this.lblHms.Size = new System.Drawing.Size(565, 52);
             this.lblHms.TabIndex = 29;
             this.lblHms.Text = "Hostel Management System";
             // 
@@ -192,20 +192,20 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(1733, 19);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogout.Location = new System.Drawing.Point(1540, 15);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(178, 46);
+            this.btnLogout.Size = new System.Drawing.Size(158, 37);
             this.btnLogout.TabIndex = 30;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // FormEmployeeDashboarde
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.ClientSize = new System.Drawing.Size(1710, 840);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.lblHms);
             this.Controls.Add(this.btnEmployeePayment);
@@ -217,6 +217,8 @@
             this.Controls.Add(this.btnManageRoom);
             this.Controls.Add(this.btnEnrollEmployee);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormEmployeeDashboarde";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormEmployeeDashboarde";
