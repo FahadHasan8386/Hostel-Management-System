@@ -80,11 +80,11 @@
     <Compile Include="FormCurrentResidents.Designer.cs">
       <DependentUpon>FormCurrentResidents.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEmployeeDashboarde.cs">
+    <Compile Include="FormEmployeeDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEmployeeDashboarde.Designer.cs">
-      <DependentUpon>FormEmployeeDashboarde.cs</DependentUpon>
+    <Compile Include="FormEmployeeDashboard.Designer.cs">
+      <DependentUpon>FormEmployeeDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="FormFormerResidents.cs">
       <SubType>Form</SubType>
@@ -148,8 +148,8 @@
     <EmbeddedResource Include="FormCurrentResidents.resx">
       <DependentUpon>FormCurrentResidents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEmployeeDashboarde.resx">
-      <DependentUpon>FormEmployeeDashboarde.cs</DependentUpon>
+    <EmbeddedResource Include="FormEmployeeDashboard.resx">
+      <DependentUpon>FormEmployeeDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFormerResidents.resx">
       <DependentUpon>FormFormerResidents.cs</DependentUpon>

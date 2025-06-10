@@ -17,11 +17,6 @@ namespace Hostel_Management_System
             InitializeComponent();
         }
 
-        private void btnExitFormCurrentResidents_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void FormCurrentResidents_Load(object sender, EventArgs e)
         {
             this.Location = new Point(450, 180);

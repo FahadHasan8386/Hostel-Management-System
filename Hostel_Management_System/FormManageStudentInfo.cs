@@ -17,10 +17,7 @@ namespace Hostel_Management_System
             InitializeComponent();
         }
 
-        private void btnExitFormManageStudentInfo_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void FormManageStudentInfo_Load(object sender, EventArgs e)
         {

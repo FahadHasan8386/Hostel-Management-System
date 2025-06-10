@@ -17,10 +17,7 @@ namespace Hostel_Management_System
             InitializeComponent();
         }
 
-        private void btnExitFormFormerResidents_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void FormFormerResidents_Load(object sender, EventArgs e)
         {

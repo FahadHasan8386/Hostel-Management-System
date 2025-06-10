@@ -14,12 +14,13 @@ namespace HostelManagementSystem
     public partial class FormStudentDashboard : Form
     {
         private Login login;
-        private FormManageRooms manageRooms;
-        private FormNewStudent newStudent;
-        private FormManageStudentInfo manageStudentInfo;
-        private FormStudentPayment studentPayment;
-        private FormCurrentResidents currentResidents;
-        private FormFormerResidents formerResidents;
+        private Form activeForm = null;
+        //private FormManageRooms manageRooms;
+        //private FormNewStudent newStudent;
+        //private FormManageStudentInfo manageStudentInfo;
+        //private FormStudentPayment studentPayment;
+        //private FormCurrentResidents currentResidents;
+        //private FormFormerResidents formerResidents;
 
         public FormStudentDashboard()
         {
@@ -34,14 +35,41 @@ namespace HostelManagementSystem
            
         }
 
+
+        private void OpenChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();  // Optional: Clear previous controls if needed
+            panelContainer.Controls.Add(childForm);
+            panelContainer.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void UpdateHeaderInfo(string labelText)
+        {
+            lableInfo.Text = labelText;
+            lableInfo.Visible = true;
+
+        }
         private void btnManageRoom_Click(object sender, EventArgs e)
         {
-            if (manageRooms == null || manageRooms.IsDisposed)
-            {
-                manageRooms = new FormManageRooms(); // Create a new instance only if it doesn't exist or was disposed
-            }
-            manageRooms.Show(); // Show the form
-            manageRooms.BringToFront();
+            //if (manageRooms == null || manageRooms.IsDisposed)
+            //{
+            //    manageRooms = new FormManageRooms(); // Create a new instance only if it doesn't exist or was disposed
+            //}
+            //manageRooms.Show(); // Show the form
+            //manageRooms.BringToFront();
+           
+             OpenChildForm(new FormManageRooms());
+            UpdateHeaderInfo("Manage Rooms");  // Pass your form name here
+
 
         }
 
@@ -57,13 +85,9 @@ namespace HostelManagementSystem
         private void btnNewStudent_Click(object sender, EventArgs e)
         {
 
-            if (newStudent == null || newStudent.IsDisposed)
-            {
-                newStudent = new FormNewStudent(); 
-            }
-            newStudent.Show();
-            newStudent.BringToFront();
-           
+            OpenChildForm(new FormNewStudent());
+            UpdateHeaderInfo("New Student");
+
         }
 
         Boolean lavelVisible = true;
@@ -82,12 +106,7 @@ namespace HostelManagementSystem
             }
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.login.Visible = true;
-            this.Hide();
-
-        }
+       
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -96,66 +115,54 @@ namespace HostelManagementSystem
 
         private void btnCurrentResidents_Click(object sender, EventArgs e)
         {
-            if (currentResidents == null || currentResidents.IsDisposed)
-            {
-                currentResidents = new FormCurrentResidents(); 
-            }
-            currentResidents.Show(); 
-            currentResidents.BringToFront();
+            OpenChildForm(new FormCurrentResidents());
+            UpdateHeaderInfo("Current Residents");
         }
 
         private void btnManageStudentInfo_Click(object sender, EventArgs e)
         {
-            if (manageStudentInfo == null || manageStudentInfo.IsDisposed)
-            {
-                manageStudentInfo = new FormManageStudentInfo();
-            }
-            manageStudentInfo.Show(); 
-            manageStudentInfo.BringToFront();
+            OpenChildForm(new FormManageStudentInfo());
+            UpdateHeaderInfo("Manage Student Info");
 
 
         }
 
         private void btnFormerResidents_Click(object sender, EventArgs e)
         {
-            if (formerResidents == null || formerResidents.IsDisposed)
-            {
-                formerResidents = new FormFormerResidents(); 
-            }
-            formerResidents.Show(); 
-            formerResidents.BringToFront();
+            OpenChildForm(new FormFormerResidents());
+            UpdateHeaderInfo("Former Residents");
 
         }
 
-        Boolean hostelLogoVisible = true;
-
-        private void picHostelLogo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tmrHostelLogo_Tick(object sender, EventArgs e)
-        {
-            if (hostelLogoVisible)
-            {
-                picHostelLogo.Visible = true;
-                hostelLogoVisible = false;
-            }
-            else
-            {
-                picHostelLogo.Visible = false;
-                hostelLogoVisible = true;
-            }
-        }
+       
+        
 
         private void btnStudentPayment_Click(object sender, EventArgs e)
         {
-            if (studentPayment == null || studentPayment.IsDisposed)
-            {
-                studentPayment = new FormStudentPayment(); // Create a new instance only if it doesn't exist or was disposed
-            }
-            studentPayment.Show(); // Show the form
-            studentPayment.BringToFront();
+            OpenChildForm(new FormStudentPayment());
+            UpdateHeaderInfo("Student Payment");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picCloseButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnloout_Click(object sender, EventArgs e)
+        {
+            this.login.Visible = true;
+            this.Hide();
+        }
+
+        
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

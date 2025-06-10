@@ -28,35 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFormerResidents));
-            this.btnExitFormFormerResidents = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnExitFormFormerResidents
-            // 
-            this.btnExitFormFormerResidents.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnExitFormFormerResidents.FlatAppearance.BorderSize = 0;
-            this.btnExitFormFormerResidents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFormFormerResidents.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitFormFormerResidents.ForeColor = System.Drawing.Color.White;
-            this.btnExitFormFormerResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormFormerResidents.Image")));
-            this.btnExitFormFormerResidents.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExitFormFormerResidents.Location = new System.Drawing.Point(827, 12);
-            this.btnExitFormFormerResidents.Name = "btnExitFormFormerResidents";
-            this.btnExitFormFormerResidents.Size = new System.Drawing.Size(36, 34);
-            this.btnExitFormFormerResidents.TabIndex = 20;
-            this.btnExitFormFormerResidents.Text = "\r\n";
-            this.btnExitFormFormerResidents.UseVisualStyleBackColor = false;
-            this.btnExitFormFormerResidents.Click += new System.EventHandler(this.btnExitFormFormerResidents_Click);
             // 
             // FormFormerResidents
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(875, 512);
-            this.Controls.Add(this.btnExitFormFormerResidents);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.ClientSize = new System.Drawing.Size(1170, 630);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormFormerResidents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormFormerResidents";
@@ -66,7 +49,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnExitFormFormerResidents;
     }
 }
