@@ -28,35 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormManageStudentInfo));
-            this.btnExitFormManageStudentInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnExitFormManageStudentInfo
-            // 
-            this.btnExitFormManageStudentInfo.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnExitFormManageStudentInfo.FlatAppearance.BorderSize = 0;
-            this.btnExitFormManageStudentInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFormManageStudentInfo.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitFormManageStudentInfo.ForeColor = System.Drawing.Color.White;
-            this.btnExitFormManageStudentInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormManageStudentInfo.Image")));
-            this.btnExitFormManageStudentInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExitFormManageStudentInfo.Location = new System.Drawing.Point(827, 12);
-            this.btnExitFormManageStudentInfo.Name = "btnExitFormManageStudentInfo";
-            this.btnExitFormManageStudentInfo.Size = new System.Drawing.Size(36, 34);
-            this.btnExitFormManageStudentInfo.TabIndex = 18;
-            this.btnExitFormManageStudentInfo.Text = "\r\n";
-            this.btnExitFormManageStudentInfo.UseVisualStyleBackColor = false;
-            this.btnExitFormManageStudentInfo.Click += new System.EventHandler(this.btnExitFormManageStudentInfo_Click);
             // 
             // FormManageStudentInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(875, 512);
-            this.Controls.Add(this.btnExitFormManageStudentInfo);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.ClientSize = new System.Drawing.Size(1170, 630);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormManageStudentInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormManageStudentInfo";
@@ -66,7 +47,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnExitFormManageStudentInfo;
     }
 }

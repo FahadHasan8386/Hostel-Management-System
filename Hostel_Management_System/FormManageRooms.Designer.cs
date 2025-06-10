@@ -45,7 +45,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnExitFormManageRooms = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,9 +54,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 18);
+            this.label1.Location = new System.Drawing.Point(13, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 28);
+            this.label1.Size = new System.Drawing.Size(215, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Room\r\n";
             // 
@@ -66,9 +66,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 88);
+            this.label2.Location = new System.Drawing.Point(16, 108);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 32);
+            this.label2.Size = new System.Drawing.Size(122, 38);
             this.label2.TabIndex = 1;
             this.label2.Text = "Room Number\r\n\r\n";
             // 
@@ -77,9 +78,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(327, 92);
+            this.label3.Location = new System.Drawing.Point(436, 113);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 16);
+            this.label3.Size = new System.Drawing.Size(181, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Activate or Deactivate\r\n";
             // 
@@ -88,9 +90,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 146);
+            this.label4.Location = new System.Drawing.Point(16, 180);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(260, 28);
+            this.label4.Size = new System.Drawing.Size(324, 36);
             this.label4.TabIndex = 3;
             this.label4.Text = "Update or Delete Room\r\n";
             // 
@@ -99,18 +102,20 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 211);
+            this.label5.Location = new System.Drawing.Point(16, 260);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 32);
+            this.label5.Size = new System.Drawing.Size(122, 38);
             this.label5.TabIndex = 4;
             this.label5.Text = "Room Number\r\n\r\n";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(127, 88);
+            this.textBox1.Location = new System.Drawing.Point(169, 108);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 22);
+            this.textBox1.Size = new System.Drawing.Size(179, 26);
             this.textBox1.TabIndex = 6;
             // 
             // checkBox1
@@ -118,9 +123,10 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(510, 94);
+            this.checkBox1.Location = new System.Drawing.Point(680, 116);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(46, 18);
+            this.checkBox1.Size = new System.Drawing.Size(55, 20);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Yes\r\n";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -130,9 +136,10 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(665, 210);
+            this.checkBox2.Location = new System.Drawing.Point(887, 258);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(46, 18);
+            this.checkBox2.Size = new System.Drawing.Size(55, 20);
             this.checkBox2.TabIndex = 8;
             this.checkBox2.Text = "Yes\r\n";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -144,9 +151,10 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(330, 207);
+            this.button1.Location = new System.Drawing.Point(440, 255);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 30);
+            this.button1.Size = new System.Drawing.Size(157, 37);
             this.button1.TabIndex = 10;
             this.button1.Text = "Search\r\n";
             this.button1.UseVisualStyleBackColor = false;
@@ -158,9 +166,10 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(665, 258);
+            this.button2.Location = new System.Drawing.Point(887, 318);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 30);
+            this.button2.Size = new System.Drawing.Size(157, 37);
             this.button2.TabIndex = 11;
             this.button2.Text = "Delete\r\n\r\n";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -173,9 +182,10 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(665, 84);
+            this.button3.Location = new System.Drawing.Point(887, 103);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 30);
+            this.button3.Size = new System.Drawing.Size(157, 37);
             this.button3.TabIndex = 12;
             this.button3.Text = "Add Room";
             this.button3.UseVisualStyleBackColor = false;
@@ -187,9 +197,10 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(498, 258);
+            this.button4.Location = new System.Drawing.Point(664, 318);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 30);
+            this.button4.Size = new System.Drawing.Size(157, 37);
             this.button4.TabIndex = 13;
             this.button4.Text = "Update\r\n\r\n";
             this.button4.UseVisualStyleBackColor = false;
@@ -199,9 +210,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(482, 211);
+            this.label6.Location = new System.Drawing.Point(643, 260);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(146, 16);
+            this.label6.Size = new System.Drawing.Size(181, 19);
             this.label6.TabIndex = 5;
             this.label6.Text = "Activate or Deactivate\r\n";
             // 
@@ -210,9 +222,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(363, 312);
+            this.label7.Location = new System.Drawing.Point(484, 384);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 32);
+            this.label7.Size = new System.Drawing.Size(88, 38);
             this.label7.TabIndex = 14;
             this.label7.Text = "All Rooms\r\n\r\n";
             // 
@@ -220,43 +233,28 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 341);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 420);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(851, 159);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1135, 196);
             this.dataGridView1.TabIndex = 15;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(127, 210);
+            this.textBox3.Location = new System.Drawing.Point(169, 258);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(135, 22);
+            this.textBox3.Size = new System.Drawing.Size(179, 26);
             this.textBox3.TabIndex = 16;
-            // 
-            // btnExitFormManageRooms
-            // 
-            this.btnExitFormManageRooms.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnExitFormManageRooms.FlatAppearance.BorderSize = 0;
-            this.btnExitFormManageRooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFormManageRooms.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitFormManageRooms.ForeColor = System.Drawing.Color.White;
-            this.btnExitFormManageRooms.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormManageRooms.Image")));
-            this.btnExitFormManageRooms.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExitFormManageRooms.Location = new System.Drawing.Point(827, 12);
-            this.btnExitFormManageRooms.Name = "btnExitFormManageRooms";
-            this.btnExitFormManageRooms.Size = new System.Drawing.Size(36, 34);
-            this.btnExitFormManageRooms.TabIndex = 17;
-            this.btnExitFormManageRooms.Text = "\r\n";
-            this.btnExitFormManageRooms.UseVisualStyleBackColor = false;
-            this.btnExitFormManageRooms.Click += new System.EventHandler(this.btnExitFormManageRooms_Click);
             // 
             // FormManageRooms
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(875, 512);
-            this.Controls.Add(this.btnExitFormManageRooms);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.ClientSize = new System.Drawing.Size(1170, 630);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label7);
@@ -274,10 +272,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormManageRooms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "All Rooms";
-            this.Load += new System.EventHandler(this.AddNewRoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -302,7 +300,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btnExitFormManageRooms;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

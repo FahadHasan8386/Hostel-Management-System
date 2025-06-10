@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hostel_Management_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,24 @@ namespace HostelManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FormStudentDashboard dashboard = new FormStudentDashboard(this);
-            dashboard.Visible = true;
-            this.Hide();
+
+           if (txtPassword.Text == "Sadman")
+           {
+                FormStudentDashboard dashboard = new FormStudentDashboard(this);
+                dashboard.Visible = true;
+                this.Hide();
+           }
+           else if(txtPassword.Text == "Fahad")
+           {
+                FormEmployeeDashboard empDashboard = new FormEmployeeDashboard(this);
+                empDashboard.Visible = true;
+                this.Hide();
+           }
+           else
+           {
+                txtPassword.Clear();
+           }
+           
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
