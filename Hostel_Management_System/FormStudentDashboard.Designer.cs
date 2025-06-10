@@ -45,9 +45,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnloout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lableInfo = new System.Windows.Forms.Label();
             this.picCloseButton = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.lableInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picHostelLogo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -284,6 +284,16 @@
             this.panel2.Size = new System.Drawing.Size(1219, 79);
             this.panel2.TabIndex = 33;
             // 
+            // lableInfo
+            // 
+            this.lableInfo.AutoSize = true;
+            this.lableInfo.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lableInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lableInfo.Location = new System.Drawing.Point(26, 25);
+            this.lableInfo.Name = "lableInfo";
+            this.lableInfo.Size = new System.Drawing.Size(0, 17);
+            this.lableInfo.TabIndex = 11;
+            // 
             // picCloseButton
             // 
             this.picCloseButton.Image = ((System.Drawing.Image)(resources.GetObject("picCloseButton.Image")));
@@ -303,16 +313,6 @@
             this.panelContainer.Size = new System.Drawing.Size(1219, 634);
             this.panelContainer.TabIndex = 34;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
-            // 
-            // lableInfo
-            // 
-            this.lableInfo.AutoSize = true;
-            this.lableInfo.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lableInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lableInfo.Location = new System.Drawing.Point(26, 25);
-            this.lableInfo.Name = "lableInfo";
-            this.lableInfo.Size = new System.Drawing.Size(0, 17);
-            this.lableInfo.TabIndex = 11;
             // 
             // FormStudentDashboard
             // 

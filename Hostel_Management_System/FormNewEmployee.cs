@@ -16,5 +16,10 @@ namespace Hostel_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnExitFormNewEmployee_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
