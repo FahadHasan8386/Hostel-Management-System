@@ -23,5 +23,7 @@ namespace Hostel_Management_System
         {
             this.Location = new Point(450, 180);
         }
+
+     
     }
 }

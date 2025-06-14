@@ -23,5 +23,15 @@ namespace HostelManagementSystem
         {
 
         }
+
+        private void txtStudentInfromationAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStudentInfomationSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
