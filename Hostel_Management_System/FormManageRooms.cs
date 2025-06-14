@@ -21,5 +21,39 @@ namespace HostelManagementSystem
         {
             this.Close();
         }
+
+        private void btnExitFormManageRooms_Leave(object sender, EventArgs e)
+        {
+            if (txtSearchByRoomNumbers.Text == "")
+            {
+                txtSearchByRoomNumbers.Text = "Search By Room Number";
+                txtSearchByRoomNumbers.ForeColor = Color.Gray;
+            }
+        }
+
+        private void btnExitFormManageRooms_Enter(object sender, EventArgs e)
+        {
+            if(txtSearchByRoomNumbers.Text == "Search By Room Number")
+            {
+                txtSearchByRoomNumbers.Text = "";
+                txtSearchByRoomNumbers.ForeColor = Color.Black;
+            }
+        }
+
+        private void FormManageRooms_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormManageRooms_Load(object sender, EventArgs e)
+        {
+            lblRoom.Visible = false;
+            lblRoomExit.Visible = false;   
+        }
+
+        private void txtRoomNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

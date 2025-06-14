@@ -164,5 +164,45 @@ namespace HostelManagementSystem
         {
 
         }
+
+        private void btnStudentDashboard_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormDashBoard());
+            UpdateHeaderInfo("Dashboard");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            tmrSidebarTransition.Start();
+        }
+
+
+        bool sidebarExpan = true;
+        private void tmrSidebarTransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpan)
+            {
+                pnlSidebar.Width -= 10;
+                if(pnlSidebar.Width <= 53)
+                {
+                    sidebarExpan = false;
+                    tmrSidebarTransition.Stop();
+                }
+            }
+            else
+            {
+                pnlSidebar.Width += 10;
+                if(pnlSidebar.Width >= 215)
+                {
+                   sidebarExpan = true;
+                   tmrSidebarTransition.Stop();
+                }
+            }
+        }
+      
+        private void lblHms_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

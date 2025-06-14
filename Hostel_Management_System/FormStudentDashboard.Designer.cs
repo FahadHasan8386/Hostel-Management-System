@@ -42,14 +42,19 @@
             this.tmrHms = new System.Windows.Forms.Timer(this.components);
             this.picHostelLogo = new System.Windows.Forms.PictureBox();
             this.tmrHostelLogo = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.btnSlide = new System.Windows.Forms.PictureBox();
+            this.btnStudentDashboard = new System.Windows.Forms.Button();
             this.btnloout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lableInfo = new System.Windows.Forms.Label();
             this.picCloseButton = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.tmrMenuTransition = new System.Windows.Forms.Timer(this.components);
+            this.tmrSidebarTransition = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picHostelLogo)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlSidebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCloseButton)).BeginInit();
             this.SuspendLayout();
@@ -64,12 +69,11 @@
             this.btnCurrentResidents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnCurrentResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnCurrentResidents.Image")));
             this.btnCurrentResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCurrentResidents.Location = new System.Drawing.Point(7, 456);
-            this.btnCurrentResidents.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCurrentResidents.Location = new System.Drawing.Point(0, 401);
             this.btnCurrentResidents.Name = "btnCurrentResidents";
-            this.btnCurrentResidents.Size = new System.Drawing.Size(282, 50);
+            this.btnCurrentResidents.Size = new System.Drawing.Size(212, 41);
             this.btnCurrentResidents.TabIndex = 7;
-            this.btnCurrentResidents.Text = "Current Residents";
+            this.btnCurrentResidents.Text = "      Current Residents";
             this.btnCurrentResidents.UseVisualStyleBackColor = true;
             this.btnCurrentResidents.Click += new System.EventHandler(this.btnCurrentResidents_Click);
             // 
@@ -83,12 +87,11 @@
             this.btnFormerResidents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnFormerResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnFormerResidents.Image")));
             this.btnFormerResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnFormerResidents.Location = new System.Drawing.Point(7, 528);
-            this.btnFormerResidents.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFormerResidents.Location = new System.Drawing.Point(1, 461);
             this.btnFormerResidents.Name = "btnFormerResidents";
-            this.btnFormerResidents.Size = new System.Drawing.Size(282, 50);
+            this.btnFormerResidents.Size = new System.Drawing.Size(212, 41);
             this.btnFormerResidents.TabIndex = 6;
-            this.btnFormerResidents.Text = "Former Residents\r\n";
+            this.btnFormerResidents.Text = "      Former Residents\r\n";
             this.btnFormerResidents.UseVisualStyleBackColor = true;
             this.btnFormerResidents.Click += new System.EventHandler(this.btnFormerResidents_Click);
             // 
@@ -102,12 +105,11 @@
             this.btnManageStudentInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnManageStudentInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStudentInfo.Image")));
             this.btnManageStudentInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageStudentInfo.Location = new System.Drawing.Point(7, 318);
-            this.btnManageStudentInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnManageStudentInfo.Location = new System.Drawing.Point(1, 285);
             this.btnManageStudentInfo.Name = "btnManageStudentInfo";
-            this.btnManageStudentInfo.Size = new System.Drawing.Size(282, 50);
+            this.btnManageStudentInfo.Size = new System.Drawing.Size(208, 41);
             this.btnManageStudentInfo.TabIndex = 3;
-            this.btnManageStudentInfo.Text = "Manage Student Info\r\n";
+            this.btnManageStudentInfo.Text = "         Manage Student Info\r\n";
             this.btnManageStudentInfo.UseVisualStyleBackColor = true;
             this.btnManageStudentInfo.Click += new System.EventHandler(this.btnManageStudentInfo_Click);
             // 
@@ -121,12 +123,11 @@
             this.btnStudentPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnStudentPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentPayment.Image")));
             this.btnStudentPayment.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnStudentPayment.Location = new System.Drawing.Point(7, 386);
-            this.btnStudentPayment.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStudentPayment.Location = new System.Drawing.Point(0, 344);
             this.btnStudentPayment.Name = "btnStudentPayment";
-            this.btnStudentPayment.Size = new System.Drawing.Size(282, 50);
+            this.btnStudentPayment.Size = new System.Drawing.Size(212, 51);
             this.btnStudentPayment.TabIndex = 2;
-            this.btnStudentPayment.Text = "Student  Payment";
+            this.btnStudentPayment.Text = "       Student  Payment";
             this.btnStudentPayment.UseVisualStyleBackColor = true;
             this.btnStudentPayment.Click += new System.EventHandler(this.btnStudentPayment_Click);
             // 
@@ -140,10 +141,9 @@
             this.btnEnrollStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnEnrollStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrollStudent.Image")));
             this.btnEnrollStudent.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnEnrollStudent.Location = new System.Drawing.Point(4, 243);
-            this.btnEnrollStudent.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEnrollStudent.Location = new System.Drawing.Point(3, 227);
             this.btnEnrollStudent.Name = "btnEnrollStudent";
-            this.btnEnrollStudent.Size = new System.Drawing.Size(282, 50);
+            this.btnEnrollStudent.Size = new System.Drawing.Size(212, 41);
             this.btnEnrollStudent.TabIndex = 1;
             this.btnEnrollStudent.Text = "New Student";
             this.btnEnrollStudent.UseVisualStyleBackColor = true;
@@ -159,26 +159,25 @@
             this.btnManageRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnManageRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnManageRoom.Image")));
             this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnManageRoom.Location = new System.Drawing.Point(7, 171);
-            this.btnManageRoom.Margin = new System.Windows.Forms.Padding(4);
+            this.btnManageRoom.Location = new System.Drawing.Point(3, 180);
             this.btnManageRoom.Name = "btnManageRoom";
-            this.btnManageRoom.Size = new System.Drawing.Size(282, 50);
+            this.btnManageRoom.Size = new System.Drawing.Size(209, 41);
             this.btnManageRoom.TabIndex = 0;
-            this.btnManageRoom.Text = "Manage Rooms";
+            this.btnManageRoom.Text = "   Manage Rooms";
             this.btnManageRoom.UseVisualStyleBackColor = true;
             this.btnManageRoom.Click += new System.EventHandler(this.btnManageRoom_Click);
             // 
             // lblHms
             // 
             this.lblHms.AutoSize = true;
-            this.lblHms.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHms.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblHms.Location = new System.Drawing.Point(313, 9);
-            this.lblHms.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHms.Location = new System.Drawing.Point(248, 9);
             this.lblHms.Name = "lblHms";
-            this.lblHms.Size = new System.Drawing.Size(555, 54);
+            this.lblHms.Size = new System.Drawing.Size(332, 32);
             this.lblHms.TabIndex = 9;
             this.lblHms.Text = "Hostel Management System";
+            this.lblHms.Click += new System.EventHandler(this.lblHms_Click);
             // 
             // btnExit
             // 
@@ -187,10 +186,9 @@
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(1753, 14);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Location = new System.Drawing.Point(1315, 11);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(48, 42);
+            this.btnExit.Size = new System.Drawing.Size(36, 34);
             this.btnExit.TabIndex = 18;
             this.btnExit.Text = "\r\n";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -205,10 +203,9 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(1565, 21);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Location = new System.Drawing.Point(1174, 17);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(159, 37);
+            this.btnLogout.Size = new System.Drawing.Size(119, 30);
             this.btnLogout.TabIndex = 19;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -224,10 +221,9 @@
             this.picHostelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picHostelLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.ErrorImage")));
             this.picHostelLogo.Image = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.Image")));
-            this.picHostelLogo.Location = new System.Drawing.Point(32, 25);
-            this.picHostelLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.picHostelLogo.Location = new System.Drawing.Point(46, 36);
             this.picHostelLogo.Name = "picHostelLogo";
-            this.picHostelLogo.Size = new System.Drawing.Size(201, 117);
+            this.picHostelLogo.Size = new System.Drawing.Size(151, 58);
             this.picHostelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHostelLogo.TabIndex = 20;
             this.picHostelLogo.TabStop = false;
@@ -236,22 +232,55 @@
             // 
             this.tmrHostelLogo.Interval = 1000;
             // 
-            // panel1
+            // pnlSidebar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panel1.Controls.Add(this.btnloout);
-            this.panel1.Controls.Add(this.picHostelLogo);
-            this.panel1.Controls.Add(this.btnManageRoom);
-            this.panel1.Controls.Add(this.btnEnrollStudent);
-            this.panel1.Controls.Add(this.btnManageStudentInfo);
-            this.panel1.Controls.Add(this.btnStudentPayment);
-            this.panel1.Controls.Add(this.btnCurrentResidents);
-            this.panel1.Controls.Add(this.btnFormerResidents);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 713);
-            this.panel1.TabIndex = 32;
+            this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.pnlSidebar.Controls.Add(this.btnSlide);
+            this.pnlSidebar.Controls.Add(this.btnStudentDashboard);
+            this.pnlSidebar.Controls.Add(this.btnloout);
+            this.pnlSidebar.Controls.Add(this.picHostelLogo);
+            this.pnlSidebar.Controls.Add(this.btnManageRoom);
+            this.pnlSidebar.Controls.Add(this.btnEnrollStudent);
+            this.pnlSidebar.Controls.Add(this.btnManageStudentInfo);
+            this.pnlSidebar.Controls.Add(this.btnStudentPayment);
+            this.pnlSidebar.Controls.Add(this.btnCurrentResidents);
+            this.pnlSidebar.Controls.Add(this.btnFormerResidents);
+            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(215, 579);
+            this.pnlSidebar.TabIndex = 32;
+            // 
+            // btnSlide
+            // 
+            this.btnSlide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnSlide.Image = ((System.Drawing.Image)(resources.GetObject("btnSlide.Image")));
+            this.btnSlide.Location = new System.Drawing.Point(0, 0);
+            this.btnSlide.Name = "btnSlide";
+            this.btnSlide.Size = new System.Drawing.Size(34, 24);
+            this.btnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSlide.TabIndex = 94;
+            this.btnSlide.TabStop = false;
+            this.btnSlide.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // btnStudentDashboard
+            // 
+            this.btnStudentDashboard.FlatAppearance.BorderSize = 0;
+            this.btnStudentDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
+            this.btnStudentDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnStudentDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStudentDashboard.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnStudentDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentDashboard.Image")));
+            this.btnStudentDashboard.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnStudentDashboard.Location = new System.Drawing.Point(3, 119);
+            this.btnStudentDashboard.Name = "btnStudentDashboard";
+            this.btnStudentDashboard.Size = new System.Drawing.Size(212, 41);
+            this.btnStudentDashboard.TabIndex = 31;
+            this.btnStudentDashboard.Text = "Dashboard";
+            this.btnStudentDashboard.UseVisualStyleBackColor = true;
+            this.btnStudentDashboard.Click += new System.EventHandler(this.btnStudentDashboard_Click);
             // 
             // btnloout
             // 
@@ -263,10 +292,9 @@
             this.btnloout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnloout.Image = ((System.Drawing.Image)(resources.GetObject("btnloout.Image")));
             this.btnloout.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnloout.Location = new System.Drawing.Point(4, 610);
-            this.btnloout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnloout.Location = new System.Drawing.Point(1, 518);
             this.btnloout.Name = "btnloout";
-            this.btnloout.Size = new System.Drawing.Size(282, 50);
+            this.btnloout.Size = new System.Drawing.Size(212, 49);
             this.btnloout.TabIndex = 30;
             this.btnloout.Text = "Logout";
             this.btnloout.UseVisualStyleBackColor = true;
@@ -279,9 +307,10 @@
             this.panel2.Controls.Add(this.picCloseButton);
             this.panel2.Controls.Add(this.lblHms);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(293, 0);
+            this.panel2.Location = new System.Drawing.Point(215, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1219, 79);
+            this.panel2.Size = new System.Drawing.Size(919, 52);
             this.panel2.TabIndex = 33;
             // 
             // lableInfo
@@ -289,17 +318,20 @@
             this.lableInfo.AutoSize = true;
             this.lableInfo.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lableInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lableInfo.Location = new System.Drawing.Point(26, 25);
+            this.lableInfo.Location = new System.Drawing.Point(20, 20);
+            this.lableInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lableInfo.Name = "lableInfo";
-            this.lableInfo.Size = new System.Drawing.Size(0, 17);
+            this.lableInfo.Size = new System.Drawing.Size(0, 13);
             this.lableInfo.TabIndex = 11;
             // 
             // picCloseButton
             // 
+            this.picCloseButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.picCloseButton.Image = ((System.Drawing.Image)(resources.GetObject("picCloseButton.Image")));
-            this.picCloseButton.Location = new System.Drawing.Point(1150, 9);
+            this.picCloseButton.Location = new System.Drawing.Point(876, 0);
+            this.picCloseButton.Margin = new System.Windows.Forms.Padding(2);
             this.picCloseButton.Name = "picCloseButton";
-            this.picCloseButton.Size = new System.Drawing.Size(57, 61);
+            this.picCloseButton.Size = new System.Drawing.Size(43, 52);
             this.picCloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCloseButton.TabIndex = 10;
             this.picCloseButton.TabStop = false;
@@ -308,32 +340,38 @@
             // panelContainer
             // 
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(293, 79);
+            this.panelContainer.Location = new System.Drawing.Point(215, 52);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(2);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1219, 634);
+            this.panelContainer.Size = new System.Drawing.Size(919, 527);
             this.panelContainer.TabIndex = 34;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
+            // tmrSidebarTransition
+            // 
+            this.tmrSidebarTransition.Interval = 10;
+            this.tmrSidebarTransition.Tick += new System.EventHandler(this.tmrSidebarTransition_Tick);
+            // 
             // FormStudentDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1512, 713);
+            this.ClientSize = new System.Drawing.Size(1134, 579);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlSidebar);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnExit);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormStudentDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.FormDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picHostelLogo)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.pnlSidebar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCloseButton)).EndInit();
@@ -354,11 +392,15 @@
         private System.Windows.Forms.Timer tmrHms;
         private System.Windows.Forms.PictureBox picHostelLogo;
         private System.Windows.Forms.Timer tmrHostelLogo;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlSidebar;
         private System.Windows.Forms.Button btnloout;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox picCloseButton;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label lableInfo;
+        private System.Windows.Forms.Button btnStudentDashboard;
+        private System.Windows.Forms.PictureBox btnSlide;
+        private System.Windows.Forms.Timer tmrMenuTransition;
+        private System.Windows.Forms.Timer tmrSidebarTransition;
     }
 }
