@@ -36,6 +36,11 @@ namespace Hostel_Management_System
             this.Hide();
         }
 
-        
+        private void picCloseButtonEmployeeDB_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+       
     }
 }

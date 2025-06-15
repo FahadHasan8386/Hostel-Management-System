@@ -35,7 +35,6 @@
             this.btnManageStudentInfo = new System.Windows.Forms.Button();
             this.btnStudentPayment = new System.Windows.Forms.Button();
             this.btnEnrollStudent = new System.Windows.Forms.Button();
-            this.btnManageRoom = new System.Windows.Forms.Button();
             this.lblHms = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -44,7 +43,7 @@
             this.tmrHostelLogo = new System.Windows.Forms.Timer(this.components);
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.btnSlide = new System.Windows.Forms.PictureBox();
-            this.btnStudentDashboard = new System.Windows.Forms.Button();
+            this.btnStatusOverview = new System.Windows.Forms.Button();
             this.btnloout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lableInfo = new System.Windows.Forms.Label();
@@ -149,24 +148,6 @@
             this.btnEnrollStudent.UseVisualStyleBackColor = true;
             this.btnEnrollStudent.Click += new System.EventHandler(this.btnNewStudent_Click);
             // 
-            // btnManageRoom
-            // 
-            this.btnManageRoom.FlatAppearance.BorderSize = 0;
-            this.btnManageRoom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnManageRoom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.btnManageRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManageRoom.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnManageRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnManageRoom.Image")));
-            this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnManageRoom.Location = new System.Drawing.Point(3, 180);
-            this.btnManageRoom.Name = "btnManageRoom";
-            this.btnManageRoom.Size = new System.Drawing.Size(209, 41);
-            this.btnManageRoom.TabIndex = 0;
-            this.btnManageRoom.Text = "   Manage Rooms";
-            this.btnManageRoom.UseVisualStyleBackColor = true;
-            this.btnManageRoom.Click += new System.EventHandler(this.btnManageRoom_Click);
-            // 
             // lblHms
             // 
             this.lblHms.AutoSize = true;
@@ -236,10 +217,9 @@
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.pnlSidebar.Controls.Add(this.btnSlide);
-            this.pnlSidebar.Controls.Add(this.btnStudentDashboard);
+            this.pnlSidebar.Controls.Add(this.btnStatusOverview);
             this.pnlSidebar.Controls.Add(this.btnloout);
             this.pnlSidebar.Controls.Add(this.picHostelLogo);
-            this.pnlSidebar.Controls.Add(this.btnManageRoom);
             this.pnlSidebar.Controls.Add(this.btnEnrollStudent);
             this.pnlSidebar.Controls.Add(this.btnManageStudentInfo);
             this.pnlSidebar.Controls.Add(this.btnStudentPayment);
@@ -264,23 +244,23 @@
             this.btnSlide.TabStop = false;
             this.btnSlide.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // btnStudentDashboard
+            // btnStatusOverview
             // 
-            this.btnStudentDashboard.FlatAppearance.BorderSize = 0;
-            this.btnStudentDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnStudentDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.btnStudentDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudentDashboard.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnStudentDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentDashboard.Image")));
-            this.btnStudentDashboard.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnStudentDashboard.Location = new System.Drawing.Point(3, 119);
-            this.btnStudentDashboard.Name = "btnStudentDashboard";
-            this.btnStudentDashboard.Size = new System.Drawing.Size(212, 41);
-            this.btnStudentDashboard.TabIndex = 31;
-            this.btnStudentDashboard.Text = "Dashboard";
-            this.btnStudentDashboard.UseVisualStyleBackColor = true;
-            this.btnStudentDashboard.Click += new System.EventHandler(this.btnStudentDashboard_Click);
+            this.btnStatusOverview.FlatAppearance.BorderSize = 0;
+            this.btnStatusOverview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
+            this.btnStatusOverview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnStatusOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatusOverview.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatusOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnStatusOverview.Image = ((System.Drawing.Image)(resources.GetObject("btnStatusOverview.Image")));
+            this.btnStatusOverview.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnStatusOverview.Location = new System.Drawing.Point(3, 119);
+            this.btnStatusOverview.Name = "btnStatusOverview";
+            this.btnStatusOverview.Size = new System.Drawing.Size(212, 41);
+            this.btnStatusOverview.TabIndex = 31;
+            this.btnStatusOverview.Text = " Status Overview";
+            this.btnStatusOverview.UseVisualStyleBackColor = true;
+            this.btnStatusOverview.Click += new System.EventHandler(this.btnStudentDashboard_Click);
             // 
             // btnloout
             // 
@@ -385,7 +365,6 @@
         private System.Windows.Forms.Button btnManageStudentInfo;
         private System.Windows.Forms.Button btnStudentPayment;
         private System.Windows.Forms.Button btnEnrollStudent;
-        private System.Windows.Forms.Button btnManageRoom;
         private System.Windows.Forms.Label lblHms;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLogout;
@@ -398,7 +377,7 @@
         private System.Windows.Forms.PictureBox picCloseButton;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label lableInfo;
-        private System.Windows.Forms.Button btnStudentDashboard;
+        private System.Windows.Forms.Button btnStatusOverview;
         private System.Windows.Forms.PictureBox btnSlide;
         private System.Windows.Forms.Timer tmrMenuTransition;
         private System.Windows.Forms.Timer tmrSidebarTransition;

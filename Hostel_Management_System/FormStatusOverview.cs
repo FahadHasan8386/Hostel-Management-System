@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System
+namespace HostelManagementSystem
 {
-    public partial class FormCurrentResidents : Form
+    public partial class FormStatusOverview : Form
     {
-        public FormCurrentResidents()
+        public FormStatusOverview()
         {
             InitializeComponent();
-        }
-
-        private void FormCurrentResidents_Load(object sender, EventArgs e)
-        {
-            this.Location = new Point(450, 180);
         }
     }
 }

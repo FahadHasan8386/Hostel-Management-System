@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HostelManagementSystem
+namespace Hostel_Management_System
 {
-    public partial class FormDashBoard : Form
+    public partial class FormCurrentStudents : Form
     {
-        public FormDashBoard()
+        public FormCurrentStudents()
         {
             InitializeComponent();
+        }
+
+        private void FormCurrentResidents_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(450, 180);
         }
     }
 }
