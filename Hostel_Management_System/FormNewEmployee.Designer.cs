@@ -29,196 +29,259 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNewEmployee));
-            this.pictureBox_Employee = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Employee_info = new System.Windows.Forms.PictureBox();
-            this.btn_EmployeeClear = new System.Windows.Forms.Button();
-            this.btn_EmployeeSave = new System.Windows.Forms.Button();
-            this.txtEmRoomNumber = new System.Windows.Forms.TextBox();
-            this.txtEmMobileNumber = new System.Windows.Forms.TextBox();
-            this.txtEmFatherName = new System.Windows.Forms.TextBox();
-            this.txtEmMotherName = new System.Windows.Forms.TextBox();
-            this.txtEmailIdEmployee = new System.Windows.Forms.TextBox();
-            this.txtEmAddress = new System.Windows.Forms.TextBox();
-            this.txtEmployeeId = new System.Windows.Forms.TextBox();
-            this.btnExitFormNewEmployee = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Employee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Employee_info)).BeginInit();
+            this.PictureBoxEmployee = new System.Windows.Forms.PictureBox();
+            this.lblEmployeeInfo = new System.Windows.Forms.Label();
+            this.txtEmployeeInfomationFirstName = new System.Windows.Forms.TextBox();
+            this.txtEmpployeeInformationEmail = new System.Windows.Forms.TextBox();
+            this.lblEmpoyeeAddress = new System.Windows.Forms.Label();
+            this.txtEmployeeInfromationAddress = new System.Windows.Forms.TextBox();
+            this.lblEmployeeEmail = new System.Windows.Forms.Label();
+            this.txtEmployeeInformationId = new System.Windows.Forms.TextBox();
+            this.lblEmployeePhonNum = new System.Windows.Forms.Label();
+            this.txtEmployeeInformationPhoneNum = new System.Windows.Forms.TextBox();
+            this.lblEmployeeName = new System.Windows.Forms.Label();
+            this.btnEmployeeInformationClear = new System.Windows.Forms.Button();
+            this.btnEmpoyeeInfomationSave = new System.Windows.Forms.Button();
+            this.lblEmployeeId = new System.Windows.Forms.Label();
+            this.lblEmployeeDesignation = new System.Windows.Forms.Label();
+            this.cmbEmployeeDesignattion = new System.Windows.Forms.ComboBox();
+            this.lblEmployeeJoininigDate = new System.Windows.Forms.Label();
+            this.dtpEmpoyeeoJoiningDate = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployee)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox_Employee
+            // PictureBoxEmployee
             // 
-            this.pictureBox_Employee.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pictureBox_Employee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox_Employee.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Employee.Image")));
-            this.pictureBox_Employee.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox_Employee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox_Employee.Name = "pictureBox_Employee";
-            this.pictureBox_Employee.Size = new System.Drawing.Size(500, 724);
-            this.pictureBox_Employee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Employee.TabIndex = 21;
-            this.pictureBox_Employee.TabStop = false;
+            this.PictureBoxEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PictureBoxEmployee.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxEmployee.Image")));
+            this.PictureBoxEmployee.Location = new System.Drawing.Point(534, 7);
+            this.PictureBoxEmployee.Name = "PictureBoxEmployee";
+            this.PictureBoxEmployee.Size = new System.Drawing.Size(71, 27);
+            this.PictureBoxEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxEmployee.TabIndex = 108;
+            this.PictureBoxEmployee.TabStop = false;
             // 
-            // pictureBox_Employee_info
+            // lblEmployeeInfo
             // 
-            this.pictureBox_Employee_info.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox_Employee_info.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Employee_info.Image")));
-            this.pictureBox_Employee_info.Location = new System.Drawing.Point(719, 16);
-            this.pictureBox_Employee_info.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox_Employee_info.Name = "pictureBox_Employee_info";
-            this.pictureBox_Employee_info.Size = new System.Drawing.Size(335, 53);
-            this.pictureBox_Employee_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Employee_info.TabIndex = 31;
-            this.pictureBox_Employee_info.TabStop = false;
+            this.lblEmployeeInfo.AutoSize = true;
+            this.lblEmployeeInfo.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmployeeInfo.Location = new System.Drawing.Point(236, 7);
+            this.lblEmployeeInfo.Name = "lblEmployeeInfo";
+            this.lblEmployeeInfo.Size = new System.Drawing.Size(292, 25);
+            this.lblEmployeeInfo.TabIndex = 107;
+            this.lblEmployeeInfo.Text = "Add Employee Inofrmation";
             // 
-            // btn_EmployeeClear
+            // txtEmployeeInfomationFirstName
             // 
-            this.btn_EmployeeClear.BackColor = System.Drawing.Color.Black;
-            this.btn_EmployeeClear.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_EmployeeClear.ForeColor = System.Drawing.Color.White;
-            this.btn_EmployeeClear.Image = ((System.Drawing.Image)(resources.GetObject("btn_EmployeeClear.Image")));
-            this.btn_EmployeeClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_EmployeeClear.Location = new System.Drawing.Point(919, 661);
-            this.btn_EmployeeClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_EmployeeClear.Name = "btn_EmployeeClear";
-            this.btn_EmployeeClear.Size = new System.Drawing.Size(174, 54);
-            this.btn_EmployeeClear.TabIndex = 30;
-            this.btn_EmployeeClear.Text = "Clear";
-            this.btn_EmployeeClear.UseVisualStyleBackColor = false;
+            this.txtEmployeeInfomationFirstName.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmployeeInfomationFirstName.Location = new System.Drawing.Point(80, 99);
+            this.txtEmployeeInfomationFirstName.Multiline = true;
+            this.txtEmployeeInfomationFirstName.Name = "txtEmployeeInfomationFirstName";
+            this.txtEmployeeInfomationFirstName.Size = new System.Drawing.Size(199, 20);
+            this.txtEmployeeInfomationFirstName.TabIndex = 106;
+            this.txtEmployeeInfomationFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btn_EmployeeSave
+            // txtEmpployeeInformationEmail
             // 
-            this.btn_EmployeeSave.BackColor = System.Drawing.Color.Black;
-            this.btn_EmployeeSave.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_EmployeeSave.ForeColor = System.Drawing.Color.White;
-            this.btn_EmployeeSave.Image = ((System.Drawing.Image)(resources.GetObject("btn_EmployeeSave.Image")));
-            this.btn_EmployeeSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_EmployeeSave.Location = new System.Drawing.Point(673, 661);
-            this.btn_EmployeeSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_EmployeeSave.Name = "btn_EmployeeSave";
-            this.btn_EmployeeSave.Size = new System.Drawing.Size(177, 54);
-            this.btn_EmployeeSave.TabIndex = 29;
-            this.btn_EmployeeSave.Text = "Save\n";
-            this.btn_EmployeeSave.UseVisualStyleBackColor = false;
+            this.txtEmpployeeInformationEmail.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmpployeeInformationEmail.Location = new System.Drawing.Point(80, 308);
+            this.txtEmpployeeInformationEmail.Multiline = true;
+            this.txtEmpployeeInformationEmail.Name = "txtEmpployeeInformationEmail";
+            this.txtEmpployeeInformationEmail.Size = new System.Drawing.Size(388, 21);
+            this.txtEmpployeeInformationEmail.TabIndex = 103;
+            this.txtEmpployeeInformationEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtEmRoomNumber
+            // lblEmpoyeeAddress
             // 
-            this.txtEmRoomNumber.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmRoomNumber.Location = new System.Drawing.Point(673, 594);
-            this.txtEmRoomNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmRoomNumber.Name = "txtEmRoomNumber";
-            this.txtEmRoomNumber.Size = new System.Drawing.Size(418, 26);
-            this.txtEmRoomNumber.TabIndex = 28;
-            this.txtEmRoomNumber.Text = "Enter Employee Room Number\r\n";
-            this.txtEmRoomNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblEmpoyeeAddress.AutoSize = true;
+            this.lblEmpoyeeAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpoyeeAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmpoyeeAddress.Location = new System.Drawing.Point(77, 347);
+            this.lblEmpoyeeAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmpoyeeAddress.Name = "lblEmpoyeeAddress";
+            this.lblEmpoyeeAddress.Size = new System.Drawing.Size(52, 13);
+            this.lblEmpoyeeAddress.TabIndex = 102;
+            this.lblEmpoyeeAddress.Text = "Address";
             // 
-            // txtEmMobileNumber
+            // txtEmployeeInfromationAddress
             // 
-            this.txtEmMobileNumber.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmMobileNumber.Location = new System.Drawing.Point(673, 164);
-            this.txtEmMobileNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmMobileNumber.Name = "txtEmMobileNumber";
-            this.txtEmMobileNumber.Size = new System.Drawing.Size(418, 26);
-            this.txtEmMobileNumber.TabIndex = 27;
-            this.txtEmMobileNumber.Text = "Enter Employee Mobile Nubmer";
-            this.txtEmMobileNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmployeeInfromationAddress.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmployeeInfromationAddress.Location = new System.Drawing.Point(80, 378);
+            this.txtEmployeeInfromationAddress.Multiline = true;
+            this.txtEmployeeInfromationAddress.Name = "txtEmployeeInfromationAddress";
+            this.txtEmployeeInfromationAddress.Size = new System.Drawing.Size(388, 21);
+            this.txtEmployeeInfromationAddress.TabIndex = 101;
+            this.txtEmployeeInfromationAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtEmFatherName
+            // lblEmployeeEmail
             // 
-            this.txtEmFatherName.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmFatherName.Location = new System.Drawing.Point(673, 234);
-            this.txtEmFatherName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmFatherName.Name = "txtEmFatherName";
-            this.txtEmFatherName.Size = new System.Drawing.Size(418, 26);
-            this.txtEmFatherName.TabIndex = 26;
-            this.txtEmFatherName.Text = "Enter Employee Father Name";
-            this.txtEmFatherName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblEmployeeEmail.AutoSize = true;
+            this.lblEmployeeEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmployeeEmail.Location = new System.Drawing.Point(77, 277);
+            this.lblEmployeeEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeEmail.Name = "lblEmployeeEmail";
+            this.lblEmployeeEmail.Size = new System.Drawing.Size(37, 13);
+            this.lblEmployeeEmail.TabIndex = 100;
+            this.lblEmployeeEmail.Text = "Email";
             // 
-            // txtEmMotherName
+            // txtEmployeeInformationId
             // 
-            this.txtEmMotherName.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmMotherName.Location = new System.Drawing.Point(673, 310);
-            this.txtEmMotherName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmMotherName.Name = "txtEmMotherName";
-            this.txtEmMotherName.Size = new System.Drawing.Size(418, 26);
-            this.txtEmMotherName.TabIndex = 25;
-            this.txtEmMotherName.Text = "Enter Employee Mother Name\r\n";
-            this.txtEmMotherName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmployeeInformationId.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmployeeInformationId.Location = new System.Drawing.Point(80, 168);
+            this.txtEmployeeInformationId.Multiline = true;
+            this.txtEmployeeInformationId.Name = "txtEmployeeInformationId";
+            this.txtEmployeeInformationId.Size = new System.Drawing.Size(199, 21);
+            this.txtEmployeeInformationId.TabIndex = 99;
+            this.txtEmployeeInformationId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtEmailIdEmployee
+            // lblEmployeePhonNum
             // 
-            this.txtEmailIdEmployee.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmailIdEmployee.Location = new System.Drawing.Point(673, 381);
-            this.txtEmailIdEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmailIdEmployee.Name = "txtEmailIdEmployee";
-            this.txtEmailIdEmployee.Size = new System.Drawing.Size(418, 26);
-            this.txtEmailIdEmployee.TabIndex = 24;
-            this.txtEmailIdEmployee.Text = "Enter Employee Email ID\r\n";
-            this.txtEmailIdEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblEmployeePhonNum.AutoSize = true;
+            this.lblEmployeePhonNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeePhonNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmployeePhonNum.Location = new System.Drawing.Point(77, 207);
+            this.lblEmployeePhonNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeePhonNum.Name = "lblEmployeePhonNum";
+            this.lblEmployeePhonNum.Size = new System.Drawing.Size(88, 13);
+            this.lblEmployeePhonNum.TabIndex = 98;
+            this.lblEmployeePhonNum.Text = "Phone number";
             // 
-            // txtEmAddress
+            // txtEmployeeInformationPhoneNum
             // 
-            this.txtEmAddress.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmAddress.Location = new System.Drawing.Point(673, 447);
-            this.txtEmAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmAddress.Name = "txtEmAddress";
-            this.txtEmAddress.Size = new System.Drawing.Size(418, 26);
-            this.txtEmAddress.TabIndex = 23;
-            this.txtEmAddress.Text = "Enter Employee Address_Enter\r\n";
-            this.txtEmAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmployeeInformationPhoneNum.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmployeeInformationPhoneNum.Location = new System.Drawing.Point(80, 238);
+            this.txtEmployeeInformationPhoneNum.Multiline = true;
+            this.txtEmployeeInformationPhoneNum.Name = "txtEmployeeInformationPhoneNum";
+            this.txtEmployeeInformationPhoneNum.Size = new System.Drawing.Size(199, 21);
+            this.txtEmployeeInformationPhoneNum.TabIndex = 97;
+            this.txtEmployeeInformationPhoneNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtEmployeeId
+            // lblEmployeeName
             // 
-            this.txtEmployeeId.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmployeeId.Location = new System.Drawing.Point(673, 525);
-            this.txtEmployeeId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmployeeId.Name = "txtEmployeeId";
-            this.txtEmployeeId.Size = new System.Drawing.Size(418, 26);
-            this.txtEmployeeId.TabIndex = 22;
-            this.txtEmployeeId.Text = "Employee ID";
-            this.txtEmployeeId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblEmployeeName.AutoSize = true;
+            this.lblEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmployeeName.Location = new System.Drawing.Point(77, 68);
+            this.lblEmployeeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeName.Name = "lblEmployeeName";
+            this.lblEmployeeName.Size = new System.Drawing.Size(67, 13);
+            this.lblEmployeeName.TabIndex = 94;
+            this.lblEmployeeName.Text = "First Name";
             // 
-            // btnExitFormNewEmployee
+            // btnEmployeeInformationClear
             // 
-            this.btnExitFormNewEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnExitFormNewEmployee.FlatAppearance.BorderSize = 0;
-            this.btnExitFormNewEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFormNewEmployee.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitFormNewEmployee.ForeColor = System.Drawing.Color.White;
-            this.btnExitFormNewEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormNewEmployee.Image")));
-            this.btnExitFormNewEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExitFormNewEmployee.Location = new System.Drawing.Point(1223, 17);
-            this.btnExitFormNewEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnExitFormNewEmployee.Name = "btnExitFormNewEmployee";
-            this.btnExitFormNewEmployee.Size = new System.Drawing.Size(54, 52);
-            this.btnExitFormNewEmployee.TabIndex = 32;
-            this.btnExitFormNewEmployee.Text = "\r\n";
-            this.btnExitFormNewEmployee.UseVisualStyleBackColor = false;
-            this.btnExitFormNewEmployee.Click += new System.EventHandler(this.btnExitFormNewEmployee_Click);
+            this.btnEmployeeInformationClear.BackColor = System.Drawing.Color.Black;
+            this.btnEmployeeInformationClear.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployeeInformationClear.ForeColor = System.Drawing.Color.White;
+            this.btnEmployeeInformationClear.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeInformationClear.Image")));
+            this.btnEmployeeInformationClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmployeeInformationClear.Location = new System.Drawing.Point(293, 440);
+            this.btnEmployeeInformationClear.Name = "btnEmployeeInformationClear";
+            this.btnEmployeeInformationClear.Size = new System.Drawing.Size(122, 34);
+            this.btnEmployeeInformationClear.TabIndex = 93;
+            this.btnEmployeeInformationClear.Text = "Clear";
+            this.btnEmployeeInformationClear.UseVisualStyleBackColor = false;
+            // 
+            // btnEmpoyeeInfomationSave
+            // 
+            this.btnEmpoyeeInfomationSave.BackColor = System.Drawing.Color.Black;
+            this.btnEmpoyeeInfomationSave.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpoyeeInfomationSave.ForeColor = System.Drawing.Color.White;
+            this.btnEmpoyeeInfomationSave.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpoyeeInfomationSave.Image")));
+            this.btnEmpoyeeInfomationSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmpoyeeInfomationSave.Location = new System.Drawing.Point(80, 440);
+            this.btnEmpoyeeInfomationSave.Name = "btnEmpoyeeInfomationSave";
+            this.btnEmpoyeeInfomationSave.Size = new System.Drawing.Size(118, 34);
+            this.btnEmpoyeeInfomationSave.TabIndex = 92;
+            this.btnEmpoyeeInfomationSave.Text = "Save\n";
+            this.btnEmpoyeeInfomationSave.UseVisualStyleBackColor = false;
+            // 
+            // lblEmployeeId
+            // 
+            this.lblEmployeeId.AutoSize = true;
+            this.lblEmployeeId.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmployeeId.Location = new System.Drawing.Point(77, 137);
+            this.lblEmployeeId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeId.Name = "lblEmployeeId";
+            this.lblEmployeeId.Size = new System.Drawing.Size(17, 13);
+            this.lblEmployeeId.TabIndex = 109;
+            this.lblEmployeeId.Text = "Id";
+            // 
+            // lblEmployeeDesignation
+            // 
+            this.lblEmployeeDesignation.AutoSize = true;
+            this.lblEmployeeDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeDesignation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmployeeDesignation.Location = new System.Drawing.Point(390, 129);
+            this.lblEmployeeDesignation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeDesignation.Name = "lblEmployeeDesignation";
+            this.lblEmployeeDesignation.Size = new System.Drawing.Size(74, 13);
+            this.lblEmployeeDesignation.TabIndex = 110;
+            this.lblEmployeeDesignation.Text = "Designation";
+            // 
+            // cmbEmployeeDesignattion
+            // 
+            this.cmbEmployeeDesignattion.FormattingEnabled = true;
+            this.cmbEmployeeDesignattion.Location = new System.Drawing.Point(393, 164);
+            this.cmbEmployeeDesignattion.Name = "cmbEmployeeDesignattion";
+            this.cmbEmployeeDesignattion.Size = new System.Drawing.Size(236, 21);
+            this.cmbEmployeeDesignattion.TabIndex = 111;
+            // 
+            // lblEmployeeJoininigDate
+            // 
+            this.lblEmployeeJoininigDate.AutoSize = true;
+            this.lblEmployeeJoininigDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeJoininigDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblEmployeeJoininigDate.Location = new System.Drawing.Point(390, 207);
+            this.lblEmployeeJoininigDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeJoininigDate.Name = "lblEmployeeJoininigDate";
+            this.lblEmployeeJoininigDate.Size = new System.Drawing.Size(78, 13);
+            this.lblEmployeeJoininigDate.TabIndex = 113;
+            this.lblEmployeeJoininigDate.Text = "Joining Date";
+            // 
+            // dtpEmpoyeeoJoiningDate
+            // 
+            this.dtpEmpoyeeoJoiningDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpEmpoyeeoJoiningDate.Location = new System.Drawing.Point(397, 242);
+            this.dtpEmpoyeeoJoiningDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
+            this.dtpEmpoyeeoJoiningDate.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            this.dtpEmpoyeeoJoiningDate.Name = "dtpEmpoyeeoJoiningDate";
+            this.dtpEmpoyeeoJoiningDate.Size = new System.Drawing.Size(232, 20);
+            this.dtpEmpoyeeoJoiningDate.TabIndex = 112;
             // 
             // FormNewEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1290, 732);
-            this.Controls.Add(this.btnExitFormNewEmployee);
-            this.Controls.Add(this.pictureBox_Employee_info);
-            this.Controls.Add(this.btn_EmployeeClear);
-            this.Controls.Add(this.btn_EmployeeSave);
-            this.Controls.Add(this.txtEmRoomNumber);
-            this.Controls.Add(this.txtEmMobileNumber);
-            this.Controls.Add(this.txtEmFatherName);
-            this.Controls.Add(this.txtEmMotherName);
-            this.Controls.Add(this.txtEmailIdEmployee);
-            this.Controls.Add(this.txtEmAddress);
-            this.Controls.Add(this.txtEmployeeId);
-            this.Controls.Add(this.pictureBox_Employee);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.ClientSize = new System.Drawing.Size(860, 476);
+            this.Controls.Add(this.lblEmployeeJoininigDate);
+            this.Controls.Add(this.dtpEmpoyeeoJoiningDate);
+            this.Controls.Add(this.cmbEmployeeDesignattion);
+            this.Controls.Add(this.lblEmployeeDesignation);
+            this.Controls.Add(this.lblEmployeeId);
+            this.Controls.Add(this.PictureBoxEmployee);
+            this.Controls.Add(this.lblEmployeeInfo);
+            this.Controls.Add(this.txtEmployeeInfomationFirstName);
+            this.Controls.Add(this.txtEmpployeeInformationEmail);
+            this.Controls.Add(this.lblEmpoyeeAddress);
+            this.Controls.Add(this.txtEmployeeInfromationAddress);
+            this.Controls.Add(this.lblEmployeeEmail);
+            this.Controls.Add(this.txtEmployeeInformationId);
+            this.Controls.Add(this.lblEmployeePhonNum);
+            this.Controls.Add(this.txtEmployeeInformationPhoneNum);
+            this.Controls.Add(this.lblEmployeeName);
+            this.Controls.Add(this.btnEmployeeInformationClear);
+            this.Controls.Add(this.btnEmpoyeeInfomationSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNewEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewEmployee";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Employee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Employee_info)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,17 +289,23 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox_Employee;
-        private System.Windows.Forms.PictureBox pictureBox_Employee_info;
-        private System.Windows.Forms.Button btn_EmployeeClear;
-        private System.Windows.Forms.Button btn_EmployeeSave;
-        private System.Windows.Forms.TextBox txtEmRoomNumber;
-        private System.Windows.Forms.TextBox txtEmMobileNumber;
-        private System.Windows.Forms.TextBox txtEmFatherName;
-        private System.Windows.Forms.TextBox txtEmMotherName;
-        private System.Windows.Forms.TextBox txtEmailIdEmployee;
-        private System.Windows.Forms.TextBox txtEmAddress;
-        private System.Windows.Forms.TextBox txtEmployeeId;
-        private System.Windows.Forms.Button btnExitFormNewEmployee;
+        private System.Windows.Forms.PictureBox PictureBoxEmployee;
+        private System.Windows.Forms.Label lblEmployeeInfo;
+        private System.Windows.Forms.TextBox txtEmployeeInfomationFirstName;
+        private System.Windows.Forms.TextBox txtEmpployeeInformationEmail;
+        private System.Windows.Forms.Label lblEmpoyeeAddress;
+        private System.Windows.Forms.TextBox txtEmployeeInfromationAddress;
+        private System.Windows.Forms.Label lblEmployeeEmail;
+        private System.Windows.Forms.TextBox txtEmployeeInformationId;
+        private System.Windows.Forms.Label lblEmployeePhonNum;
+        private System.Windows.Forms.TextBox txtEmployeeInformationPhoneNum;
+        private System.Windows.Forms.Label lblEmployeeName;
+        private System.Windows.Forms.Button btnEmployeeInformationClear;
+        private System.Windows.Forms.Button btnEmpoyeeInfomationSave;
+        private System.Windows.Forms.Label lblEmployeeId;
+        private System.Windows.Forms.Label lblEmployeeDesignation;
+        private System.Windows.Forms.ComboBox cmbEmployeeDesignattion;
+        private System.Windows.Forms.Label lblEmployeeJoininigDate;
+        private System.Windows.Forms.DateTimePicker dtpEmpoyeeoJoiningDate;
     }
 }
