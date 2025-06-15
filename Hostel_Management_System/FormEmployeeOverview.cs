@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Hostel_Management_System
 {
-    public partial class FormFormerResidents : Form
+    public partial class FormEmployeeOverview : Form
     {
-        public FormFormerResidents()
+        public FormEmployeeOverview()
         {
             InitializeComponent();
-        }
-
-       
-
-        private void FormFormerResidents_Load(object sender, EventArgs e)
-        {
-            this.Location = new Point(450, 180);
         }
     }
 }

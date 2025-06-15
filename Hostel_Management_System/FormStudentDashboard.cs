@@ -58,20 +58,7 @@ namespace HostelManagementSystem
             lableInfo.Visible = true;
 
         }
-        private void btnManageRoom_Click(object sender, EventArgs e)
-        {
-            //if (manageRooms == null || manageRooms.IsDisposed)
-            //{
-            //    manageRooms = new FormManageRooms(); // Create a new instance only if it doesn't exist or was disposed
-            //}
-            //manageRooms.Show(); // Show the form
-            //manageRooms.BringToFront();
-           
-             OpenChildForm(new FormManageRooms());
-            UpdateHeaderInfo("Manage Rooms");  // Pass your form name here
-
-
-        }
+      
 
         private void FormDashboard_Load(object sender, EventArgs e)
         {
@@ -115,7 +102,7 @@ namespace HostelManagementSystem
 
         private void btnCurrentResidents_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormCurrentResidents());
+            OpenChildForm(new FormCurrentStudents());
             UpdateHeaderInfo("Current Residents");
         }
 
@@ -129,7 +116,7 @@ namespace HostelManagementSystem
 
         private void btnFormerResidents_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormFormerResidents());
+            OpenChildForm(new FormFormerStudents());
             UpdateHeaderInfo("Former Residents");
 
         }
@@ -167,7 +154,7 @@ namespace HostelManagementSystem
 
         private void btnStudentDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormDashBoard());
+            OpenChildForm(new FormStatusOverview());
             UpdateHeaderInfo("Dashboard");
         }
 

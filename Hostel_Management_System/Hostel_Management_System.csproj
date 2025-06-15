@@ -56,6 +56,12 @@
     <Compile Include="FormCurrentEmployees.Designer.cs">
       <DependentUpon>FormCurrentEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEmployeeOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeOverview.Designer.cs">
+      <DependentUpon>FormEmployeeOverview.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmployeeSalaries.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +80,11 @@
     <Compile Include="FormNewEmployee.Designer.cs">
       <DependentUpon>FormNewEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCurrentResidents.cs">
+    <Compile Include="FormCurrentStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCurrentResidents.Designer.cs">
-      <DependentUpon>FormCurrentResidents.cs</DependentUpon>
+    <Compile Include="FormCurrentStudents.Designer.cs">
+      <DependentUpon>FormCurrentStudents.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEmployeeDashboard.cs">
       <SubType>Form</SubType>
@@ -86,11 +92,11 @@
     <Compile Include="FormEmployeeDashboard.Designer.cs">
       <DependentUpon>FormEmployeeDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormFormerResidents.cs">
+    <Compile Include="FormFormerStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormFormerResidents.Designer.cs">
-      <DependentUpon>FormFormerResidents.cs</DependentUpon>
+    <Compile Include="FormFormerStudents.Designer.cs">
+      <DependentUpon>FormFormerStudents.cs</DependentUpon>
     </Compile>
     <Compile Include="FormManageEmployeeInfo.cs">
       <SubType>Form</SubType>
@@ -128,11 +134,11 @@
     <Compile Include="FormStudentDashboard.Designer.cs">
       <DependentUpon>FormStudentDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDashBoard.cs">
+    <Compile Include="FormStatusOverview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDashBoard.Designer.cs">
-      <DependentUpon>FormDashBoard.cs</DependentUpon>
+    <Compile Include="FormStatusOverview.Designer.cs">
+      <DependentUpon>FormStatusOverview.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStudentPayment.cs">
       <SubType>Form</SubType>
@@ -142,20 +148,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormDashBoard.resx">
-      <DependentUpon>FormDashBoard.cs</DependentUpon>
+    <EmbeddedResource Include="FormStatusOverview.resx">
+      <DependentUpon>FormStatusOverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCurrentEmployees.resx">
       <DependentUpon>FormCurrentEmployees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCurrentResidents.resx">
-      <DependentUpon>FormCurrentResidents.cs</DependentUpon>
+    <EmbeddedResource Include="FormCurrentStudents.resx">
+      <DependentUpon>FormCurrentStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmployeeDashboard.resx">
       <DependentUpon>FormEmployeeDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormFormerResidents.resx">
-      <DependentUpon>FormFormerResidents.cs</DependentUpon>
+    <EmbeddedResource Include="FormFormerStudents.resx">
+      <DependentUpon>FormFormerStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageStudentInfo.resx">
       <DependentUpon>FormManageStudentInfo.cs</DependentUpon>
