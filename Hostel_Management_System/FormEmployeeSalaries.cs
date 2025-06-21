@@ -16,5 +16,12 @@ namespace Hostel_Management_System
         {
             InitializeComponent();
         }
+
+        private void txtEmployeeBonus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
