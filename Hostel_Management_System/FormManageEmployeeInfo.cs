@@ -16,5 +16,10 @@ namespace Hostel_Management_System
         {
             InitializeComponent();
         }
+
+        private void txtStudentPhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
