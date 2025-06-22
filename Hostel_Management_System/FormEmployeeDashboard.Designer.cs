@@ -33,7 +33,7 @@
             this.btnEnrollEmployee = new System.Windows.Forms.Button();
             this.btnEmployeePayment = new System.Windows.Forms.Button();
             this.btnEmployeeFormerResidents = new System.Windows.Forms.Button();
-            this.btnEmployeeWorking = new System.Windows.Forms.Button();
+            this.btnEmployeeOverview = new System.Windows.Forms.Button();
             this.lblHms = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,7 +42,7 @@
             this.btnSlideEmployee = new System.Windows.Forms.PictureBox();
             this.btnStudentDashboard = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnLeavedEmployee = new System.Windows.Forms.Button();
+            this.btnFormerEmployees = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.picCloseButtonEmployeeDB = new System.Windows.Forms.PictureBox();
             this.pnlEmployeeContainer = new System.Windows.Forms.Panel();
@@ -68,7 +68,7 @@
             this.btnManageEmplpoyee.Name = "btnManageEmplpoyee";
             this.btnManageEmplpoyee.Size = new System.Drawing.Size(336, 63);
             this.btnManageEmplpoyee.TabIndex = 23;
-            this.btnManageEmplpoyee.Text = "Manage Employee";
+            this.btnManageEmplpoyee.Text = "Manage Employees";
             this.btnManageEmplpoyee.UseVisualStyleBackColor = true;
             this.btnManageEmplpoyee.Click += new System.EventHandler(this.btnManageEmplpoyee_Click);
             // 
@@ -81,8 +81,8 @@
             this.btnEnrollEmployee.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnrollEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnEnrollEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrollEmployee.Image")));
-            this.btnEnrollEmployee.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnEnrollEmployee.Location = new System.Drawing.Point(-2, 363);
+            this.btnEnrollEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnrollEmployee.Location = new System.Drawing.Point(4, 364);
             this.btnEnrollEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEnrollEmployee.Name = "btnEnrollEmployee";
             this.btnEnrollEmployee.Size = new System.Drawing.Size(340, 63);
@@ -100,7 +100,7 @@
             this.btnEmployeePayment.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployeePayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnEmployeePayment.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeePayment.Image")));
-            this.btnEmployeePayment.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnEmployeePayment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployeePayment.Location = new System.Drawing.Point(0, 508);
             this.btnEmployeePayment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEmployeePayment.Name = "btnEmployeePayment";
@@ -127,24 +127,24 @@
             this.btnEmployeeFormerResidents.Text = "Former Residents\r\n";
             this.btnEmployeeFormerResidents.UseVisualStyleBackColor = true;
             // 
-            // btnEmployeeWorking
+            // btnEmployeeOverview
             // 
-            this.btnEmployeeWorking.FlatAppearance.BorderSize = 0;
-            this.btnEmployeeWorking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnEmployeeWorking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnEmployeeWorking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployeeWorking.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeeWorking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnEmployeeWorking.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeWorking.Image")));
-            this.btnEmployeeWorking.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnEmployeeWorking.Location = new System.Drawing.Point(4, 598);
-            this.btnEmployeeWorking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEmployeeWorking.Name = "btnEmployeeWorking";
-            this.btnEmployeeWorking.Size = new System.Drawing.Size(332, 63);
-            this.btnEmployeeWorking.TabIndex = 28;
-            this.btnEmployeeWorking.Text = "All Employee Working";
-            this.btnEmployeeWorking.UseVisualStyleBackColor = true;
-            
+            this.btnEmployeeOverview.FlatAppearance.BorderSize = 0;
+            this.btnEmployeeOverview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
+            this.btnEmployeeOverview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnEmployeeOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmployeeOverview.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployeeOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnEmployeeOverview.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeOverview.Image")));
+            this.btnEmployeeOverview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmployeeOverview.Location = new System.Drawing.Point(4, 598);
+            this.btnEmployeeOverview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEmployeeOverview.Name = "btnEmployeeOverview";
+            this.btnEmployeeOverview.Size = new System.Drawing.Size(332, 63);
+            this.btnEmployeeOverview.TabIndex = 28;
+            this.btnEmployeeOverview.Text = "  Employee Overview";
+            this.btnEmployeeOverview.UseVisualStyleBackColor = true;
+            this.btnEmployeeOverview.Click += new System.EventHandler(this.btnEmployeeOverview_Click);
             // 
             // lblHms
             // 
@@ -183,11 +183,11 @@
             this.panel1.Controls.Add(this.btnSlideEmployee);
             this.panel1.Controls.Add(this.btnStudentDashboard);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnLeavedEmployee);
+            this.panel1.Controls.Add(this.btnFormerEmployees);
             this.panel1.Controls.Add(this.btnManageEmplpoyee);
             this.panel1.Controls.Add(this.btnEnrollEmployee);
             this.panel1.Controls.Add(this.btnEmployeePayment);
-            this.panel1.Controls.Add(this.btnEmployeeWorking);
+            this.panel1.Controls.Add(this.btnEmployeeOverview);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -203,7 +203,7 @@
             this.btnManageRoom.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnManageRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnManageRoom.Image")));
-            this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManageRoom.Location = new System.Drawing.Point(4, 291);
             this.btnManageRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnManageRoom.Name = "btnManageRoom";
@@ -276,23 +276,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnEmpLogout_Click);
             // 
-            // btnLeavedEmployee
+            // btnFormerEmployees
             // 
-            this.btnLeavedEmployee.FlatAppearance.BorderSize = 0;
-            this.btnLeavedEmployee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnLeavedEmployee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnLeavedEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeavedEmployee.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeavedEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnLeavedEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnLeavedEmployee.Image")));
-            this.btnLeavedEmployee.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLeavedEmployee.Location = new System.Drawing.Point(0, 689);
-            this.btnLeavedEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnLeavedEmployee.Name = "btnLeavedEmployee";
-            this.btnLeavedEmployee.Size = new System.Drawing.Size(336, 63);
-            this.btnLeavedEmployee.TabIndex = 29;
-            this.btnLeavedEmployee.Text = "Leaved Employee";
-            this.btnLeavedEmployee.UseVisualStyleBackColor = true;
+            this.btnFormerEmployees.FlatAppearance.BorderSize = 0;
+            this.btnFormerEmployees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
+            this.btnFormerEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnFormerEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormerEmployees.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormerEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnFormerEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnFormerEmployees.Image")));
+            this.btnFormerEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFormerEmployees.Location = new System.Drawing.Point(0, 689);
+            this.btnFormerEmployees.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFormerEmployees.Name = "btnFormerEmployees";
+            this.btnFormerEmployees.Size = new System.Drawing.Size(336, 63);
+            this.btnFormerEmployees.TabIndex = 29;
+            this.btnFormerEmployees.Text = "Former Employees";
+            this.btnFormerEmployees.UseVisualStyleBackColor = true;
+            this.btnFormerEmployees.Click += new System.EventHandler(this.btnFormerEmployees_Click);
             // 
             // panel2
             // 
@@ -357,11 +358,11 @@
         private System.Windows.Forms.Button btnEnrollEmployee;
         private System.Windows.Forms.Button btnEmployeePayment;
         private System.Windows.Forms.Button btnEmployeeFormerResidents;
-        private System.Windows.Forms.Button btnEmployeeWorking;
+        private System.Windows.Forms.Button btnEmployeeOverview;
         private System.Windows.Forms.Label lblHms;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnLeavedEmployee;
+        private System.Windows.Forms.Button btnFormerEmployees;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnStudentDashboard;

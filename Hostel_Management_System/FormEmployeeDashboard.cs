@@ -86,6 +86,16 @@ namespace Hostel_Management_System
             
         }
 
+        private void btnEmployeeOverview_Click(object sender, EventArgs e)
+        {
+            
+            OepenEmpChildForm(new FormEmployeeOverview());
+        }
 
+        private void btnFormerEmployees_Click(object sender, EventArgs e)
+        {
+            
+            OepenEmpChildForm(new FormFormerEmployees());
+        }
     }
 }
