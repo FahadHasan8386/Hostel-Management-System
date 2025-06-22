@@ -17,8 +17,20 @@ namespace Hostel_Management_System
             InitializeComponent();
         }
 
-        private void txtStudentPhoneNumber_TextChanged(object sender, EventArgs e)
+      
+        private void btnManageEmployeeClear_Click(object sender, EventArgs e)
         {
+            clearAll();
+        }
+
+        public void clearAll()
+        {
+            txtManageEmployeePhone.Clear();
+            txtManageEmployeeName.Clear();
+            txtManageEmployeeId.Clear();
+            txtManageEmpployeeEmail.Clear();
+            txtManageEmployeeAddress.Clear();
+            chkManageEmployeeDesignation.SelectedIndex = -1;
 
         }
     }

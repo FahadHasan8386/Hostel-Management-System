@@ -22,6 +22,40 @@ namespace Hostel_Management_System
             this.Close();
         }
 
-       
+        private void btnEmpoyeeInfomationSave_Click(object sender, EventArgs e)
+        {
+            if (txtEmployeeInfomationFirstName.Text != "" && txtEmployeeInformationId.Text != "" && txtEmployeeInformationPhoneNum.Text != "" && txtEmpployeeInformationEmail.Text != "" && txtEmployeeInfromationAddress.Text != "" && cmbEmployeeDesignattion.SelectedIndex != -1)
+            {
+                string name = txtEmployeeInfomationFirstName.Text;
+                Int64 id = Int64.Parse(txtEmployeeInformationId.Text);
+                Int64 phone = Int64.Parse(txtEmployeeInformationPhoneNum.Text);
+                string email = txtEmpployeeInformationEmail.Text;
+                string address = txtEmployeeInfromationAddress.Text;
+                string designation = cmbEmployeeDesignattion.Text;
+
+            }
+            else
+            {
+                MessageBox.Show("Fill all Required Data.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnEmployeeInformationClear_Click(object sender, EventArgs e)
+        {
+            clearAll();
+        }
+
+        private void clearAll()
+        {
+            txtEmployeeInfomationFirstName.Clear();
+            txtEmployeeInformationId.Clear();
+            txtEmployeeInformationPhoneNum.Clear();
+            txtEmpployeeInformationEmail.Clear();
+            txtEmployeeInfromationAddress.Clear();
+            cmbEmployeeDesignattion.SelectedIndex = -1;
+
+        }
+
+        
     }
 }
