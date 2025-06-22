@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnManageEmployeeClear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAXhJREFUOE9jGAXUBywsrCIGUooNdgrq0+zk8WCgvKOCxjRLOdUJ/Fy8JlDtqICR
+        DAAACwwBP0AiyAAAAXhJREFUOE9jGAXUBywsrCIGUooNdgrq0+zk8WCgvKOCxjRLOdUJ/Fy8JlDtqICR
         iZnDVklz4iqP8P8nAhLw4lOBif+vhaT83+wd9d9KTm0C1AhkwMikISGfN8cl6Nuj8Iz/n6Nz/r+Kyfn/
         DkiD2J+g9BsQBorD+CDDQS6GGoIAEgKivtMc/V/fDUsDK/4Ylf3/eF75/yOVjWBDPkfl/H8em/t/T33L
         /0tpRf8/AfkgdVgN5OXiNSg1c75+NxRqGBCD6Odxef/3tnT8P1rd9P9hbM7/fUD2kZomsAthajAMZGFl
@@ -130,10 +130,10 @@
         TlxNRMKG4e0+Mf+tsSdsCCA660Ex3qw3CsgADAwAmlOYCJq/SZ4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnStudentInformationClear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnManageEmployeeDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAA95JREFUOE+lkn9Qk3Ucx7cB1xgKkZBJidGZdclEfsSEoQxcSfCHmp1mcoKainDQ
+        vwAADr8BOAVTJAAAA95JREFUOE+lkn9Qk3Ucx7cB1xgKkZBJidGZdclEfsSEoQxcSfCHmp1mcoKainDQ
         bZj9uroUsswuYAvhvIQHtR9Ybs/GwMHGUYzB5nRbQ5HfIklyFgh0pHHGu+/zXArcsLjrj9c9z/fu+3k9
         78/z+XAA3Gewo2OZ7t33PlZlZVHqjExKtXsvpd5D2JvBQmfso+h9mRSdyZBFafa/qeg2N8dOd9x/GR0c
         XHjy5VcM1Zu3oDE1FXWxYuieDEHNU0uhf+ZZ1C4PRX3YSjREReHHVSKYVothiBGBio9v73c6w9yE9soz
@@ -153,10 +153,10 @@
         rkJggg==
 </value>
   </data>
-  <data name="btnStudentInfomationSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnManageEmployeeUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAAnlJREFUOE+tk01sEkEUx/HSHoy9NLGHkrSm12rSS089mRAXPZAmumtSb7K0h+4C
+        vwAADr8BOAVTJAAAAnlJREFUOE+tk01sEkEUx/HSHoy9NLGHkrSm12rSS089mRAXPZAmumtSb7K0h+4C
         nnozaqIkKIn3njAxaQ2zGAgcFkLogh4K9YsTEWiVmBZblvrRshxY3yxDge2CTfSf/DPzZmZ/+96bXVMf
         ndtZ5C0FB+8vslyhyPKNrJVuZCh6G0a0ZaXteWphhJw1vb16e+zdNWaShL3aYbkpgGyUHLza7ayV0bu2
         RTErb27cHIeX5DLUrTmC6Khwd3m26OAO9LA+QGL6GI+ngF/tnBkerLQBRQffhEw/wdwP9mastC9L0aEs
@@ -170,10 +170,10 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="btnSearcByPhoneNumber.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnManageNumSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAA8hJREFUOE9jQAbMbOzsMg5BQbZdG7b6b3r8JmTvx39BO15/dZ197LRGVHEJh5C4
+        DAAACwwBP0AiyAAAA8hJREFUOE9jQAbMbOzsMg5BQbZdG7b6b3r8JmTvx39BO15/dZ197LRGVHEJh5C4
         GFQpYcDGLyxkkNPV57/56YeQ/Z//g/G+T0AMYn/5H7Tr3S+7ns07BVT19aFacANmDi4uw8KJ0wN3v/8X
         tOfDf88V19+Z1czbppfePB0ovsJ59rF7gTvf/g/a++m/47SDp3lkVVWgWrEDGeewSN8tz7/773r337Z/
         xzk995DA7LwCm8mTJnnW1NY5WHn42xgWTljsu+3lH//dH/4bFk2excTKxgrVjgpYOHl4LFrX7PDb9f6/
