@@ -148,8 +148,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormEmployeeOverview.resx">
+      <DependentUpon>FormEmployeeOverview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEmployeeSalaries.resx">
       <DependentUpon>FormEmployeeSalaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFormerEmployees.resx">
+      <DependentUpon>FormFormerEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManageEmployeeInfo.resx">
       <DependentUpon>FormManageEmployeeInfo.cs</DependentUpon>
