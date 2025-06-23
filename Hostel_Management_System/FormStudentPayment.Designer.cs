@@ -38,10 +38,10 @@
             this.btnPay = new System.Windows.Forms.Button();
             this.btnStudentInfoClear = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvStudentPayment = new System.Windows.Forms.DataGridView();
             this.dtpPaymentDate = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtStudentDueFees = new System.Windows.Forms.TextBox();
+            this.txtAmount = new System.Windows.Forms.TextBox();
             this.txtStudentRoomNumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtStudentEmail = new System.Windows.Forms.TextBox();
@@ -51,12 +51,12 @@
             this.txtStudentLastName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnSearcByPhoneNumber = new System.Windows.Forms.Button();
+            this.btnPaymentSearcByPhoneNumber = new System.Windows.Forms.Button();
             this.txtStudentPhoneNumber = new System.Windows.Forms.TextBox();
             this.pdoSudentReceipt = new System.Drawing.Printing.PrintDocument();
             this.PrintPreviewDialogStudent = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentPayment)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -148,6 +148,7 @@
             this.btnPay.TabIndex = 99;
             this.btnPay.Text = "Pay";
             this.btnPay.UseVisualStyleBackColor = false;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // btnStudentInfoClear
             // 
@@ -162,6 +163,7 @@
             this.btnStudentInfoClear.TabIndex = 98;
             this.btnStudentInfoClear.Text = "Clear";
             this.btnStudentInfoClear.UseVisualStyleBackColor = false;
+            this.btnStudentInfoClear.Click += new System.EventHandler(this.btnStudentInfoClear_Click);
             // 
             // label7
             // 
@@ -175,16 +177,16 @@
             this.label7.TabIndex = 97;
             this.label7.Text = "Date";
             // 
-            // dataGridView1
+            // dgvStudentPayment
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 376);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(878, 133);
-            this.dataGridView1.TabIndex = 96;
+            this.dgvStudentPayment.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvStudentPayment.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvStudentPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudentPayment.GridColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dgvStudentPayment.Location = new System.Drawing.Point(0, 376);
+            this.dgvStudentPayment.Name = "dgvStudentPayment";
+            this.dgvStudentPayment.Size = new System.Drawing.Size(878, 133);
+            this.dgvStudentPayment.TabIndex = 96;
             // 
             // dtpPaymentDate
             // 
@@ -208,14 +210,14 @@
             this.label2.TabIndex = 94;
             this.label2.Text = "Dues Amount";
             // 
-            // txtStudentDueFees
+            // txtAmount
             // 
-            this.txtStudentDueFees.ForeColor = System.Drawing.Color.Gray;
-            this.txtStudentDueFees.Location = new System.Drawing.Point(225, 295);
-            this.txtStudentDueFees.Name = "txtStudentDueFees";
-            this.txtStudentDueFees.Size = new System.Drawing.Size(175, 20);
-            this.txtStudentDueFees.TabIndex = 93;
-            this.txtStudentDueFees.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAmount.ForeColor = System.Drawing.Color.Gray;
+            this.txtAmount.Location = new System.Drawing.Point(225, 295);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(175, 20);
+            this.txtAmount.TabIndex = 93;
+            this.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtStudentRoomNumber
             // 
@@ -314,27 +316,27 @@
             this.label5.TabIndex = 84;
             this.label5.Text = "Phone number";
             // 
-            // btnSearcByPhoneNumber
+            // btnPaymentSearcByPhoneNumber
             // 
-            this.btnSearcByPhoneNumber.BackColor = System.Drawing.Color.Black;
-            this.btnSearcByPhoneNumber.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearcByPhoneNumber.ForeColor = System.Drawing.Color.White;
-            this.btnSearcByPhoneNumber.Image = ((System.Drawing.Image)(resources.GetObject("btnSearcByPhoneNumber.Image")));
-            this.btnSearcByPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearcByPhoneNumber.Location = new System.Drawing.Point(284, 61);
-            this.btnSearcByPhoneNumber.Name = "btnSearcByPhoneNumber";
-            this.btnSearcByPhoneNumber.Size = new System.Drawing.Size(116, 27);
-            this.btnSearcByPhoneNumber.TabIndex = 83;
-            this.btnSearcByPhoneNumber.Text = "Search";
-            this.btnSearcByPhoneNumber.UseVisualStyleBackColor = false;
+            this.btnPaymentSearcByPhoneNumber.BackColor = System.Drawing.Color.Black;
+            this.btnPaymentSearcByPhoneNumber.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaymentSearcByPhoneNumber.ForeColor = System.Drawing.Color.White;
+            this.btnPaymentSearcByPhoneNumber.Image = ((System.Drawing.Image)(resources.GetObject("btnPaymentSearcByPhoneNumber.Image")));
+            this.btnPaymentSearcByPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPaymentSearcByPhoneNumber.Location = new System.Drawing.Point(284, 61);
+            this.btnPaymentSearcByPhoneNumber.Name = "btnPaymentSearcByPhoneNumber";
+            this.btnPaymentSearcByPhoneNumber.Size = new System.Drawing.Size(116, 27);
+            this.btnPaymentSearcByPhoneNumber.TabIndex = 83;
+            this.btnPaymentSearcByPhoneNumber.Text = "Search";
+            this.btnPaymentSearcByPhoneNumber.UseVisualStyleBackColor = false;
+            this.btnPaymentSearcByPhoneNumber.Click += new System.EventHandler(this.btnPaymentSearcByPhoneNumber_Click);
             // 
             // txtStudentPhoneNumber
             // 
             this.txtStudentPhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.txtStudentPhoneNumber.Location = new System.Drawing.Point(12, 61);
-            this.txtStudentPhoneNumber.Multiline = true;
             this.txtStudentPhoneNumber.Name = "txtStudentPhoneNumber";
-            this.txtStudentPhoneNumber.Size = new System.Drawing.Size(220, 27);
+            this.txtStudentPhoneNumber.Size = new System.Drawing.Size(220, 20);
             this.txtStudentPhoneNumber.TabIndex = 82;
             this.txtStudentPhoneNumber.Text = "Search by phone number";
             this.txtStudentPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -372,10 +374,10 @@
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.btnStudentInfoClear);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvStudentPayment);
             this.Controls.Add(this.dtpPaymentDate);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtStudentDueFees);
+            this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.txtStudentRoomNumber);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtStudentEmail);
@@ -385,7 +387,7 @@
             this.Controls.Add(this.txtStudentLastName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnSearcByPhoneNumber);
+            this.Controls.Add(this.btnPaymentSearcByPhoneNumber);
             this.Controls.Add(this.txtStudentPhoneNumber);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormStudentPayment";
@@ -393,7 +395,7 @@
             this.Text = "FormStudentPayment";
             this.Load += new System.EventHandler(this.FormStudentPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentPayment)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,10 +412,10 @@
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Button btnStudentInfoClear;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvStudentPayment;
         private System.Windows.Forms.DateTimePicker dtpPaymentDate;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtStudentDueFees;
+        private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.TextBox txtStudentRoomNumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtStudentEmail;
@@ -423,7 +425,7 @@
         private System.Windows.Forms.TextBox txtStudentLastName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnSearcByPhoneNumber;
+        private System.Windows.Forms.Button btnPaymentSearcByPhoneNumber;
         private System.Windows.Forms.TextBox txtStudentPhoneNumber;
         private System.Drawing.Printing.PrintDocument pdoSudentReceipt;
         private System.Windows.Forms.PrintPreviewDialog PrintPreviewDialogStudent;

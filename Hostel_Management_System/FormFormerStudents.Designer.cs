@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFormerStudents));
-            this.btnStudentInfoClear = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnFrmShowDetails = new System.Windows.Forms.Button();
+            this.dgvFormerStudent = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFormerStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnStudentInfoClear
+            // btnFrmShowDetails
             // 
-            this.btnStudentInfoClear.BackColor = System.Drawing.Color.Black;
-            this.btnStudentInfoClear.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentInfoClear.ForeColor = System.Drawing.Color.White;
-            this.btnStudentInfoClear.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInfoClear.Image")));
-            this.btnStudentInfoClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentInfoClear.Location = new System.Drawing.Point(12, 86);
-            this.btnStudentInfoClear.Name = "btnStudentInfoClear";
-            this.btnStudentInfoClear.Size = new System.Drawing.Size(160, 34);
-            this.btnStudentInfoClear.TabIndex = 103;
-            this.btnStudentInfoClear.Text = "Show Details >>";
-            this.btnStudentInfoClear.UseVisualStyleBackColor = false;
+            this.btnFrmShowDetails.BackColor = System.Drawing.Color.Black;
+            this.btnFrmShowDetails.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFrmShowDetails.ForeColor = System.Drawing.Color.White;
+            this.btnFrmShowDetails.Image = ((System.Drawing.Image)(resources.GetObject("btnFrmShowDetails.Image")));
+            this.btnFrmShowDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFrmShowDetails.Location = new System.Drawing.Point(0, 86);
+            this.btnFrmShowDetails.Name = "btnFrmShowDetails";
+            this.btnFrmShowDetails.Size = new System.Drawing.Size(160, 34);
+            this.btnFrmShowDetails.TabIndex = 103;
+            this.btnFrmShowDetails.Text = "Show Details >>";
+            this.btnFrmShowDetails.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvFormerStudent
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 126);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(878, 386);
-            this.dataGridView1.TabIndex = 102;
+            this.dgvFormerStudent.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvFormerStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFormerStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvFormerStudent.Location = new System.Drawing.Point(0, 126);
+            this.dgvFormerStudent.Name = "dgvFormerStudent";
+            this.dgvFormerStudent.Size = new System.Drawing.Size(878, 386);
+            this.dgvFormerStudent.TabIndex = 102;
             // 
             // pictureBox4
             // 
@@ -83,24 +83,24 @@
             this.label1.TabIndex = 100;
             this.label1.Text = "Former Student Details";
             // 
-            // FormFormerResidents
+            // FormFormerStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(878, 512);
-            this.Controls.Add(this.btnStudentInfoClear);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnFrmShowDetails);
+            this.Controls.Add(this.dgvFormerStudent);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormFormerResidents";
+            this.Name = "FormFormerStudents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormFormerResidents";
             this.Load += new System.EventHandler(this.FormFormerResidents_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFormerStudent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -109,8 +109,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnStudentInfoClear;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnFrmShowDetails;
+        private System.Windows.Forms.DataGridView dgvFormerStudent;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
     }

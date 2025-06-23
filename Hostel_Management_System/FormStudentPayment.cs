@@ -35,7 +35,7 @@ namespace Hostel_Management_System
             rtbStudentReceipt.Text += "Last Name : " + txtStudentLastName.Text + "\n\n";
             rtbStudentReceipt.Text += "Email Id: " + txtStudentEmail.Text + "\n\n";
             rtbStudentReceipt.Text += "Room Number : " + txtStudentRoomNumber.Text + "\n\n";
-            rtbStudentReceipt.Text += "Dues Amount : " + txtStudentDueFees.Text + "\n\n";
+            rtbStudentReceipt.Text += "Dues Amount : " + txtAmount.Text + "\n\n";
 
         }
 
@@ -82,6 +82,21 @@ namespace Hostel_Management_System
         }
 
         private void txtStudentPhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPaymentSearcByPhoneNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStudentInfoClear_Click(object sender, EventArgs e)
         {
 
         }
