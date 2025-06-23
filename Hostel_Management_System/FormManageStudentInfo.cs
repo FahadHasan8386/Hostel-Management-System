@@ -24,6 +24,29 @@ namespace Hostel_Management_System
             this.Location = new Point(450, 180);
         }
 
-     
+        private void btnMngStudnetInfomationClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearcByPhoneNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStudentInfomationUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStudentInformationDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMngStudentAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
