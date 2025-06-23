@@ -97,5 +97,12 @@ namespace Hostel_Management_System
             
             OepenEmpChildForm(new FormFormerEmployees());
         }
+
+        private void picHostelLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+   
+        
     }
 }
