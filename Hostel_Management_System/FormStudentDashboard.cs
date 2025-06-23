@@ -191,5 +191,12 @@ namespace HostelManagementSystem
         {
 
         }
+
+        private void picHostelLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

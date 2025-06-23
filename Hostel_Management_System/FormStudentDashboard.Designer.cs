@@ -68,7 +68,7 @@
             this.btnCurrentResidents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnCurrentResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnCurrentResidents.Image")));
             this.btnCurrentResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCurrentResidents.Location = new System.Drawing.Point(0, 401);
+            this.btnCurrentResidents.Location = new System.Drawing.Point(1, 383);
             this.btnCurrentResidents.Name = "btnCurrentResidents";
             this.btnCurrentResidents.Size = new System.Drawing.Size(212, 41);
             this.btnCurrentResidents.TabIndex = 7;
@@ -86,7 +86,7 @@
             this.btnFormerResidents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnFormerResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnFormerResidents.Image")));
             this.btnFormerResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnFormerResidents.Location = new System.Drawing.Point(1, 461);
+            this.btnFormerResidents.Location = new System.Drawing.Point(1, 455);
             this.btnFormerResidents.Name = "btnFormerResidents";
             this.btnFormerResidents.Size = new System.Drawing.Size(212, 41);
             this.btnFormerResidents.TabIndex = 6;
@@ -104,7 +104,7 @@
             this.btnManageStudentInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnManageStudentInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStudentInfo.Image")));
             this.btnManageStudentInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageStudentInfo.Location = new System.Drawing.Point(1, 285);
+            this.btnManageStudentInfo.Location = new System.Drawing.Point(0, 254);
             this.btnManageStudentInfo.Name = "btnManageStudentInfo";
             this.btnManageStudentInfo.Size = new System.Drawing.Size(208, 41);
             this.btnManageStudentInfo.TabIndex = 3;
@@ -122,7 +122,7 @@
             this.btnStudentPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnStudentPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentPayment.Image")));
             this.btnStudentPayment.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnStudentPayment.Location = new System.Drawing.Point(0, 344);
+            this.btnStudentPayment.Location = new System.Drawing.Point(2, 311);
             this.btnStudentPayment.Name = "btnStudentPayment";
             this.btnStudentPayment.Size = new System.Drawing.Size(212, 51);
             this.btnStudentPayment.TabIndex = 2;
@@ -140,7 +140,7 @@
             this.btnEnrollStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnEnrollStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrollStudent.Image")));
             this.btnEnrollStudent.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnEnrollStudent.Location = new System.Drawing.Point(3, 227);
+            this.btnEnrollStudent.Location = new System.Drawing.Point(3, 188);
             this.btnEnrollStudent.Name = "btnEnrollStudent";
             this.btnEnrollStudent.Size = new System.Drawing.Size(212, 41);
             this.btnEnrollStudent.TabIndex = 1;
@@ -208,6 +208,7 @@
             this.picHostelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHostelLogo.TabIndex = 20;
             this.picHostelLogo.TabStop = false;
+            this.picHostelLogo.Click += new System.EventHandler(this.picHostelLogo_Click);
             // 
             // tmrHostelLogo
             // 
@@ -326,6 +327,9 @@
             this.panelContainer.Size = new System.Drawing.Size(919, 527);
             this.panelContainer.TabIndex = 34;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
+            // 
+            // tmrMenuTransition
+            
             // 
             // tmrSidebarTransition
             // 
