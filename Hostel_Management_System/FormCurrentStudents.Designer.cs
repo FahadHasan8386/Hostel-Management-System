@@ -82,6 +82,7 @@
             this.btnCrntShowDetails.TabIndex = 99;
             this.btnCrntShowDetails.Text = "Show Details >>";
             this.btnCrntShowDetails.UseVisualStyleBackColor = false;
+            this.btnCrntShowDetails.Click += new System.EventHandler(this.btnCrntShowDetails_Click);
             // 
             // FormCurrentStudents
             // 

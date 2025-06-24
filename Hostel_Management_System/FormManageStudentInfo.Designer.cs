@@ -43,7 +43,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtMngStudentAddress = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtMngStudentId = new System.Windows.Forms.TextBox();
+            this.txtMngStudentNid = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtMngStudentPhoneNum = new System.Windows.Forms.TextBox();
             this.btnStudentInformationDelete = new System.Windows.Forms.Button();
@@ -134,6 +134,8 @@
             this.txtMngStudentSearchByPhoneNumber.TabIndex = 89;
             this.txtMngStudentSearchByPhoneNumber.Text = "Search by phone number";
             this.txtMngStudentSearchByPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMngStudentSearchByPhoneNumber.Enter += new System.EventHandler(this.btnExitFormManageRooms_Enter);
+            this.txtMngStudentSearchByPhoneNumber.Leave += new System.EventHandler(this.btnExitFormManageRooms_Leave);
             // 
             // label1
             // 
@@ -214,14 +216,14 @@
             this.label11.TabIndex = 101;
             this.label11.Text = "Email";
             // 
-            // txtMngStudentId
+            // txtMngStudentNid
             // 
-            this.txtMngStudentId.ForeColor = System.Drawing.Color.Gray;
-            this.txtMngStudentId.Location = new System.Drawing.Point(27, 217);
-            this.txtMngStudentId.Name = "txtMngStudentId";
-            this.txtMngStudentId.Size = new System.Drawing.Size(175, 20);
-            this.txtMngStudentId.TabIndex = 100;
-            this.txtMngStudentId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMngStudentNid.ForeColor = System.Drawing.Color.Gray;
+            this.txtMngStudentNid.Location = new System.Drawing.Point(27, 217);
+            this.txtMngStudentNid.Name = "txtMngStudentNid";
+            this.txtMngStudentNid.Size = new System.Drawing.Size(175, 20);
+            this.txtMngStudentNid.TabIndex = 100;
+            this.txtMngStudentNid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label12
             // 
@@ -347,7 +349,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtMngStudentAddress);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtMngStudentId);
+            this.Controls.Add(this.txtMngStudentNid);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtMngStudentPhoneNum);
             this.Controls.Add(this.btnStudentInformationDelete);
@@ -386,7 +388,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtMngStudentAddress;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtMngStudentId;
+        private System.Windows.Forms.TextBox txtMngStudentNid;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtMngStudentPhoneNum;
         private System.Windows.Forms.Button btnStudentInformationDelete;
