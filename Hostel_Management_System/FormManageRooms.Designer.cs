@@ -132,6 +132,7 @@
             this.btnSearchByRoomNumber.TabIndex = 10;
             this.btnSearchByRoomNumber.Text = "Search\r\n";
             this.btnSearchByRoomNumber.UseVisualStyleBackColor = false;
+            this.btnSearchByRoomNumber.Click += new System.EventHandler(this.btnSearchByRoomNumber_Click);
             // 
             // btnStudentDeleteRoom
             // 
@@ -147,6 +148,7 @@
             this.btnStudentDeleteRoom.Text = "Delete\r\n\r\n";
             this.btnStudentDeleteRoom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnStudentDeleteRoom.UseVisualStyleBackColor = false;
+            this.btnStudentDeleteRoom.Click += new System.EventHandler(this.btnStudentDeleteRoom_Click);
             // 
             // btnAddRooms
             // 
@@ -161,6 +163,7 @@
             this.btnAddRooms.TabIndex = 12;
             this.btnAddRooms.Text = "Add Room";
             this.btnAddRooms.UseVisualStyleBackColor = false;
+            this.btnAddRooms.Click += new System.EventHandler(this.btnAddRooms_Click);
             // 
             // btnStudentInfoUdateRoom
             // 
@@ -175,6 +178,7 @@
             this.btnStudentInfoUdateRoom.TabIndex = 13;
             this.btnStudentInfoUdateRoom.Text = "Update\r\n\r\n";
             this.btnStudentInfoUdateRoom.UseVisualStyleBackColor = false;
+            this.btnStudentInfoUdateRoom.Click += new System.EventHandler(this.btnStudentInfoUdateRoom_Click);
             // 
             // label6
             // 
