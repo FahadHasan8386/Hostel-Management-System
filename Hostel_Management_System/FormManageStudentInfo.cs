@@ -74,6 +74,7 @@ namespace Hostel_Management_System
                 txtMngStudentNid.Text = ds.Tables[0].Rows[0][6].ToString(); /// idProof mean Nid
                 txtManageStudnetRoomNum.Text = ds.Tables[0].Rows[0][7].ToString();
                 chkMngkStudentLivingStatus.Text = ds.Tables[0].Rows[0][8].ToString();
+                 
             }
             else
             {
