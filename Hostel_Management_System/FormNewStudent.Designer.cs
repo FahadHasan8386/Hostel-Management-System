@@ -237,7 +237,7 @@
             this.btnStudentInformationClear.TabIndex = 75;
             this.btnStudentInformationClear.Text = "Clear";
             this.btnStudentInformationClear.UseVisualStyleBackColor = false;
-            
+            this.btnStudentInformationClear.Click += new System.EventHandler(this.btnStudentInformationClear_Click);
             // 
             // btnStudentInfomationSave
             // 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,24 +21,42 @@ namespace HostelManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            String connectionstring = "data source=WIN11\\SQLEXPRESS;database=ProjectTest;Integrated Security=True";
 
-           if (txtPassword.Text == "Sadman")
-           {
-                FormStudentDashboard dashboard = new FormStudentDashboard(this);
-                dashboard.Visible = true;
-                this.Hide();
-           }
-           else if(txtPassword.Text == "Fahad")
-           {
-                FormEmployeeDashboard empDashboard = new FormEmployeeDashboard(this);
-                empDashboard.Visible = true;
-                this.Hide();
-           }
-           else
-           {
-                txtPassword.Clear();
-           }
-           
+            string sql = "SELECT * FROM Userinfo WHERE Id = '"
+            + textUserId.Text + "' AND Password = '"
+            + txtPassword.Text + "';";
+
+
+            SqlConnection sqlcon = new SqlConnection(connectionstring);
+            sqlcon.Open();
+            SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
+            SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+
+            if (ds.Tables[0].Rows.Count == 1)
+            {
+                var name = ds.Tables[0].Rows[0][1].ToString();
+                MessageBox.Show("Valid User");
+                this.Visible = false;
+
+                if (ds.Tables[0].Rows[0][0].ToString().Equals("u-001") && ds.Tables[0].Rows[0][1].ToString().Equals("123"))
+                {
+                    new FormStudentDashboard(this).Show();
+                }
+                else if (ds.Tables[0].Rows[0][0].ToString().Equals("u-002") && ds.Tables[0].Rows[0][1].ToString().Equals("456"))
+                {
+                    new FormEmployeeDashboard(this).Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid User");
+            }
+
+            sqlcon.Close();
+
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -48,6 +67,11 @@ namespace HostelManagementSystem
         private void btnExitFormFormLogin_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

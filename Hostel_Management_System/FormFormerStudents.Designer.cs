@@ -50,6 +50,7 @@
             this.btnFrmShowDetails.TabIndex = 103;
             this.btnFrmShowDetails.Text = "Show Details >>";
             this.btnFrmShowDetails.UseVisualStyleBackColor = false;
+            this.btnFrmShowDetails.Click += new System.EventHandler(this.btnFrmShowDetails_Click);
             // 
             // dgvFormerStudent
             // 
