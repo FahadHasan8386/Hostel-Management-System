@@ -392,7 +392,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormStudentPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormStudentPayment";
+            this.Text = "                                                                ";
             this.Load += new System.EventHandler(this.FormStudentPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentPayment)).EndInit();

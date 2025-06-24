@@ -29,51 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStatusOverview));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pnlTotalStudent = new System.Windows.Forms.Panel();
+            this.lblTotalStudents = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.pnlTotalRooms = new System.Windows.Forms.Panel();
+            this.lblTotalRooms = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.pnlBedAssign = new System.Windows.Forms.Panel();
+            this.lblBedAssign = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pnlTotalStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.pnlTotalRooms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.pnlBedAssign.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlTotalStudent
             // 
-            this.panel1.BackColor = System.Drawing.Color.Crimson;
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.panel1.Location = new System.Drawing.Point(92, 119);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 108);
-            this.panel1.TabIndex = 0;
+            this.pnlTotalStudent.BackColor = System.Drawing.Color.Crimson;
+            this.pnlTotalStudent.Controls.Add(this.lblTotalStudents);
+            this.pnlTotalStudent.Controls.Add(this.label2);
+            this.pnlTotalStudent.Controls.Add(this.pictureBox1);
+            this.pnlTotalStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.pnlTotalStudent.Location = new System.Drawing.Point(92, 119);
+            this.pnlTotalStudent.Name = "pnlTotalStudent";
+            this.pnlTotalStudent.Size = new System.Drawing.Size(248, 108);
+            this.pnlTotalStudent.TabIndex = 0;
             // 
-            // label5
+            // lblTotalStudents
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(118, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "?";
+            this.lblTotalStudents.AutoSize = true;
+            this.lblTotalStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalStudents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblTotalStudents.Location = new System.Drawing.Point(118, 77);
+            this.lblTotalStudents.Name = "lblTotalStudents";
+            this.lblTotalStudents.Size = new System.Drawing.Size(19, 20);
+            this.lblTotalStudents.TabIndex = 4;
+            this.lblTotalStudents.Text = "?";
             // 
             // label2
             // 
@@ -96,27 +96,27 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // pnlTotalRooms
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(443, 119);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(248, 108);
-            this.panel2.TabIndex = 1;
+            this.pnlTotalRooms.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.pnlTotalRooms.Controls.Add(this.lblTotalRooms);
+            this.pnlTotalRooms.Controls.Add(this.label3);
+            this.pnlTotalRooms.Controls.Add(this.pictureBox2);
+            this.pnlTotalRooms.Location = new System.Drawing.Point(443, 119);
+            this.pnlTotalRooms.Name = "pnlTotalRooms";
+            this.pnlTotalRooms.Size = new System.Drawing.Size(248, 108);
+            this.pnlTotalRooms.TabIndex = 1;
             // 
-            // label6
+            // lblTotalRooms
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label6.Location = new System.Drawing.Point(149, 77);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 20);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "?";
+            this.lblTotalRooms.AutoSize = true;
+            this.lblTotalRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblTotalRooms.Location = new System.Drawing.Point(149, 77);
+            this.lblTotalRooms.Name = "lblTotalRooms";
+            this.lblTotalRooms.Size = new System.Drawing.Size(19, 20);
+            this.lblTotalRooms.TabIndex = 4;
+            this.lblTotalRooms.Text = "?";
             // 
             // label3
             // 
@@ -140,28 +140,28 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // panel3
+            // pnlBedAssign
             // 
-            this.panel3.BackColor = System.Drawing.Color.Firebrick;
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3.Location = new System.Drawing.Point(264, 275);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 108);
-            this.panel3.TabIndex = 2;
+            this.pnlBedAssign.BackColor = System.Drawing.Color.Firebrick;
+            this.pnlBedAssign.Controls.Add(this.lblBedAssign);
+            this.pnlBedAssign.Controls.Add(this.label4);
+            this.pnlBedAssign.Controls.Add(this.pictureBox3);
+            this.pnlBedAssign.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlBedAssign.Location = new System.Drawing.Point(264, 275);
+            this.pnlBedAssign.Name = "pnlBedAssign";
+            this.pnlBedAssign.Size = new System.Drawing.Size(248, 108);
+            this.pnlBedAssign.TabIndex = 2;
             // 
-            // label7
+            // lblBedAssign
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label7.Location = new System.Drawing.Point(136, 72);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "?";
+            this.lblBedAssign.AutoSize = true;
+            this.lblBedAssign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBedAssign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblBedAssign.Location = new System.Drawing.Point(136, 72);
+            this.lblBedAssign.Name = "lblBedAssign";
+            this.lblBedAssign.Size = new System.Drawing.Size(19, 20);
+            this.lblBedAssign.TabIndex = 4;
+            this.lblBedAssign.Text = "?";
             // 
             // label4
             // 
@@ -207,27 +207,28 @@
             this.label1.TabIndex = 92;
             this.label1.Text = "DashBoard";
             // 
-            // FormDashBoard
+            // FormStatusOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pnlBedAssign);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlTotalRooms);
+            this.Controls.Add(this.pnlTotalStudent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormDashBoard";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Name = "FormStatusOverview";
+            this.Load += new System.EventHandler(this.FormStatusOverview_Load);
+            this.pnlTotalStudent.ResumeLayout(false);
+            this.pnlTotalStudent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlTotalRooms.ResumeLayout(false);
+            this.pnlTotalRooms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlBedAssign.ResumeLayout(false);
+            this.pnlBedAssign.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
@@ -237,18 +238,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlTotalStudent;
+        private System.Windows.Forms.Panel pnlTotalRooms;
+        private System.Windows.Forms.Panel pnlBedAssign;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblTotalStudents;
+        private System.Windows.Forms.Label lblTotalRooms;
+        private System.Windows.Forms.Label lblBedAssign;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
     }
