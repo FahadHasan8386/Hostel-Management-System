@@ -25,7 +25,7 @@ namespace Hostel_Management_System
             // "database=hostel" specifies the name of the database to connect to.
             // "integrated security=True" indicates that Windows Authentication should be used,
             // meaning the user's current Windows login credentials will be used to authenticate with SQL Server.
-            con.ConnectionString = "data source=WIN11\\SQLEXPRESS;database=ProjectTest;Integrated Security=True";
+            con.ConnectionString = "data source=FAHAD\\SQLEXPRESS;database=HMS;Integrated Security=True";
 
             // Returns the configured SqlConnection object.
             // This object can then be used to open a connection, execute commands, and close the connection.
