@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.chkManageEmployeeDesignation = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtManageEmployeeId = new System.Windows.Forms.TextBox();
+            this.txtManageEmployeeNID = new System.Windows.Forms.TextBox();
             this.btnManageEmployeeDelete = new System.Windows.Forms.Button();
             this.btnManageEmployeeUpdate = new System.Windows.Forms.Button();
             this.txtManageEmployeeName = new System.Windows.Forms.TextBox();
@@ -46,6 +46,8 @@
             this.lblManageEmpoyeeAddress = new System.Windows.Forms.Label();
             this.txtManageEmployeeAddress = new System.Windows.Forms.TextBox();
             this.lblManageEmployeeEmail = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbMangeEWorkingStatus = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
@@ -109,20 +111,20 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.label12.Location = new System.Drawing.Point(75, 237);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 20);
+            this.label12.Size = new System.Drawing.Size(40, 20);
             this.label12.TabIndex = 120;
-            this.label12.Text = "Id";
+            this.label12.Text = "NID";
             // 
-            // txtManageEmployeeId
+            // txtManageEmployeeNID
             // 
-            this.txtManageEmployeeId.ForeColor = System.Drawing.Color.Gray;
-            this.txtManageEmployeeId.Location = new System.Drawing.Point(232, 226);
-            this.txtManageEmployeeId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtManageEmployeeId.Multiline = true;
-            this.txtManageEmployeeId.Name = "txtManageEmployeeId";
-            this.txtManageEmployeeId.Size = new System.Drawing.Size(298, 31);
-            this.txtManageEmployeeId.TabIndex = 119;
-            this.txtManageEmployeeId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtManageEmployeeNID.ForeColor = System.Drawing.Color.Gray;
+            this.txtManageEmployeeNID.Location = new System.Drawing.Point(232, 226);
+            this.txtManageEmployeeNID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtManageEmployeeNID.Multiline = true;
+            this.txtManageEmployeeNID.Name = "txtManageEmployeeNID";
+            this.txtManageEmployeeNID.Size = new System.Drawing.Size(298, 31);
+            this.txtManageEmployeeNID.TabIndex = 119;
+            this.txtManageEmployeeNID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnManageEmployeeDelete
             // 
@@ -138,6 +140,7 @@
             this.btnManageEmployeeDelete.TabIndex = 118;
             this.btnManageEmployeeDelete.Text = "Delete";
             this.btnManageEmployeeDelete.UseVisualStyleBackColor = false;
+            this.btnManageEmployeeDelete.Click += new System.EventHandler(this.btnManageEmployeeDelete_Click);
             // 
             // btnManageEmployeeUpdate
             // 
@@ -153,6 +156,7 @@
             this.btnManageEmployeeUpdate.TabIndex = 117;
             this.btnManageEmployeeUpdate.Text = "Update";
             this.btnManageEmployeeUpdate.UseVisualStyleBackColor = false;
+            this.btnManageEmployeeUpdate.Click += new System.EventHandler(this.btnManageEmployeeUpdate_Click);
             // 
             // txtManageEmployeeName
             // 
@@ -200,6 +204,7 @@
             this.btnManageNumSearch.TabIndex = 111;
             this.btnManageNumSearch.Text = "Search";
             this.btnManageNumSearch.UseVisualStyleBackColor = false;
+            this.btnManageNumSearch.Click += new System.EventHandler(this.btnManageNumSearch_Click);
             // 
             // txtManageEmployeePhone
             // 
@@ -255,12 +260,40 @@
             this.lblManageEmployeeEmail.TabIndex = 128;
             this.lblManageEmployeeEmail.Text = "Email";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label4.Location = new System.Drawing.Point(426, 546);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(206, 30);
+            this.label4.TabIndex = 133;
+            this.label4.Text = "Working Status";
+            // 
+            // cmbMangeEWorkingStatus
+            // 
+            this.cmbMangeEWorkingStatus.FormattingEnabled = true;
+            this.cmbMangeEWorkingStatus.Items.AddRange(new object[] {
+            "Hostel Incharge",
+            "Cleaning Staff",
+            "Mess Staff",
+            "Accounts Manager"});
+            this.cmbMangeEWorkingStatus.Location = new System.Drawing.Point(659, 542);
+            this.cmbMangeEWorkingStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbMangeEWorkingStatus.Name = "cmbMangeEWorkingStatus";
+            this.cmbMangeEWorkingStatus.Size = new System.Drawing.Size(580, 28);
+            this.cmbMangeEWorkingStatus.TabIndex = 132;
+            // 
             // FormManageEmployeeInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1302, 750);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cmbMangeEWorkingStatus);
             this.Controls.Add(this.txtManageEmpployeeEmail);
             this.Controls.Add(this.lblManageEmpoyeeAddress);
             this.Controls.Add(this.txtManageEmployeeAddress);
@@ -270,7 +303,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chkManageEmployeeDesignation);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.txtManageEmployeeId);
+            this.Controls.Add(this.txtManageEmployeeNID);
             this.Controls.Add(this.btnManageEmployeeDelete);
             this.Controls.Add(this.btnManageEmployeeUpdate);
             this.Controls.Add(this.txtManageEmployeeName);
@@ -281,6 +314,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormManageEmployeeInfo";
             this.Text = "FormManageEmployee";
+            this.Load += new System.EventHandler(this.FormManageEmployeeInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,7 +327,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox chkManageEmployeeDesignation;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtManageEmployeeId;
+        private System.Windows.Forms.TextBox txtManageEmployeeNID;
         private System.Windows.Forms.Button btnManageEmployeeDelete;
         private System.Windows.Forms.Button btnManageEmployeeUpdate;
         private System.Windows.Forms.TextBox txtManageEmployeeName;
@@ -305,5 +339,7 @@
         private System.Windows.Forms.Label lblManageEmpoyeeAddress;
         private System.Windows.Forms.TextBox txtManageEmployeeAddress;
         private System.Windows.Forms.Label lblManageEmployeeEmail;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbMangeEWorkingStatus;
     }
 }
