@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +14,8 @@ namespace Hostel_Management_System
 {
     public partial class FormNewEmployee : Form
     {
+        DataFunction fn = new DataFunction();
+        string query;
         public FormNewEmployee()
         {
             InitializeComponent();
@@ -24,15 +28,26 @@ namespace Hostel_Management_System
 
         private void btnEmpoyeeInfomationSave_Click(object sender, EventArgs e)
         {
-            if (txtEmployeeInfomationFirstName.Text != "" && txtEmployeeInformationId.Text != "" && txtEmployeeInformationPhoneNum.Text != "" && txtEmpployeeInformationEmail.Text != "" && txtEmployeeInfromationAddress.Text != "" && cmbEmployeeDesignattion.SelectedIndex != -1)
+            if ( txtEmployeeInformationPhoneNum.Text != "" && txtEmployeeInfomationFirstName.Text != "" &&   txtEmpployeeInformationEmail.Text != "" && txtEmployeeInfromationAddress.Text != "" && txtEmployeeInformationNID.Text != "" && cmbEmployeeDesignattion.SelectedIndex != -1)
             {
-                string name = txtEmployeeInfomationFirstName.Text;
-                Int64 id = Int64.Parse(txtEmployeeInformationId.Text);
+                //Int64 id = Int64.Parse(txtEmployeeInformationId.Text);
                 Int64 phone = Int64.Parse(txtEmployeeInformationPhoneNum.Text);
+                string name = txtEmployeeInfomationFirstName.Text;              
                 string email = txtEmpployeeInformationEmail.Text;
                 string address = txtEmployeeInfromationAddress.Text;
+                Int64 nid = Int64.Parse(txtEmployeeInformationNID.Text);
                 string designation = cmbEmployeeDesignattion.Text;
+               
 
+                
+
+                // Correct SQL: insert + update (2 statements separated by semicolon)
+                query = "INSERT INTO newEmployee ( mobile, name, email, address ,nid, designation) " +
+                        "VALUES ( '" + phone + "', '" + name + "', '" + email + "', '" + address + "', '" + nid + "', '" + designation + "')"; 
+                       
+
+                fn.setData(query, "Employee Registration Successful.");
+                clearAll();
             }
             else
             {
@@ -48,7 +63,8 @@ namespace Hostel_Management_System
         private void clearAll()
         {
             txtEmployeeInfomationFirstName.Clear();
-            txtEmployeeInformationId.Clear();
+            txtEmployeeInformationNID.Clear();
+            //txtEmployeeInformationId.Clear();
             txtEmployeeInformationPhoneNum.Clear();
             txtEmpployeeInformationEmail.Clear();
             txtEmployeeInfromationAddress.Clear();
@@ -57,6 +73,11 @@ namespace Hostel_Management_System
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormNewEmployee_Load(object sender, EventArgs e)
         {
 
         }
