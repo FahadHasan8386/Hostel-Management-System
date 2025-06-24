@@ -47,6 +47,8 @@
             this.cmbEmployeeDesignattion = new System.Windows.Forms.ComboBox();
             this.lblEmployeeJoininigDate = new System.Windows.Forms.Label();
             this.dtpEmpoyeeoJoiningDate = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtEmployeeInformationNID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,7 +171,7 @@
             this.lblEmployeeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.lblEmployeeName.Location = new System.Drawing.Point(116, 105);
             this.lblEmployeeName.Name = "lblEmployeeName";
-            this.lblEmployeeName.Size = new System.Drawing.Size(83, 30);
+            this.lblEmployeeName.Size = new System.Drawing.Size(55, 20);
             this.lblEmployeeName.TabIndex = 94;
             this.lblEmployeeName.Text = "Name";
             // 
@@ -221,7 +223,7 @@
             this.lblEmployeeDesignation.AutoSize = true;
             this.lblEmployeeDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeDesignation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblEmployeeDesignation.Location = new System.Drawing.Point(585, 198);
+            this.lblEmployeeDesignation.Location = new System.Drawing.Point(585, 211);
             this.lblEmployeeDesignation.Name = "lblEmployeeDesignation";
             this.lblEmployeeDesignation.Size = new System.Drawing.Size(105, 20);
             this.lblEmployeeDesignation.TabIndex = 110;
@@ -235,7 +237,7 @@
             "Cleaning Staff",
             "Mess Staff",
             "Accounts Manager"});
-            this.cmbEmployeeDesignattion.Location = new System.Drawing.Point(590, 252);
+            this.cmbEmployeeDesignattion.Location = new System.Drawing.Point(589, 260);
             this.cmbEmployeeDesignattion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbEmployeeDesignattion.Name = "cmbEmployeeDesignattion";
             this.cmbEmployeeDesignattion.Size = new System.Drawing.Size(352, 28);
@@ -255,7 +257,7 @@
             // dtpEmpoyeeoJoiningDate
             // 
             this.dtpEmpoyeeoJoiningDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEmpoyeeoJoiningDate.Location = new System.Drawing.Point(596, 372);
+            this.dtpEmpoyeeoJoiningDate.Location = new System.Drawing.Point(589, 370);
             this.dtpEmpoyeeoJoiningDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpEmpoyeeoJoiningDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
             this.dtpEmpoyeeoJoiningDate.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
@@ -263,12 +265,37 @@
             this.dtpEmpoyeeoJoiningDate.Size = new System.Drawing.Size(346, 26);
             this.dtpEmpoyeeoJoiningDate.TabIndex = 112;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label1.Location = new System.Drawing.Point(585, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 20);
+            this.label1.TabIndex = 115;
+            this.label1.Text = "NID";
+            // 
+            // txtEmployeeInformationNID
+            // 
+            this.txtEmployeeInformationNID.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmployeeInformationNID.Location = new System.Drawing.Point(589, 152);
+            this.txtEmployeeInformationNID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmployeeInformationNID.Multiline = true;
+            this.txtEmployeeInformationNID.Name = "txtEmployeeInformationNID";
+            this.txtEmployeeInformationNID.Size = new System.Drawing.Size(352, 30);
+            this.txtEmployeeInformationNID.TabIndex = 114;
+            this.txtEmployeeInformationNID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmployeeInformationNID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // FormNewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1290, 732);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtEmployeeInformationNID);
             this.Controls.Add(this.lblEmployeeJoininigDate);
             this.Controls.Add(this.dtpEmpoyeeoJoiningDate);
             this.Controls.Add(this.cmbEmployeeDesignattion);
@@ -317,5 +344,7 @@
         private System.Windows.Forms.ComboBox cmbEmployeeDesignattion;
         private System.Windows.Forms.Label lblEmployeeJoininigDate;
         private System.Windows.Forms.DateTimePicker dtpEmpoyeeoJoiningDate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtEmployeeInformationNID;
     }
 }

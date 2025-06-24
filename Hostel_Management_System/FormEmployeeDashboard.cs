@@ -37,6 +37,12 @@ namespace Hostel_Management_System
             empChildForm.BringToFront();
             empChildForm.Show();
         }
+        private void EUpdateHeaderInfo(string labelText)
+        {
+            lblEmployeeHInfo.Text = labelText;
+            lblEmployeeHInfo.Visible = true;
+
+        }
         public FormEmployeeDashboard(Login empLogin)
         {
             InitializeComponent();
@@ -76,7 +82,8 @@ namespace Hostel_Management_System
         private void btnEnrollEmployee_Click(object sender, EventArgs e)
         {
             OepenEmpChildForm(new FormNewEmployee());
-            
+            EUpdateHeaderInfo("New Employee");
+
         }
 
         private void btnManageEmplpoyee_Click(object sender, EventArgs e)
