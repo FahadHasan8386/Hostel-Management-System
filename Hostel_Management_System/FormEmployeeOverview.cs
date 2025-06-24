@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace Hostel_Management_System
 {
     public partial class FormEmployeeOverview : Form
     {
+        DataFunction fn = new DataFunction();
+        String query;
+
         public FormEmployeeOverview()
         {
             InitializeComponent();
@@ -20,6 +24,13 @@ namespace Hostel_Management_System
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEmployeeDetails_Click(object sender, EventArgs e)
+        {
+            query = "select * from newEmployee where working = 'Yes'";
+            DataSet ds = fn.getData(query);
+            dataGridViewEmployee.DataSource = ds.Tables[0];
         }
     }
 }

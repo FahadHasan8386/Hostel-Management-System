@@ -50,6 +50,7 @@
             this.btnEmployeeDetails.TabIndex = 103;
             this.btnEmployeeDetails.Text = "Show Details >>";
             this.btnEmployeeDetails.UseVisualStyleBackColor = false;
+            this.btnEmployeeDetails.Click += new System.EventHandler(this.btnEmployeeDetails_Click);
             // 
             // dataGridViewEmployee
             // 
@@ -95,7 +96,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEmployeeOverview";
             this.Text = "FormEmployeeOverview";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).EndInit();
