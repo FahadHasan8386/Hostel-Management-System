@@ -73,7 +73,7 @@
             this.btnManageEmplpoyee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManageEmplpoyee.Location = new System.Drawing.Point(4, 283);
             this.btnManageEmplpoyee.Name = "btnManageEmplpoyee";
-            this.btnManageEmplpoyee.Size = new System.Drawing.Size(224, 41);
+            this.btnManageEmplpoyee.Size = new System.Drawing.Size(222, 41);
             this.btnManageEmplpoyee.TabIndex = 23;
             this.btnManageEmplpoyee.Text = "       Manage Employees";
             this.btnManageEmplpoyee.UseVisualStyleBackColor = true;
@@ -89,9 +89,9 @@
             this.btnEnrollEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnEnrollEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrollEmployee.Image")));
             this.btnEnrollEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnrollEmployee.Location = new System.Drawing.Point(3, 237);
+            this.btnEnrollEmployee.Location = new System.Drawing.Point(0, 236);
             this.btnEnrollEmployee.Name = "btnEnrollEmployee";
-            this.btnEnrollEmployee.Size = new System.Drawing.Size(225, 41);
+            this.btnEnrollEmployee.Size = new System.Drawing.Size(224, 41);
             this.btnEnrollEmployee.TabIndex = 22;
             this.btnEnrollEmployee.Text = "New Employee";
             this.btnEnrollEmployee.UseVisualStyleBackColor = true;
@@ -107,9 +107,9 @@
             this.btnEmployeePayment.ForeColor = System.Drawing.Color.Black;
             this.btnEmployeePayment.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeePayment.Image")));
             this.btnEmployeePayment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeePayment.Location = new System.Drawing.Point(4, 330);
+            this.btnEmployeePayment.Location = new System.Drawing.Point(4, 331);
             this.btnEmployeePayment.Name = "btnEmployeePayment";
-            this.btnEmployeePayment.Size = new System.Drawing.Size(224, 41);
+            this.btnEmployeePayment.Size = new System.Drawing.Size(220, 41);
             this.btnEmployeePayment.TabIndex = 26;
             this.btnEmployeePayment.Text = "         Employee  Payment";
             this.btnEmployeePayment.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@
             this.btnEmployeeOverview.ForeColor = System.Drawing.Color.Black;
             this.btnEmployeeOverview.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeOverview.Image")));
             this.btnEmployeeOverview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeOverview.Location = new System.Drawing.Point(5, 389);
+            this.btnEmployeeOverview.Location = new System.Drawing.Point(2, 389);
             this.btnEmployeeOverview.Name = "btnEmployeeOverview";
             this.btnEmployeeOverview.Size = new System.Drawing.Size(221, 41);
             this.btnEmployeeOverview.TabIndex = 28;
@@ -208,7 +208,7 @@
             this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManageRoom.Location = new System.Drawing.Point(3, 189);
             this.btnManageRoom.Name = "btnManageRoom";
-            this.btnManageRoom.Size = new System.Drawing.Size(228, 41);
+            this.btnManageRoom.Size = new System.Drawing.Size(223, 41);
             this.btnManageRoom.TabIndex = 97;
             this.btnManageRoom.Text = "       Manage Rooms";
             this.btnManageRoom.UseVisualStyleBackColor = true;
@@ -269,7 +269,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(4, 507);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 41);
+            this.button1.Size = new System.Drawing.Size(222, 41);
             this.button1.TabIndex = 30;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
@@ -287,7 +287,7 @@
             this.btnFormerEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFormerEmployees.Location = new System.Drawing.Point(3, 448);
             this.btnFormerEmployees.Name = "btnFormerEmployees";
-            this.btnFormerEmployees.Size = new System.Drawing.Size(224, 41);
+            this.btnFormerEmployees.Size = new System.Drawing.Size(223, 41);
             this.btnFormerEmployees.TabIndex = 29;
             this.btnFormerEmployees.Text = "       Former Employees";
             this.btnFormerEmployees.UseVisualStyleBackColor = true;
@@ -311,12 +311,13 @@
             this.lblEmployeeHInfo.AutoSize = true;
             this.lblEmployeeHInfo.Enabled = false;
             this.lblEmployeeHInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeHInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblEmployeeHInfo.Location = new System.Drawing.Point(57, 24);
+            this.lblEmployeeHInfo.ForeColor = System.Drawing.Color.White;
+            this.lblEmployeeHInfo.Location = new System.Drawing.Point(40, 24);
             this.lblEmployeeHInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeHInfo.Name = "lblEmployeeHInfo";
-            this.lblEmployeeHInfo.Size = new System.Drawing.Size(0, 13);
+            this.lblEmployeeHInfo.Size = new System.Drawing.Size(41, 13);
             this.lblEmployeeHInfo.TabIndex = 99;
+            this.lblEmployeeHInfo.Text = "Admin";
             // 
             // picCloseButtonEmployeeDB
             // 

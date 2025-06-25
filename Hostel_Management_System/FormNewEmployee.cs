@@ -37,15 +37,11 @@ namespace Hostel_Management_System
                 string address = txtEmployeeInfromationAddress.Text;
                 Int64 nid = Int64.Parse(txtEmployeeInformationNID.Text);
                 string designation = cmbEmployeeDesignattion.Text;
-               
-
-                
 
                 // Correct SQL: insert + update (2 statements separated by semicolon)
                 query = "INSERT INTO newEmployee ( mobile, name, email, address ,nid, designation) " +
                         "VALUES ( '" + phone + "', '" + name + "', '" + email + "', '" + address + "', '" + nid + "', '" + designation + "')"; 
                        
-
                 fn.setData(query, "Employee Registration Successful.");
                 clearAll();
             }
@@ -77,6 +73,9 @@ namespace Hostel_Management_System
 
         }
 
-       
+        private void FormNewEmployee_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -285,10 +285,11 @@
             this.Controls.Add(this.btnEmployeeInformationClear);
             this.Controls.Add(this.btnEmpoyeeInfomationSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNewEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewEmployee";
+            this.Load += new System.EventHandler(this.FormNewEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

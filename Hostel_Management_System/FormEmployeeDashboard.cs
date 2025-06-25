@@ -81,7 +81,7 @@ namespace Hostel_Management_System
         private void btnEnrollEmployee_Click(object sender, EventArgs e)
         {
             OepenEmpChildForm(new FormNewEmployee());
-            EUpdateHeaderInfo("New Employee");
+            EUpdateHeaderInfo("Admin");
 
         }
 
