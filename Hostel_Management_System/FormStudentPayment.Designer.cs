@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStudentPayment));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.rtbStudentReceipt = new System.Windows.Forms.RichTextBox();
@@ -179,12 +180,30 @@
             // 
             // dgvStudentPayment
             // 
+            this.dgvStudentPayment.AllowUserToAddRows = false;
+            this.dgvStudentPayment.AllowUserToDeleteRows = false;
+            this.dgvStudentPayment.AllowUserToResizeColumns = false;
+            this.dgvStudentPayment.AllowUserToResizeRows = false;
+            this.dgvStudentPayment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStudentPayment.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvStudentPayment.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvStudentPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudentPayment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudentPayment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvStudentPayment.EnableHeadersVisualStyles = false;
             this.dgvStudentPayment.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvStudentPayment.Location = new System.Drawing.Point(0, 376);
+            this.dgvStudentPayment.MultiSelect = false;
             this.dgvStudentPayment.Name = "dgvStudentPayment";
+            this.dgvStudentPayment.ReadOnly = true;
+            this.dgvStudentPayment.RowHeadersVisible = false;
+            this.dgvStudentPayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudentPayment.Size = new System.Drawing.Size(878, 133);
             this.dgvStudentPayment.TabIndex = 96;
             // 

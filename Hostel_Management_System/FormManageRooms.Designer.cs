@@ -193,6 +193,7 @@
             // 
             // dgvManageRooms
             // 
+            this.dgvManageRooms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvManageRooms.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvManageRooms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvManageRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

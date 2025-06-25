@@ -109,7 +109,55 @@ namespace Hostel_Management_System
         {
 
         }
-   
-        
+
+        private void pnlEmployeeContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        Boolean labelEmpHmsVisible = true;
+        private void tmrEmpHms_Tick(object sender, EventArgs e)
+        {
+            if (labelEmpHmsVisible)
+            {
+                lblEmpHms.Visible = true;
+                labelEmpHmsVisible = false;
+            }
+            else
+            {
+                lblEmpHms.Visible = false;
+                labelEmpHmsVisible = true;
+            }
+        }
+
+        private void btnSlideEmployee_Click(object sender, EventArgs e)
+        {
+            tmrEmpSidebarTransition.Start();
+        }
+
+        bool empSidebarExpand = true;
+        private void tmrEmpSidebarTransition_Tick(object sender, EventArgs e)
+        {
+            if(empSidebarExpand)
+            {
+                pnlEmployeebar.Width = pnlEmployeebar.Width - 10;
+
+                if(pnlEmployeebar.Width <= 53)
+                {
+                    empSidebarExpand = false;
+                    tmrEmpSidebarTransition.Stop();
+                }
+            }
+            else
+            {
+                pnlEmployeebar.Width = pnlEmployeebar.Width + 10;
+
+                if (pnlEmployeebar.Width >= 215)
+                {
+                    empSidebarExpand = true;
+                    tmrEmpSidebarTransition.Stop();
+                }
+            }
+        }
     }
 }

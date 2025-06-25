@@ -54,6 +54,7 @@
             // 
             // dataGridViewEmployee
             // 
+            this.dataGridViewEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEmployee.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridViewEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;

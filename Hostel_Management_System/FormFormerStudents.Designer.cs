@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFormerStudents));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnFrmShowDetails = new System.Windows.Forms.Button();
             this.dgvFormerStudent = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -44,9 +45,9 @@
             this.btnFrmShowDetails.ForeColor = System.Drawing.Color.White;
             this.btnFrmShowDetails.Image = ((System.Drawing.Image)(resources.GetObject("btnFrmShowDetails.Image")));
             this.btnFrmShowDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFrmShowDetails.Location = new System.Drawing.Point(0, 86);
+            this.btnFrmShowDetails.Location = new System.Drawing.Point(0, 95);
             this.btnFrmShowDetails.Name = "btnFrmShowDetails";
-            this.btnFrmShowDetails.Size = new System.Drawing.Size(160, 34);
+            this.btnFrmShowDetails.Size = new System.Drawing.Size(150, 25);
             this.btnFrmShowDetails.TabIndex = 103;
             this.btnFrmShowDetails.Text = "Show Details >>";
             this.btnFrmShowDetails.UseVisualStyleBackColor = false;
@@ -54,8 +55,16 @@
             // 
             // dgvFormerStudent
             // 
+            this.dgvFormerStudent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFormerStudent.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvFormerStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFormerStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFormerStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvFormerStudent.Location = new System.Drawing.Point(0, 126);
             this.dgvFormerStudent.Name = "dgvFormerStudent";
