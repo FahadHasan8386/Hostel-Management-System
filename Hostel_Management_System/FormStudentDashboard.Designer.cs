@@ -104,7 +104,7 @@
             this.btnManageStudentInfo.ForeColor = System.Drawing.Color.Black;
             this.btnManageStudentInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStudentInfo.Image")));
             this.btnManageStudentInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageStudentInfo.Location = new System.Drawing.Point(0, 247);
+            this.btnManageStudentInfo.Location = new System.Drawing.Point(3, 247);
             this.btnManageStudentInfo.Name = "btnManageStudentInfo";
             this.btnManageStudentInfo.Size = new System.Drawing.Size(208, 41);
             this.btnManageStudentInfo.TabIndex = 3;
@@ -202,9 +202,9 @@
             this.picHostelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picHostelLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.ErrorImage")));
             this.picHostelLogo.Image = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.Image")));
-            this.picHostelLogo.Location = new System.Drawing.Point(46, 36);
+            this.picHostelLogo.Location = new System.Drawing.Point(55, 36);
             this.picHostelLogo.Name = "picHostelLogo";
-            this.picHostelLogo.Size = new System.Drawing.Size(151, 58);
+            this.picHostelLogo.Size = new System.Drawing.Size(142, 68);
             this.picHostelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHostelLogo.TabIndex = 20;
             this.picHostelLogo.TabStop = false;
@@ -228,7 +228,7 @@
             this.pnlSidebar.Controls.Add(this.btnFormerResidents);
             this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(215, 579);
             this.pnlSidebar.TabIndex = 32;
@@ -273,7 +273,7 @@
             this.btnloout.ForeColor = System.Drawing.Color.Black;
             this.btnloout.Image = ((System.Drawing.Image)(resources.GetObject("btnloout.Image")));
             this.btnloout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnloout.Location = new System.Drawing.Point(1, 518);
+            this.btnloout.Location = new System.Drawing.Point(1, 517);
             this.btnloout.Name = "btnloout";
             this.btnloout.Size = new System.Drawing.Size(212, 49);
             this.btnloout.TabIndex = 30;
@@ -289,7 +289,7 @@
             this.panel2.Controls.Add(this.lblHms);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(215, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(919, 52);
             this.panel2.TabIndex = 33;
@@ -310,7 +310,7 @@
             this.picCloseButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.picCloseButton.Image = ((System.Drawing.Image)(resources.GetObject("picCloseButton.Image")));
             this.picCloseButton.Location = new System.Drawing.Point(881, 0);
-            this.picCloseButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCloseButton.Margin = new System.Windows.Forms.Padding(2);
             this.picCloseButton.Name = "picCloseButton";
             this.picCloseButton.Size = new System.Drawing.Size(38, 52);
             this.picCloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -323,7 +323,7 @@
             this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(197)))));
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(215, 52);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(2);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(919, 527);
             this.panelContainer.TabIndex = 34;

@@ -21,7 +21,7 @@ namespace HostelManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            String connectionstring = "data source=WIN11\\SQLEXPRESS;database=HMS;Integrated Security=True";
+            String connectionstring = "data source=FAHAD\\SQLEXPRESS;database=HMS;Integrated Security=True";
 
             string sql = "SELECT * FROM Userinfo WHERE Id = '"
             + textUserId.Text + "' AND Password = '"
@@ -38,7 +38,7 @@ namespace HostelManagementSystem
             if (ds.Tables[0].Rows.Count == 1)
             {
                 var name = ds.Tables[0].Rows[0][1].ToString();
-                MessageBox.Show("Valid User");
+                MessageBox.Show("Valid User", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Visible = false;
 
                 if (ds.Tables[0].Rows[0][0].ToString().Equals("u-001") && ds.Tables[0].Rows[0][1].ToString().Equals("123"))
@@ -52,7 +52,7 @@ namespace HostelManagementSystem
             }
             else
             {
-                MessageBox.Show("Invalid User");
+                MessageBox.Show("Invalid User" , "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             sqlcon.Close();
