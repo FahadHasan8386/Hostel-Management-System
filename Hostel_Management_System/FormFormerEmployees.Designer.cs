@@ -44,10 +44,9 @@
             this.btnStudentInfoClear.ForeColor = System.Drawing.Color.White;
             this.btnStudentInfoClear.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInfoClear.Image")));
             this.btnStudentInfoClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentInfoClear.Location = new System.Drawing.Point(2, 103);
-            this.btnStudentInfoClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnStudentInfoClear.Location = new System.Drawing.Point(1, 67);
             this.btnStudentInfoClear.Name = "btnStudentInfoClear";
-            this.btnStudentInfoClear.Size = new System.Drawing.Size(240, 43);
+            this.btnStudentInfoClear.Size = new System.Drawing.Size(160, 28);
             this.btnStudentInfoClear.TabIndex = 107;
             this.btnStudentInfoClear.Text = "Show Details >>";
             this.btnStudentInfoClear.UseVisualStyleBackColor = false;
@@ -56,24 +55,22 @@
             // dgvFormerEmployee
             // 
             this.dgvFormerEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvFormerEmployee.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvFormerEmployee.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(130)))), ((int)(((byte)(106)))));
             this.dgvFormerEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFormerEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvFormerEmployee.Location = new System.Drawing.Point(0, 155);
-            this.dgvFormerEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvFormerEmployee.Location = new System.Drawing.Point(0, 101);
             this.dgvFormerEmployee.Name = "dgvFormerEmployee";
             this.dgvFormerEmployee.RowHeadersWidth = 62;
-            this.dgvFormerEmployee.Size = new System.Drawing.Size(1302, 594);
+            this.dgvFormerEmployee.Size = new System.Drawing.Size(868, 386);
             this.dgvFormerEmployee.TabIndex = 106;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(790, -2);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox4.Location = new System.Drawing.Point(527, 1);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(122, 39);
+            this.pictureBox4.Size = new System.Drawing.Size(83, 27);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 105;
             this.pictureBox4.TabStop = false;
@@ -83,25 +80,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(366, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(248, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 39);
+            this.label1.Size = new System.Drawing.Size(273, 25);
             this.label1.TabIndex = 104;
             this.label1.Text = "Former Employee Details";
             // 
             // FormFormerEmployees
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1302, 749);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(197)))));
+            this.ClientSize = new System.Drawing.Size(868, 487);
             this.Controls.Add(this.btnStudentInfoClear);
             this.Controls.Add(this.dgvFormerEmployee);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormFormerEmployees";
             this.Text = "FormFormerEmployees";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFormerEmployee)).EndInit();

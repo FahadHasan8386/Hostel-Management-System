@@ -37,16 +37,19 @@
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExitFormFormLogin = new System.Windows.Forms.Button();
+            this.btnStudentInfoClear = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(102, 133);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(423, 212);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 0;
@@ -56,8 +59,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label2.Location = new System.Drawing.Point(102, 196);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(423, 275);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 15);
             this.label2.TabIndex = 1;
@@ -65,14 +68,14 @@
             // 
             // textUserId
             // 
-            this.textUserId.Location = new System.Drawing.Point(105, 161);
+            this.textUserId.Location = new System.Drawing.Point(426, 240);
             this.textUserId.Name = "textUserId";
             this.textUserId.Size = new System.Drawing.Size(225, 20);
             this.textUserId.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(105, 226);
+            this.txtPassword.Location = new System.Drawing.Point(426, 305);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(225, 20);
             this.txtPassword.TabIndex = 3;
@@ -85,9 +88,9 @@
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(105, 295);
+            this.btnLogin.Location = new System.Drawing.Point(426, 374);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(225, 29);
+            this.btnLogin.Size = new System.Drawing.Size(92, 29);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -97,8 +100,8 @@
             // 
             this.chkShowPassword.AutoSize = true;
             this.chkShowPassword.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkShowPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.chkShowPassword.Location = new System.Drawing.Point(105, 261);
+            this.chkShowPassword.ForeColor = System.Drawing.Color.Black;
+            this.chkShowPassword.Location = new System.Drawing.Point(426, 340);
             this.chkShowPassword.Name = "chkShowPassword";
             this.chkShowPassword.Size = new System.Drawing.Size(111, 19);
             this.chkShowPassword.TabIndex = 6;
@@ -110,7 +113,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(155, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(469, 112);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(139, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +127,7 @@
             this.btnExitFormFormLogin.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitFormFormLogin.ForeColor = System.Drawing.Color.White;
             this.btnExitFormFormLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormFormLogin.Image")));
-            this.btnExitFormFormLogin.Location = new System.Drawing.Point(431, 12);
+            this.btnExitFormFormLogin.Location = new System.Drawing.Point(645, 12);
             this.btnExitFormFormLogin.Name = "btnExitFormFormLogin";
             this.btnExitFormFormLogin.Size = new System.Drawing.Size(36, 34);
             this.btnExitFormFormLogin.TabIndex = 21;
@@ -132,12 +135,40 @@
             this.btnExitFormFormLogin.UseVisualStyleBackColor = false;
             this.btnExitFormFormLogin.Click += new System.EventHandler(this.btnExitFormFormLogin_Click);
             // 
+            // btnStudentInfoClear
+            // 
+            this.btnStudentInfoClear.BackColor = System.Drawing.Color.Black;
+            this.btnStudentInfoClear.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentInfoClear.ForeColor = System.Drawing.Color.White;
+            this.btnStudentInfoClear.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInfoClear.Image")));
+            this.btnStudentInfoClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudentInfoClear.Location = new System.Drawing.Point(561, 374);
+            this.btnStudentInfoClear.Name = "btnStudentInfoClear";
+            this.btnStudentInfoClear.Size = new System.Drawing.Size(90, 29);
+            this.btnStudentInfoClear.TabIndex = 99;
+            this.btnStudentInfoClear.Text = "Clear";
+            this.btnStudentInfoClear.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(4, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(413, 451);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 100;
+            this.pictureBox2.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(479, 390);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(693, 453);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnStudentInfoClear);
             this.Controls.Add(this.btnExitFormFormLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.chkShowPassword);
@@ -152,6 +183,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,6 +199,8 @@
         private System.Windows.Forms.CheckBox chkShowPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExitFormFormLogin;
+        private System.Windows.Forms.Button btnStudentInfoClear;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

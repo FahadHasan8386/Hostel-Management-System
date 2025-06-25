@@ -65,16 +65,15 @@
             // 
             this.btnManageEmplpoyee.FlatAppearance.BorderSize = 0;
             this.btnManageEmplpoyee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnManageEmplpoyee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnManageEmplpoyee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.btnManageEmplpoyee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageEmplpoyee.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageEmplpoyee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnManageEmplpoyee.ForeColor = System.Drawing.Color.Black;
             this.btnManageEmplpoyee.Image = ((System.Drawing.Image)(resources.GetObject("btnManageEmplpoyee.Image")));
             this.btnManageEmplpoyee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageEmplpoyee.Location = new System.Drawing.Point(0, 435);
-            this.btnManageEmplpoyee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnManageEmplpoyee.Location = new System.Drawing.Point(4, 283);
             this.btnManageEmplpoyee.Name = "btnManageEmplpoyee";
-            this.btnManageEmplpoyee.Size = new System.Drawing.Size(336, 63);
+            this.btnManageEmplpoyee.Size = new System.Drawing.Size(224, 41);
             this.btnManageEmplpoyee.TabIndex = 23;
             this.btnManageEmplpoyee.Text = "       Manage Employees";
             this.btnManageEmplpoyee.UseVisualStyleBackColor = true;
@@ -84,16 +83,15 @@
             // 
             this.btnEnrollEmployee.FlatAppearance.BorderSize = 0;
             this.btnEnrollEmployee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnEnrollEmployee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnEnrollEmployee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.btnEnrollEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnrollEmployee.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnrollEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnEnrollEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnEnrollEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrollEmployee.Image")));
             this.btnEnrollEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnrollEmployee.Location = new System.Drawing.Point(4, 365);
-            this.btnEnrollEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEnrollEmployee.Location = new System.Drawing.Point(3, 237);
             this.btnEnrollEmployee.Name = "btnEnrollEmployee";
-            this.btnEnrollEmployee.Size = new System.Drawing.Size(340, 63);
+            this.btnEnrollEmployee.Size = new System.Drawing.Size(225, 41);
             this.btnEnrollEmployee.TabIndex = 22;
             this.btnEnrollEmployee.Text = "New Employee";
             this.btnEnrollEmployee.UseVisualStyleBackColor = true;
@@ -103,16 +101,15 @@
             // 
             this.btnEmployeePayment.FlatAppearance.BorderSize = 0;
             this.btnEmployeePayment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnEmployeePayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnEmployeePayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.btnEmployeePayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmployeePayment.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeePayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnEmployeePayment.ForeColor = System.Drawing.Color.Black;
             this.btnEmployeePayment.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeePayment.Image")));
             this.btnEmployeePayment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeePayment.Location = new System.Drawing.Point(0, 508);
-            this.btnEmployeePayment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEmployeePayment.Location = new System.Drawing.Point(4, 330);
             this.btnEmployeePayment.Name = "btnEmployeePayment";
-            this.btnEmployeePayment.Size = new System.Drawing.Size(336, 63);
+            this.btnEmployeePayment.Size = new System.Drawing.Size(224, 41);
             this.btnEmployeePayment.TabIndex = 26;
             this.btnEmployeePayment.Text = "         Employee  Payment";
             this.btnEmployeePayment.UseVisualStyleBackColor = true;
@@ -127,10 +124,9 @@
             this.btnEmployeeFormerResidents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployeeFormerResidents.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeFormerResidents.Image")));
             this.btnEmployeeFormerResidents.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnEmployeeFormerResidents.Location = new System.Drawing.Point(14, 925);
-            this.btnEmployeeFormerResidents.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEmployeeFormerResidents.Location = new System.Drawing.Point(9, 601);
             this.btnEmployeeFormerResidents.Name = "btnEmployeeFormerResidents";
-            this.btnEmployeeFormerResidents.Size = new System.Drawing.Size(363, 68);
+            this.btnEmployeeFormerResidents.Size = new System.Drawing.Size(242, 44);
             this.btnEmployeeFormerResidents.TabIndex = 27;
             this.btnEmployeeFormerResidents.Text = "Former Residents\r\n";
             this.btnEmployeeFormerResidents.UseVisualStyleBackColor = true;
@@ -139,16 +135,15 @@
             // 
             this.btnEmployeeOverview.FlatAppearance.BorderSize = 0;
             this.btnEmployeeOverview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnEmployeeOverview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnEmployeeOverview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.btnEmployeeOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmployeeOverview.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeeOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnEmployeeOverview.ForeColor = System.Drawing.Color.Black;
             this.btnEmployeeOverview.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeOverview.Image")));
             this.btnEmployeeOverview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeOverview.Location = new System.Drawing.Point(4, 598);
-            this.btnEmployeeOverview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEmployeeOverview.Location = new System.Drawing.Point(5, 389);
             this.btnEmployeeOverview.Name = "btnEmployeeOverview";
-            this.btnEmployeeOverview.Size = new System.Drawing.Size(332, 63);
+            this.btnEmployeeOverview.Size = new System.Drawing.Size(221, 41);
             this.btnEmployeeOverview.TabIndex = 28;
             this.btnEmployeeOverview.Text = "        Employee Overview";
             this.btnEmployeeOverview.UseVisualStyleBackColor = true;
@@ -158,11 +153,10 @@
             // 
             this.lblEmpHms.AutoSize = true;
             this.lblEmpHms.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpHms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(226)))));
-            this.lblEmpHms.Location = new System.Drawing.Point(358, 9);
-            this.lblEmpHms.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmpHms.ForeColor = System.Drawing.Color.White;
+            this.lblEmpHms.Location = new System.Drawing.Point(239, 6);
             this.lblEmpHms.Name = "lblEmpHms";
-            this.lblEmpHms.Size = new System.Drawing.Size(663, 65);
+            this.lblEmpHms.Size = new System.Drawing.Size(439, 45);
             this.lblEmpHms.TabIndex = 29;
             this.lblEmpHms.Text = "Hostel Management System";
             // 
@@ -175,17 +169,16 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(1732, 18);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogout.Location = new System.Drawing.Point(1155, 12);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(177, 46);
+            this.btnLogout.Size = new System.Drawing.Size(118, 30);
             this.btnLogout.TabIndex = 30;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // pnlEmployeebar
             // 
-            this.pnlEmployeebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.pnlEmployeebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(216)))), ((int)(((byte)(163)))));
             this.pnlEmployeebar.Controls.Add(this.btnManageRoom);
             this.pnlEmployeebar.Controls.Add(this.picHostelLogo);
             this.pnlEmployeebar.Controls.Add(this.btnSlideEmployee);
@@ -198,24 +191,24 @@
             this.pnlEmployeebar.Controls.Add(this.btnEmployeeOverview);
             this.pnlEmployeebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlEmployeebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlEmployeebar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlEmployeebar.Name = "pnlEmployeebar";
-            this.pnlEmployeebar.Size = new System.Drawing.Size(346, 891);
+            this.pnlEmployeebar.Size = new System.Drawing.Size(226, 579);
             this.pnlEmployeebar.TabIndex = 31;
             // 
             // btnManageRoom
             // 
             this.btnManageRoom.FlatAppearance.BorderSize = 0;
             this.btnManageRoom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnManageRoom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnManageRoom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.btnManageRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageRoom.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnManageRoom.ForeColor = System.Drawing.Color.Black;
             this.btnManageRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnManageRoom.Image")));
             this.btnManageRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageRoom.Location = new System.Drawing.Point(4, 291);
-            this.btnManageRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnManageRoom.Location = new System.Drawing.Point(3, 189);
             this.btnManageRoom.Name = "btnManageRoom";
-            this.btnManageRoom.Size = new System.Drawing.Size(314, 63);
+            this.btnManageRoom.Size = new System.Drawing.Size(228, 41);
             this.btnManageRoom.TabIndex = 97;
             this.btnManageRoom.Text = "       Manage Rooms";
             this.btnManageRoom.UseVisualStyleBackColor = true;
@@ -226,10 +219,9 @@
             this.picHostelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picHostelLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.ErrorImage")));
             this.picHostelLogo.Image = ((System.Drawing.Image)(resources.GetObject("picHostelLogo.Image")));
-            this.picHostelLogo.Location = new System.Drawing.Point(92, 37);
-            this.picHostelLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picHostelLogo.Location = new System.Drawing.Point(61, 24);
             this.picHostelLogo.Name = "picHostelLogo";
-            this.picHostelLogo.Size = new System.Drawing.Size(226, 124);
+            this.picHostelLogo.Size = new System.Drawing.Size(151, 81);
             this.picHostelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHostelLogo.TabIndex = 96;
             this.picHostelLogo.TabStop = false;
@@ -240,9 +232,8 @@
             this.btnSlideEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnSlideEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnSlideEmployee.Image")));
             this.btnSlideEmployee.Location = new System.Drawing.Point(0, 0);
-            this.btnSlideEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSlideEmployee.Name = "btnSlideEmployee";
-            this.btnSlideEmployee.Size = new System.Drawing.Size(50, 36);
+            this.btnSlideEmployee.Size = new System.Drawing.Size(34, 24);
             this.btnSlideEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSlideEmployee.TabIndex = 95;
             this.btnSlideEmployee.TabStop = false;
@@ -252,34 +243,33 @@
             // 
             this.btnStudentDashboardGoTo.FlatAppearance.BorderSize = 0;
             this.btnStudentDashboardGoTo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnStudentDashboardGoTo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnStudentDashboardGoTo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.btnStudentDashboardGoTo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStudentDashboardGoTo.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentDashboardGoTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnStudentDashboardGoTo.ForeColor = System.Drawing.Color.Black;
             this.btnStudentDashboardGoTo.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentDashboardGoTo.Image")));
             this.btnStudentDashboardGoTo.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnStudentDashboardGoTo.Location = new System.Drawing.Point(4, 218);
-            this.btnStudentDashboardGoTo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnStudentDashboardGoTo.Location = new System.Drawing.Point(3, 142);
             this.btnStudentDashboardGoTo.Name = "btnStudentDashboardGoTo";
-            this.btnStudentDashboardGoTo.Size = new System.Drawing.Size(336, 63);
+            this.btnStudentDashboardGoTo.Size = new System.Drawing.Size(224, 41);
             this.btnStudentDashboardGoTo.TabIndex = 32;
             this.btnStudentDashboardGoTo.Text = "      Student Dashboard";
             this.btnStudentDashboardGoTo.UseVisualStyleBackColor = true;
+            this.btnStudentDashboardGoTo.Click += new System.EventHandler(this.btnStudentDashboardGoTo_Click);
             // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(0, 780);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(4, 507);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(336, 63);
+            this.button1.Size = new System.Drawing.Size(224, 41);
             this.button1.TabIndex = 30;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
@@ -289,16 +279,15 @@
             // 
             this.btnFormerEmployees.FlatAppearance.BorderSize = 0;
             this.btnFormerEmployees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lavender;
-            this.btnFormerEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnFormerEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(236)))), ((int)(((byte)(205)))));
             this.btnFormerEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormerEmployees.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFormerEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnFormerEmployees.ForeColor = System.Drawing.Color.Black;
             this.btnFormerEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnFormerEmployees.Image")));
             this.btnFormerEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFormerEmployees.Location = new System.Drawing.Point(0, 689);
-            this.btnFormerEmployees.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFormerEmployees.Location = new System.Drawing.Point(3, 448);
             this.btnFormerEmployees.Name = "btnFormerEmployees";
-            this.btnFormerEmployees.Size = new System.Drawing.Size(336, 63);
+            this.btnFormerEmployees.Size = new System.Drawing.Size(224, 41);
             this.btnFormerEmployees.TabIndex = 29;
             this.btnFormerEmployees.Text = "       Former Employees";
             this.btnFormerEmployees.UseVisualStyleBackColor = true;
@@ -306,14 +295,15 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(130)))), ((int)(((byte)(106)))));
             this.panel2.Controls.Add(this.lblEmployeeHInfo);
             this.panel2.Controls.Add(this.picCloseButtonEmployeeDB);
             this.panel2.Controls.Add(this.lblEmpHms);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(346, 0);
+            this.panel2.Location = new System.Drawing.Point(226, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1355, 85);
+            this.panel2.Size = new System.Drawing.Size(908, 55);
             this.panel2.TabIndex = 32;
             // 
             // lblEmployeeHInfo
@@ -322,18 +312,20 @@
             this.lblEmployeeHInfo.Enabled = false;
             this.lblEmployeeHInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeHInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblEmployeeHInfo.Location = new System.Drawing.Point(86, 37);
+            this.lblEmployeeHInfo.Location = new System.Drawing.Point(57, 24);
+            this.lblEmployeeHInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeHInfo.Name = "lblEmployeeHInfo";
-            this.lblEmployeeHInfo.Size = new System.Drawing.Size(0, 20);
+            this.lblEmployeeHInfo.Size = new System.Drawing.Size(0, 13);
             this.lblEmployeeHInfo.TabIndex = 99;
             // 
             // picCloseButtonEmployeeDB
             // 
             this.picCloseButtonEmployeeDB.Dock = System.Windows.Forms.DockStyle.Right;
             this.picCloseButtonEmployeeDB.Image = ((System.Drawing.Image)(resources.GetObject("picCloseButtonEmployeeDB.Image")));
-            this.picCloseButtonEmployeeDB.Location = new System.Drawing.Point(1305, 0);
+            this.picCloseButtonEmployeeDB.Location = new System.Drawing.Point(875, 0);
+            this.picCloseButtonEmployeeDB.Margin = new System.Windows.Forms.Padding(2);
             this.picCloseButtonEmployeeDB.Name = "picCloseButtonEmployeeDB";
-            this.picCloseButtonEmployeeDB.Size = new System.Drawing.Size(50, 85);
+            this.picCloseButtonEmployeeDB.Size = new System.Drawing.Size(33, 55);
             this.picCloseButtonEmployeeDB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCloseButtonEmployeeDB.TabIndex = 30;
             this.picCloseButtonEmployeeDB.TabStop = false;
@@ -341,10 +333,10 @@
             // 
             // pnlEmployeeContainer
             // 
-            this.pnlEmployeeContainer.Location = new System.Drawing.Point(346, 85);
-            this.pnlEmployeeContainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlEmployeeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(197)))));
+            this.pnlEmployeeContainer.Location = new System.Drawing.Point(226, 55);
             this.pnlEmployeeContainer.Name = "pnlEmployeeContainer";
-            this.pnlEmployeeContainer.Size = new System.Drawing.Size(1354, 806);
+            this.pnlEmployeeContainer.Size = new System.Drawing.Size(908, 524);
             this.pnlEmployeeContainer.TabIndex = 33;
             this.pnlEmployeeContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlEmployeeContainer_Paint);
             // 
@@ -361,10 +353,10 @@
             // 
             // FormEmployeeDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1701, 891);
+            this.ClientSize = new System.Drawing.Size(1134, 579);
             this.Controls.Add(this.pnlEmployeeContainer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlEmployeebar);
@@ -372,6 +364,7 @@
             this.Controls.Add(this.btnEmployeeFormerResidents);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEmployeeDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormEmployeeDashboarde";
