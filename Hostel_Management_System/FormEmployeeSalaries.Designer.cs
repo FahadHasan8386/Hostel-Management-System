@@ -82,7 +82,7 @@
             this.btnPayEmployeePayment.ForeColor = System.Drawing.Color.White;
             this.btnPayEmployeePayment.Image = ((System.Drawing.Image)(resources.GetObject("btnPayEmployeePayment.Image")));
             this.btnPayEmployeePayment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayEmployeePayment.Location = new System.Drawing.Point(566, 482);
+            this.btnPayEmployeePayment.Location = new System.Drawing.Point(530, 453);
             this.btnPayEmployeePayment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPayEmployeePayment.Name = "btnPayEmployeePayment";
             this.btnPayEmployeePayment.Size = new System.Drawing.Size(124, 45);
@@ -98,7 +98,7 @@
             this.btnEmployeeSalariesClear.ForeColor = System.Drawing.Color.White;
             this.btnEmployeeSalariesClear.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeSalariesClear.Image")));
             this.btnEmployeeSalariesClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeSalariesClear.Location = new System.Drawing.Point(772, 482);
+            this.btnEmployeeSalariesClear.Location = new System.Drawing.Point(748, 453);
             this.btnEmployeeSalariesClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEmployeeSalariesClear.Name = "btnEmployeeSalariesClear";
             this.btnEmployeeSalariesClear.Size = new System.Drawing.Size(171, 45);
@@ -237,7 +237,7 @@
             this.btnSearcByEmployeeSalariesPhone.ForeColor = System.Drawing.Color.White;
             this.btnSearcByEmployeeSalariesPhone.Image = ((System.Drawing.Image)(resources.GetObject("btnSearcByEmployeeSalariesPhone.Image")));
             this.btnSearcByEmployeeSalariesPhone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearcByEmployeeSalariesPhone.Location = new System.Drawing.Point(979, 92);
+            this.btnSearcByEmployeeSalariesPhone.Location = new System.Drawing.Point(947, 92);
             this.btnSearcByEmployeeSalariesPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearcByEmployeeSalariesPhone.Name = "btnSearcByEmployeeSalariesPhone";
             this.btnSearcByEmployeeSalariesPhone.Size = new System.Drawing.Size(148, 32);
