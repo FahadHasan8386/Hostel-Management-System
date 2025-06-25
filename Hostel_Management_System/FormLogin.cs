@@ -21,7 +21,7 @@ namespace HostelManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            String connectionstring = "data source=WIN11\\SQLEXPRESS;database=HMS;Integrated Security=True";
+            String connectionstring = "data source=FAHAD\\SQLEXPRESS;database=HMS;Integrated Security=True";
 
             string sql = "SELECT * FROM Userinfo WHERE Id = '"
             + textUserId.Text + "' AND Password = '"

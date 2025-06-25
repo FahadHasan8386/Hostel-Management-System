@@ -71,6 +71,7 @@ namespace Hostel_Management_System
         private void btnEmployeePayment_Click(object sender, EventArgs e)
         {
             OepenEmpChildForm(new FormEmployeeSalaries());
+
         }
 
         private void btnManageRoom_Click(object sender, EventArgs e)
