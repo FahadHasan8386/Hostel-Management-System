@@ -46,13 +46,14 @@
             this.btnStudentInfoClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStudentInfoClear.Location = new System.Drawing.Point(1, 67);
             this.btnStudentInfoClear.Name = "btnStudentInfoClear";
-            this.btnStudentInfoClear.Size = new System.Drawing.Size(160, 34);
+            this.btnStudentInfoClear.Size = new System.Drawing.Size(160, 28);
             this.btnStudentInfoClear.TabIndex = 107;
             this.btnStudentInfoClear.Text = "Show Details >>";
             this.btnStudentInfoClear.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -95,7 +96,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormFormerEmployees";
             this.Text = "FormFormerEmployees";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

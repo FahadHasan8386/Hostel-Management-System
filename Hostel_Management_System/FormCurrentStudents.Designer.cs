@@ -61,7 +61,9 @@
             // 
             // dgvCurrentStudent
             // 
+            this.dgvCurrentStudent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCurrentStudent.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvCurrentStudent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvCurrentStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCurrentStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvCurrentStudent.Location = new System.Drawing.Point(0, 126);
