@@ -51,12 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataFunction.cs" />
-    <Compile Include="FormCurrentEmployees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCurrentEmployees.Designer.cs">
-      <DependentUpon>FormCurrentEmployees.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormEmployeeOverview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,9 +157,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStatusOverview.resx">
       <DependentUpon>FormStatusOverview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCurrentEmployees.resx">
-      <DependentUpon>FormCurrentEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCurrentStudents.resx">
       <DependentUpon>FormCurrentStudents.cs</DependentUpon>

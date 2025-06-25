@@ -63,10 +63,8 @@ namespace Hostel_Management_System
         {
             Application.Exit();
         }
-        private void btnStudentDashboard_Click(object sender, EventArgs e)
-        {
-
-        }
+       
+        
 
         private void btnEmployeePayment_Click(object sender, EventArgs e)
         {
@@ -160,5 +158,7 @@ namespace Hostel_Management_System
                 }
             }
         }
+
+        
     }
 }

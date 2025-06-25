@@ -141,5 +141,10 @@ namespace Hostel_Management_System
                 txtMngStudentSearchByPhoneNumber.ForeColor = Color.Gray;
             }
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
