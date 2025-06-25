@@ -54,10 +54,9 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(736, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(491, 16);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(71, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 91;
             this.pictureBox1.TabStop = false;
@@ -66,22 +65,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label2.Location = new System.Drawing.Point(368, 28);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(245, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(345, 39);
+            this.label2.Size = new System.Drawing.Size(227, 25);
             this.label2.TabIndex = 90;
             this.label2.Text = "Student Inofrmation";
             // 
             // txtStudentInfomationFirstName
             // 
             this.txtStudentInfomationFirstName.ForeColor = System.Drawing.Color.Gray;
-            this.txtStudentInfomationFirstName.Location = new System.Drawing.Point(326, 162);
-            this.txtStudentInfomationFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStudentInfomationFirstName.Location = new System.Drawing.Point(217, 105);
             this.txtStudentInfomationFirstName.Multiline = true;
             this.txtStudentInfomationFirstName.Name = "txtStudentInfomationFirstName";
-            this.txtStudentInfomationFirstName.Size = new System.Drawing.Size(260, 30);
+            this.txtStudentInfomationFirstName.Size = new System.Drawing.Size(175, 21);
             this.txtStudentInfomationFirstName.TabIndex = 89;
             this.txtStudentInfomationFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -89,31 +86,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(321, 568);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(214, 369);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 88;
             this.label1.Text = "Room Number";
             // 
             // cmbStudentInformationRoomNum
             // 
             this.cmbStudentInformationRoomNum.FormattingEnabled = true;
-            this.cmbStudentInformationRoomNum.Location = new System.Drawing.Point(326, 608);
-            this.cmbStudentInformationRoomNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbStudentInformationRoomNum.Location = new System.Drawing.Point(217, 395);
             this.cmbStudentInformationRoomNum.Name = "cmbStudentInformationRoomNum";
-            this.cmbStudentInformationRoomNum.Size = new System.Drawing.Size(580, 28);
+            this.cmbStudentInformationRoomNum.Size = new System.Drawing.Size(388, 21);
             this.cmbStudentInformationRoomNum.TabIndex = 87;
             // 
             // txtStudentInformationEmail
             // 
             this.txtStudentInformationEmail.ForeColor = System.Drawing.Color.Gray;
-            this.txtStudentInformationEmail.Location = new System.Drawing.Point(326, 403);
-            this.txtStudentInformationEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStudentInformationEmail.Location = new System.Drawing.Point(217, 262);
             this.txtStudentInformationEmail.Multiline = true;
             this.txtStudentInformationEmail.Name = "txtStudentInformationEmail";
-            this.txtStudentInformationEmail.Size = new System.Drawing.Size(580, 35);
+            this.txtStudentInformationEmail.Size = new System.Drawing.Size(388, 24);
             this.txtStudentInformationEmail.TabIndex = 86;
             this.txtStudentInformationEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -121,10 +115,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label9.Location = new System.Drawing.Point(321, 240);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(214, 156);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 21);
+            this.label9.Size = new System.Drawing.Size(17, 13);
             this.label9.TabIndex = 85;
             this.label9.Text = "Id";
             // 
@@ -132,21 +127,21 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label10.Location = new System.Drawing.Point(321, 465);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(214, 302);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 20);
+            this.label10.Size = new System.Drawing.Size(52, 13);
             this.label10.TabIndex = 84;
             this.label10.Text = "Address";
             // 
             // txtStudentInfromationAddress
             // 
             this.txtStudentInfromationAddress.ForeColor = System.Drawing.Color.Gray;
-            this.txtStudentInfromationAddress.Location = new System.Drawing.Point(326, 508);
-            this.txtStudentInfromationAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStudentInfromationAddress.Location = new System.Drawing.Point(217, 330);
             this.txtStudentInfromationAddress.Multiline = true;
             this.txtStudentInfromationAddress.Name = "txtStudentInfromationAddress";
-            this.txtStudentInfromationAddress.Size = new System.Drawing.Size(580, 35);
+            this.txtStudentInfromationAddress.Size = new System.Drawing.Size(388, 24);
             this.txtStudentInfromationAddress.TabIndex = 83;
             this.txtStudentInfromationAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtStudentInfromationAddress.TextChanged += new System.EventHandler(this.txtStudentInfromationAddress_TextChanged);
@@ -155,21 +150,21 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label11.Location = new System.Drawing.Point(321, 354);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(214, 230);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 20);
+            this.label11.Size = new System.Drawing.Size(37, 13);
             this.label11.TabIndex = 82;
             this.label11.Text = "Email";
             // 
             // txtStudentInformationId
             // 
             this.txtStudentInformationId.ForeColor = System.Drawing.Color.Gray;
-            this.txtStudentInformationId.Location = new System.Drawing.Point(326, 282);
-            this.txtStudentInformationId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStudentInformationId.Location = new System.Drawing.Point(217, 183);
             this.txtStudentInformationId.Multiline = true;
             this.txtStudentInformationId.Name = "txtStudentInformationId";
-            this.txtStudentInformationId.Size = new System.Drawing.Size(260, 30);
+            this.txtStudentInformationId.Size = new System.Drawing.Size(175, 21);
             this.txtStudentInformationId.TabIndex = 81;
             this.txtStudentInformationId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -177,21 +172,21 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label12.Location = new System.Drawing.Point(640, 240);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(427, 156);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(125, 20);
+            this.label12.Size = new System.Drawing.Size(88, 13);
             this.label12.TabIndex = 80;
             this.label12.Text = "Phone number";
             // 
             // txtStudentInformationPhoneNum
             // 
             this.txtStudentInformationPhoneNum.ForeColor = System.Drawing.Color.Gray;
-            this.txtStudentInformationPhoneNum.Location = new System.Drawing.Point(645, 282);
-            this.txtStudentInformationPhoneNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStudentInformationPhoneNum.Location = new System.Drawing.Point(430, 183);
             this.txtStudentInformationPhoneNum.Multiline = true;
             this.txtStudentInformationPhoneNum.Name = "txtStudentInformationPhoneNum";
-            this.txtStudentInformationPhoneNum.Size = new System.Drawing.Size(260, 30);
+            this.txtStudentInformationPhoneNum.Size = new System.Drawing.Size(175, 21);
             this.txtStudentInformationPhoneNum.TabIndex = 79;
             this.txtStudentInformationPhoneNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -199,21 +194,21 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label13.Location = new System.Drawing.Point(640, 118);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(427, 77);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(95, 20);
+            this.label13.Size = new System.Drawing.Size(67, 13);
             this.label13.TabIndex = 78;
             this.label13.Text = "Last Name";
             // 
             // txtStudentInformationLastName
             // 
             this.txtStudentInformationLastName.ForeColor = System.Drawing.Color.Gray;
-            this.txtStudentInformationLastName.Location = new System.Drawing.Point(645, 162);
-            this.txtStudentInformationLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStudentInformationLastName.Location = new System.Drawing.Point(430, 105);
             this.txtStudentInformationLastName.Multiline = true;
             this.txtStudentInformationLastName.Name = "txtStudentInformationLastName";
-            this.txtStudentInformationLastName.Size = new System.Drawing.Size(260, 30);
+            this.txtStudentInformationLastName.Size = new System.Drawing.Size(175, 21);
             this.txtStudentInformationLastName.TabIndex = 77;
             this.txtStudentInformationLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -221,10 +216,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label14.Location = new System.Drawing.Point(321, 118);
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(214, 77);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 20);
+            this.label14.Size = new System.Drawing.Size(67, 13);
             this.label14.TabIndex = 76;
             this.label14.Text = "First Name";
             // 
@@ -235,10 +231,9 @@
             this.btnStudentInformationClear.ForeColor = System.Drawing.Color.White;
             this.btnStudentInformationClear.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInformationClear.Image")));
             this.btnStudentInformationClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentInformationClear.Location = new System.Drawing.Point(645, 691);
-            this.btnStudentInformationClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnStudentInformationClear.Location = new System.Drawing.Point(430, 449);
             this.btnStudentInformationClear.Name = "btnStudentInformationClear";
-            this.btnStudentInformationClear.Size = new System.Drawing.Size(183, 52);
+            this.btnStudentInformationClear.Size = new System.Drawing.Size(122, 34);
             this.btnStudentInformationClear.TabIndex = 75;
             this.btnStudentInformationClear.Text = "Clear";
             this.btnStudentInformationClear.UseVisualStyleBackColor = false;
@@ -251,10 +246,9 @@
             this.btnStudentInfomationSave.ForeColor = System.Drawing.Color.White;
             this.btnStudentInfomationSave.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInfomationSave.Image")));
             this.btnStudentInfomationSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentInfomationSave.Location = new System.Drawing.Point(393, 691);
-            this.btnStudentInfomationSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnStudentInfomationSave.Location = new System.Drawing.Point(262, 449);
             this.btnStudentInfomationSave.Name = "btnStudentInfomationSave";
-            this.btnStudentInfomationSave.Size = new System.Drawing.Size(177, 52);
+            this.btnStudentInfomationSave.Size = new System.Drawing.Size(118, 34);
             this.btnStudentInfomationSave.TabIndex = 74;
             this.btnStudentInfomationSave.Text = "Save\n";
             this.btnStudentInfomationSave.UseVisualStyleBackColor = false;
@@ -262,10 +256,10 @@
             // 
             // FormNewStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1317, 788);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(197)))));
+            this.ClientSize = new System.Drawing.Size(878, 512);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtStudentInfomationFirstName);
@@ -285,7 +279,6 @@
             this.Controls.Add(this.btnStudentInformationClear);
             this.Controls.Add(this.btnStudentInfomationSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormNewStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNewStudent";

@@ -54,7 +54,7 @@
             // 
             // pnlTotalStudent
             // 
-            this.pnlTotalStudent.BackColor = System.Drawing.Color.Crimson;
+            this.pnlTotalStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(130)))), ((int)(((byte)(106)))));
             this.pnlTotalStudent.Controls.Add(this.lblTotalStudents);
             this.pnlTotalStudent.Controls.Add(this.label2);
             this.pnlTotalStudent.Controls.Add(this.pictureBox1);
@@ -68,7 +68,7 @@
             // 
             this.lblTotalStudents.AutoSize = true;
             this.lblTotalStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalStudents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblTotalStudents.ForeColor = System.Drawing.Color.Black;
             this.lblTotalStudents.Location = new System.Drawing.Point(118, 77);
             this.lblTotalStudents.Name = "lblTotalStudents";
             this.lblTotalStudents.Size = new System.Drawing.Size(19, 20);
@@ -79,6 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(84, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 20);
@@ -98,7 +99,7 @@
             // 
             // pnlTotalRooms
             // 
-            this.pnlTotalRooms.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.pnlTotalRooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(130)))), ((int)(((byte)(106)))));
             this.pnlTotalRooms.Controls.Add(this.lblTotalRooms);
             this.pnlTotalRooms.Controls.Add(this.label3);
             this.pnlTotalRooms.Controls.Add(this.pictureBox2);
@@ -111,7 +112,7 @@
             // 
             this.lblTotalRooms.AutoSize = true;
             this.lblTotalRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblTotalRooms.ForeColor = System.Drawing.Color.Black;
             this.lblTotalRooms.Location = new System.Drawing.Point(149, 77);
             this.lblTotalRooms.Name = "lblTotalRooms";
             this.lblTotalRooms.Size = new System.Drawing.Size(19, 20);
@@ -122,7 +123,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(107, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 20);
@@ -142,7 +143,7 @@
             // 
             // pnlBedAssign
             // 
-            this.pnlBedAssign.BackColor = System.Drawing.Color.Firebrick;
+            this.pnlBedAssign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(130)))), ((int)(((byte)(106)))));
             this.pnlBedAssign.Controls.Add(this.lblBedAssign);
             this.pnlBedAssign.Controls.Add(this.label4);
             this.pnlBedAssign.Controls.Add(this.pictureBox3);
@@ -156,7 +157,7 @@
             // 
             this.lblBedAssign.AutoSize = true;
             this.lblBedAssign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBedAssign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblBedAssign.ForeColor = System.Drawing.Color.Black;
             this.lblBedAssign.Location = new System.Drawing.Point(136, 72);
             this.lblBedAssign.Name = "lblBedAssign";
             this.lblBedAssign.Size = new System.Drawing.Size(19, 20);
@@ -167,7 +168,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(97, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 20);
@@ -200,7 +201,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(309, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 25);
@@ -211,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pnlBedAssign);

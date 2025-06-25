@@ -77,9 +77,6 @@ namespace Hostel_Management_System
 
         }
 
-        private void FormNewEmployee_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

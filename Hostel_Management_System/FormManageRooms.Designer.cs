@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(22, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 32);
@@ -68,7 +68,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(375, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(206, 16);
@@ -78,11 +78,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(22, 187);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(282, 32);
+            this.label4.Size = new System.Drawing.Size(288, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Update or Delete Room\r\n";
             // 
@@ -99,7 +99,7 @@
             // 
             this.chkRoomStatus.AutoSize = true;
             this.chkRoomStatus.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkRoomStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.chkRoomStatus.ForeColor = System.Drawing.Color.Black;
             this.chkRoomStatus.Location = new System.Drawing.Point(598, 115);
             this.chkRoomStatus.Name = "chkRoomStatus";
             this.chkRoomStatus.Size = new System.Drawing.Size(46, 18);
@@ -111,8 +111,8 @@
             // 
             this.chkRoomBooked.AutoSize = true;
             this.chkRoomBooked.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkRoomBooked.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.chkRoomBooked.Location = new System.Drawing.Point(779, 248);
+            this.chkRoomBooked.ForeColor = System.Drawing.Color.Black;
+            this.chkRoomBooked.Location = new System.Drawing.Point(663, 282);
             this.chkRoomBooked.Name = "chkRoomBooked";
             this.chkRoomBooked.Size = new System.Drawing.Size(46, 18);
             this.chkRoomBooked.TabIndex = 8;
@@ -184,17 +184,17 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label6.Location = new System.Drawing.Point(665, 247);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(660, 247);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 16);
+            this.label6.Size = new System.Drawing.Size(206, 16);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Room Booked ";
+            this.label6.Text = "Room Status Active or Deactive";
             // 
             // dgvManageRooms
             // 
             this.dgvManageRooms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvManageRooms.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvManageRooms.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(130)))), ((int)(((byte)(106)))));
             this.dgvManageRooms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvManageRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvManageRooms.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -220,7 +220,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(27, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 16);
@@ -231,7 +231,7 @@
             // 
             this.lblRoomExit.AutoSize = true;
             this.lblRoomExit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoomExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblRoomExit.ForeColor = System.Drawing.Color.Black;
             this.lblRoomExit.Location = new System.Drawing.Point(61, 149);
             this.lblRoomExit.Name = "lblRoomExit";
             this.lblRoomExit.Size = new System.Drawing.Size(59, 16);
@@ -242,7 +242,7 @@
             // 
             this.lblRoom.AutoSize = true;
             this.lblRoom.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblRoom.ForeColor = System.Drawing.Color.Black;
             this.lblRoom.Location = new System.Drawing.Point(61, 284);
             this.lblRoom.Name = "lblRoom";
             this.lblRoom.Size = new System.Drawing.Size(59, 16);
@@ -253,7 +253,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(365, 321);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 19);
@@ -275,7 +275,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(282, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(173, 25);
@@ -286,7 +286,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(878, 512);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);

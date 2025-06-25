@@ -159,6 +159,9 @@ namespace Hostel_Management_System
             }
         }
 
-        
+        private void btnStudentDashboardGoTo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
