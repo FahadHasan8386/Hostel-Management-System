@@ -334,6 +334,7 @@
             // pnlEmployeeContainer
             // 
             this.pnlEmployeeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(197)))));
+            this.pnlEmployeeContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlEmployeeContainer.Location = new System.Drawing.Point(226, 55);
             this.pnlEmployeeContainer.Name = "pnlEmployeeContainer";
             this.pnlEmployeeContainer.Size = new System.Drawing.Size(908, 524);
