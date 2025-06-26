@@ -93,7 +93,7 @@
             this.txtRoomNumber.Name = "txtRoomNumber";
             this.txtRoomNumber.Size = new System.Drawing.Size(171, 22);
             this.txtRoomNumber.TabIndex = 6;
-            this.txtRoomNumber.TextChanged += new System.EventHandler(this.txtRoomNumber_TextChanged);
+            
             // 
             // chkRoomStatus
             // 
@@ -312,7 +312,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "All Rooms";
             this.Load += new System.EventHandler(this.FormManageRooms_Load);
-            this.Leave += new System.EventHandler(this.FormManageRooms_Leave);
+          
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

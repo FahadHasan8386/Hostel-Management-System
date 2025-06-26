@@ -80,9 +80,9 @@
             this.btnPayEmployeePayment.ForeColor = System.Drawing.Color.White;
             this.btnPayEmployeePayment.Image = ((System.Drawing.Image)(resources.GetObject("btnPayEmployeePayment.Image")));
             this.btnPayEmployeePayment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayEmployeePayment.Location = new System.Drawing.Point(353, 294);
+            this.btnPayEmployeePayment.Location = new System.Drawing.Point(385, 294);
             this.btnPayEmployeePayment.Name = "btnPayEmployeePayment";
-            this.btnPayEmployeePayment.Size = new System.Drawing.Size(83, 29);
+            this.btnPayEmployeePayment.Size = new System.Drawing.Size(107, 29);
             this.btnPayEmployeePayment.TabIndex = 123;
             this.btnPayEmployeePayment.Text = "Pay";
             this.btnPayEmployeePayment.UseVisualStyleBackColor = false;
@@ -95,9 +95,9 @@
             this.btnEmployeeSalariesClear.ForeColor = System.Drawing.Color.White;
             this.btnEmployeeSalariesClear.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeSalariesClear.Image")));
             this.btnEmployeeSalariesClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeSalariesClear.Location = new System.Drawing.Point(499, 294);
+            this.btnEmployeeSalariesClear.Location = new System.Drawing.Point(498, 294);
             this.btnEmployeeSalariesClear.Name = "btnEmployeeSalariesClear";
-            this.btnEmployeeSalariesClear.Size = new System.Drawing.Size(114, 29);
+            this.btnEmployeeSalariesClear.Size = new System.Drawing.Size(107, 29);
             this.btnEmployeeSalariesClear.TabIndex = 122;
             this.btnEmployeeSalariesClear.Text = "Clear";
             this.btnEmployeeSalariesClear.UseVisualStyleBackColor = false;
@@ -235,9 +235,9 @@
             this.btnSearcByEmployeeSalariesPhone.ForeColor = System.Drawing.Color.White;
             this.btnSearcByEmployeeSalariesPhone.Image = ((System.Drawing.Image)(resources.GetObject("btnSearcByEmployeeSalariesPhone.Image")));
             this.btnSearcByEmployeeSalariesPhone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearcByEmployeeSalariesPhone.Location = new System.Drawing.Point(631, 53);
+            this.btnSearcByEmployeeSalariesPhone.Location = new System.Drawing.Point(636, 53);
             this.btnSearcByEmployeeSalariesPhone.Name = "btnSearcByEmployeeSalariesPhone";
-            this.btnSearcByEmployeeSalariesPhone.Size = new System.Drawing.Size(99, 29);
+            this.btnSearcByEmployeeSalariesPhone.Size = new System.Drawing.Size(102, 29);
             this.btnSearcByEmployeeSalariesPhone.TabIndex = 107;
             this.btnSearcByEmployeeSalariesPhone.Text = "Search";
             this.btnSearcByEmployeeSalariesPhone.UseVisualStyleBackColor = false;
