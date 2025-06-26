@@ -46,27 +46,38 @@ namespace Hostel_Management_System
         {
             string phone = txtManageEmployeePhone.Text.Trim();
 
-            /// newStudent is table name and mobile is column name
-            // ✅ Correct SQL
-            query = "SELECT * FROM newEmployee WHERE mobile = " + phone;
+            
+            if (string.IsNullOrWhiteSpace(phone))
+            {
+                MessageBox.Show("Please enter a phone number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Stop execution if empty
+            }
 
-            DataSet ds = fn.getData(query);
-
-            if (ds.Tables[0].Rows.Count != 0) 
+            try
             {
                 
-                txtManageEmployeeName.Text = ds.Tables[0].Rows[0][2].ToString();
-                txtManageEmpployeeEmail.Text = ds.Tables[0].Rows[0][3].ToString();
-                txtManageEmployeeAddress.Text = ds.Tables[0].Rows[0][4].ToString();
-                txtManageEmployeeNID.Text = ds.Tables[0].Rows[0][5].ToString();
-                chkManageEmployeeDesignation.Text = ds.Tables[0].Rows[0][6].ToString();
+                query = "SELECT * FROM newEmployee WHERE mobile = '" + phone + "'";
 
-                cmbMangeEWorkingStatus.Text = ds.Tables[0].Rows[0][7].ToString();
+                DataSet ds = fn.getData(query);
+
+                if (ds.Tables[0].Rows.Count != 0)
+                {
+                    txtManageEmployeeName.Text = ds.Tables[0].Rows[0][2].ToString();
+                    txtManageEmpployeeEmail.Text = ds.Tables[0].Rows[0][3].ToString();
+                    txtManageEmployeeAddress.Text = ds.Tables[0].Rows[0][4].ToString();
+                    txtManageEmployeeNID.Text = ds.Tables[0].Rows[0][5].ToString();
+                    chkManageEmployeeDesignation.Text = ds.Tables[0].Rows[0][6].ToString();
+                    cmbMangeEWorkingStatus.Text = ds.Tables[0].Rows[0][7].ToString();
+                }
+                else
+                {
+                    clearAll();
+                    MessageBox.Show("No record found with this phone number.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                clearAll(); 
-                MessageBox.Show("No Record with this Mobile Number Exists.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Enter a Valid Phone number: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -74,40 +85,59 @@ namespace Hostel_Management_System
 
         private void btnManageEmployeeUpdate_Click(object sender, EventArgs e)
         {
-            Int64 phone = Int64.Parse(txtManageEmployeePhone.Text);
-            string name = txtManageEmployeeName.Text;
-            string email = txtManageEmpployeeEmail.Text;
-            string address = txtManageEmployeeAddress.Text;
-            Int64 nid = Int64.Parse(txtManageEmployeeNID.Text);
-            string designation = chkManageEmployeeDesignation.Text;
-            string working = cmbMangeEWorkingStatus.Text;
+            try
+            {
+                Int64 phone = Int64.Parse(txtManageEmployeePhone.Text);
+                string name = txtManageEmployeeName.Text;
+                string email = txtManageEmpployeeEmail.Text;
+                string address = txtManageEmployeeAddress.Text;
+                Int64 nid = Int64.Parse(txtManageEmployeeNID.Text);
+                string designation = chkManageEmployeeDesignation.Text;
+                string working = cmbMangeEWorkingStatus.Text;
 
 
-            query = "UPDATE newEmployee SET name = '" + name +
-                "', email = '" + email +
-                "', address = '" + address +
-                "', nid = '" + nid +
-                "', designation = '" + designation +
-                "', working = '" + working +
-                "' WHERE mobile = '" + phone + "'";
+                query = "UPDATE newEmployee SET name = '" + name +
+                    "', email = '" + email +
+                    "', address = '" + address +
+                    "', nid = '" + nid +
+                    "', designation = '" + designation +
+                    "', working = '" + working +
+                    "' WHERE mobile = '" + phone + "'";
 
 
 
-            fn.setData(query, "Data Updation Successful");
+                fn.setData(query, "Data Updation Successful");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("please Fill all the Required value", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
+
         }
 
         private void btnManageEmployeeDelete_Click(object sender, EventArgs e)
         {
-            string phone = txtManageEmployeePhone.Text.Trim();
-            ///messageBox name is Conformation
-            if (MessageBox.Show("Are You Sure?", "Conformation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            try
             {
-                query = "delete from newEmployee where mobile = " + phone + "";
-                fn.setData(query, "Employee Record Delete.");
-                clearAll();
+                string phone = txtManageEmployeePhone.Text.Trim();
+                ///messageBox name is Conformation
+                if (MessageBox.Show("Are You Sure?", "Conformation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    query = "delete from newEmployee where mobile = " + phone + "";
+                    fn.setData(query, "Employee Record Delete.");
+                    clearAll();
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fill all requried vlaue: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
 
-        
+
     }
 }

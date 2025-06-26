@@ -20,10 +20,7 @@ namespace HostelManagementSystem
             InitializeComponent();
         }
 
-        private void btnExitFormManageRooms_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void btnExitFormManageRooms_Leave(object sender, EventArgs e)
         {
@@ -59,105 +56,139 @@ namespace HostelManagementSystem
 
         private void btnAddRooms_Click(object sender, EventArgs e)
         {
-            
-            query = "select * from rooms where roomNo=" + txtRoomNumber.Text;
-
-          
-            DataSet ds = fn.getData(query);
-
-            
-            if (ds.Tables[0].Rows.Count == 0)
+            // ✅ Step 1: Check input before entering try-catch
+            if (string.IsNullOrWhiteSpace(txtRoomNumber.Text))
             {
-                
-                String status; 
+                MessageBox.Show("Please enter a Room Number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // stop further execution
+            }
 
-                
-                if (chkRoomStatus.Checked)
+            try
+            {
+                query = "select * from rooms where roomNo=" + txtRoomNumber.Text;
+                DataSet ds = fn.getData(query);
+
+                if (ds.Tables[0].Rows.Count == 0)
                 {
-                    status = "Yes";
+                    string status = chkRoomStatus.Checked ? "Yes" : "No";
+                    lblRoomExit.Visible = false;
+
+                    query = "insert into rooms (roomNo, roomStatus) values (" + txtRoomNumber.Text + ", '" + status + "')";
+                    fn.setData(query, "Room Added Successfully.");
+                    FormManageRooms_Load(this, null);
                 }
-               
                 else
                 {
-                    status = "No";
+                    lblRoomExit.Text = "Room Already Exists.";
+                    lblRoomExit.Visible = true;
                 }
-               
-                lblRoomExit.Visible = false;
-
-                
-                query = "insert into rooms (roomNo, roomStatus) values (" + txtRoomNumber.Text + ", '" + status + "')";
-
-                
-                fn.setData(query, "Room Added Successfully.");
-                FormManageRooms_Load(this, null); 
-
             }
-            else
+            catch (Exception ex)
             {
-                
-                lblRoomExit.Text = "Room All Ready Exist.";
-
-                
-                lblRoomExit.Visible = true;
+                MessageBox.Show("Unexpected error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void btnSearchByRoomNumber_Click(object sender, EventArgs e)
         {
-            query = "select * from rooms where roomNo=" + txtSearchByRoomNumbers.Text;
-            DataSet ds = fn.getData(query);
 
-            if (ds.Tables[0].Rows.Count == 0)
+
+            if (string.IsNullOrWhiteSpace(txtSearchByRoomNumbers.Text))
             {
-
-                lblRoom.Text = "No Room Exist";
-                lblRoom.Visible = true;
-                chkRoomBooked.Checked = false;
+                MessageBox.Show("Please enter a Room Number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // stop here
             }
-            else
+
+            try
             {
-                lblRoom.Text = "Room Found.";
-                lblRoom.Visible = true;
-                if (ds.Tables[0].Rows[0][1].ToString() == "Yes")  /// roomStatus
+                query = "select * from rooms where roomNo=" + txtSearchByRoomNumbers.Text;
+                DataSet ds = fn.getData(query);
+
+                if (ds.Tables[0].Rows.Count == 0)
                 {
-                    chkRoomBooked.Checked = true;
+                    // ✅ No room found
+                    lblRoom.Text = "Room Not Found.";
+                    lblRoom.Visible = true;
+                    chkRoomBooked.Checked = false;
                 }
                 else
                 {
-                    chkRoomBooked.Checked = false;
+                    lblRoom.Text = "Room Found.";
+                    lblRoom.Visible = true;
+
+                    if (ds.Tables[0].Rows[0]["roomStatus"].ToString() == "Yes")  // Safer with column name
+                    {
+                        chkRoomBooked.Checked = true;
+                    }
+                    else
+                    {
+                        chkRoomBooked.Checked = false;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fill the textbox with valid Room Number: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btnStudentInfoUdateRoom_Click(object sender, EventArgs e)
         {
-            String status;
-            ///means if i click on checkBox then status is yes else no
-            if (chkRoomBooked.Checked)
+
+
+
+            if (string.IsNullOrWhiteSpace(txtRoomNumber.Text))
             {
-                status = "Yes";
+                MessageBox.Show("Please enter a Room Number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // stop further execution
             }
-            else
+            try
             {
-                status = "No";
+                String status;
+                ///means if i click on checkBox then status is yes else no
+                if (chkRoomBooked.Checked)
+                {
+                    status = "Yes";
+                }
+                else
+                {
+                    status = "No";
+                }
+                query = "update rooms set roomStatus ='" + status + "'where roomNo =" + txtSearchByRoomNumbers.Text + "";
+                fn.setData(query, "Details Updated");
+                FormManageRooms_Load(this, null);
+
             }
-            query = "update rooms set roomStatus ='" + status + "'where roomNo =" + txtSearchByRoomNumbers.Text + "";
-            fn.setData(query, "Details Updated");
-            FormManageRooms_Load(this, null);
+            catch (FormatException)
+            {
+                MessageBox.Show("please At first Search with valid Room Number", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
+
+
         }
 
         private void btnStudentDeleteRoom_Click(object sender, EventArgs e)
         {
-            if (lblRoom.Text == "Room Found.")
-            {
-                query = "delete from rooms where roomNo =" + txtSearchByRoomNumbers.Text + "";
-                fn.setData(query, "Room Details Deleated.");
-                FormManageRooms_Load(this, null);
-            }
-            else
-            {
-                MessageBox.Show("Trying to delete which doesn't  Exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
+                if (lblRoom.Text == "Room Found.")
+                {
+                    query = "delete from rooms where roomNo =" + txtSearchByRoomNumbers.Text + "";
+                    fn.setData(query, "Room Details Deleated.");
+                    FormManageRooms_Load(this, null);
+                }
+                else
+                {
+                    MessageBox.Show("Trying to delete which doesn't  Exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            
+           
+
+
+
         }
     }
 }

@@ -102,28 +102,35 @@ namespace Hostel_Management_System
         }
         private void btnPaymentSearcByPhoneNumber_Click(object sender, EventArgs e)
         {
-            if (txtStudentPhoneNumber.Text != "")
+            try
             {
-                string phone = txtStudentPhoneNumber.Text.Trim();
-
-               
-                query = "SELECT First_name, Last_name, Email, Room_Number FROM newStudent WHERE Phone_Number = " + phone;
-
-                DataSet ds = fn.getData(query);
-
-                if (ds.Tables[0].Rows.Count != 0)
+                if (txtStudentPhoneNumber.Text != "")
                 {
-                    txtStudentFirstName.Text = ds.Tables[0].Rows[0][0].ToString();
-                    txtStudentLastName.Text = ds.Tables[0].Rows[0][1].ToString();
-                    txtStudentEmail.Text = ds.Tables[0].Rows[0][2].ToString();
-                    txtStudentRoomNumber.Text = ds.Tables[0].Rows[0][3].ToString();
+                    string phone = txtStudentPhoneNumber.Text.Trim();
 
-                    setDataGrid(Int64.Parse(phone));  // Safer to use the trimmed string variable
+
+                    query = "SELECT First_name, Last_name, Email, Room_Number FROM newStudent WHERE Phone_Number = " + phone;
+
+                    DataSet ds = fn.getData(query);
+
+                    if (ds.Tables[0].Rows.Count != 0)
+                    {
+                        txtStudentFirstName.Text = ds.Tables[0].Rows[0][0].ToString();
+                        txtStudentLastName.Text = ds.Tables[0].Rows[0][1].ToString();
+                        txtStudentEmail.Text = ds.Tables[0].Rows[0][2].ToString();
+                        txtStudentRoomNumber.Text = ds.Tables[0].Rows[0][3].ToString();
+
+                        setDataGrid(Int64.Parse(phone));  // Safer to use the trimmed string variable
+                    }
+                    else
+                    {
+                        MessageBox.Show("No Record Exist", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("No Record Exist", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Enter a Valid Phone number: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
