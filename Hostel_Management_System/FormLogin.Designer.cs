@@ -37,7 +37,7 @@
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExitFormFormLogin = new System.Windows.Forms.Button();
-            this.btnStudentInfoClear = new System.Windows.Forms.Button();
+            this.btnLoginFromClear = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -135,19 +135,20 @@
             this.btnExitFormFormLogin.UseVisualStyleBackColor = false;
             this.btnExitFormFormLogin.Click += new System.EventHandler(this.btnExitFormFormLogin_Click);
             // 
-            // btnStudentInfoClear
+            // btnLoginFromClear
             // 
-            this.btnStudentInfoClear.BackColor = System.Drawing.Color.Black;
-            this.btnStudentInfoClear.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentInfoClear.ForeColor = System.Drawing.Color.White;
-            this.btnStudentInfoClear.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInfoClear.Image")));
-            this.btnStudentInfoClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentInfoClear.Location = new System.Drawing.Point(561, 374);
-            this.btnStudentInfoClear.Name = "btnStudentInfoClear";
-            this.btnStudentInfoClear.Size = new System.Drawing.Size(90, 29);
-            this.btnStudentInfoClear.TabIndex = 99;
-            this.btnStudentInfoClear.Text = "Clear";
-            this.btnStudentInfoClear.UseVisualStyleBackColor = false;
+            this.btnLoginFromClear.BackColor = System.Drawing.Color.Black;
+            this.btnLoginFromClear.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoginFromClear.ForeColor = System.Drawing.Color.White;
+            this.btnLoginFromClear.Image = ((System.Drawing.Image)(resources.GetObject("btnLoginFromClear.Image")));
+            this.btnLoginFromClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoginFromClear.Location = new System.Drawing.Point(561, 374);
+            this.btnLoginFromClear.Name = "btnLoginFromClear";
+            this.btnLoginFromClear.Size = new System.Drawing.Size(90, 29);
+            this.btnLoginFromClear.TabIndex = 99;
+            this.btnLoginFromClear.Text = "Clear";
+            this.btnLoginFromClear.UseVisualStyleBackColor = false;
+            this.btnLoginFromClear.Click += new System.EventHandler(this.btnLoginFromClear_Click);
             // 
             // pictureBox2
             // 
@@ -168,7 +169,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(693, 453);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnStudentInfoClear);
+            this.Controls.Add(this.btnLoginFromClear);
             this.Controls.Add(this.btnExitFormFormLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.chkShowPassword);
@@ -181,7 +182,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -199,7 +199,7 @@
         private System.Windows.Forms.CheckBox chkShowPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExitFormFormLogin;
-        private System.Windows.Forms.Button btnStudentInfoClear;
+        private System.Windows.Forms.Button btnLoginFromClear;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

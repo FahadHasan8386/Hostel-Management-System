@@ -117,7 +117,7 @@
             this.btnSearcByPhoneNumber.ForeColor = System.Drawing.Color.White;
             this.btnSearcByPhoneNumber.Image = ((System.Drawing.Image)(resources.GetObject("btnSearcByPhoneNumber.Image")));
             this.btnSearcByPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearcByPhoneNumber.Location = new System.Drawing.Point(565, 69);
+            this.btnSearcByPhoneNumber.Location = new System.Drawing.Point(563, 71);
             this.btnSearcByPhoneNumber.Name = "btnSearcByPhoneNumber";
             this.btnSearcByPhoneNumber.Size = new System.Drawing.Size(116, 27);
             this.btnSearcByPhoneNumber.TabIndex = 90;
@@ -180,7 +180,6 @@
             this.label9.Size = new System.Drawing.Size(17, 13);
             this.label9.TabIndex = 104;
             this.label9.Text = "Id";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -203,7 +202,6 @@
             this.txtMngStudentAddress.Size = new System.Drawing.Size(367, 24);
             this.txtMngStudentAddress.TabIndex = 102;
             this.txtMngStudentAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtMngStudentAddress.TextChanged += new System.EventHandler(this.txtMngStudentAddress_TextChanged);
             // 
             // label11
             // 
@@ -269,9 +267,9 @@
             this.btnStudentInfomationUpdate.ForeColor = System.Drawing.Color.White;
             this.btnStudentInfomationUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInfomationUpdate.Image")));
             this.btnStudentInfomationUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentInfomationUpdate.Location = new System.Drawing.Point(172, 452);
+            this.btnStudentInfomationUpdate.Location = new System.Drawing.Point(188, 452);
             this.btnStudentInfomationUpdate.Name = "btnStudentInfomationUpdate";
-            this.btnStudentInfomationUpdate.Size = new System.Drawing.Size(118, 34);
+            this.btnStudentInfomationUpdate.Size = new System.Drawing.Size(102, 34);
             this.btnStudentInfomationUpdate.TabIndex = 96;
             this.btnStudentInfomationUpdate.Text = "Update";
             this.btnStudentInfomationUpdate.UseVisualStyleBackColor = false;
@@ -286,7 +284,7 @@
             this.btnMngStudnetInfomationClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMngStudnetInfomationClear.Location = new System.Drawing.Point(449, 452);
             this.btnMngStudnetInfomationClear.Name = "btnMngStudnetInfomationClear";
-            this.btnMngStudnetInfomationClear.Size = new System.Drawing.Size(122, 34);
+            this.btnMngStudnetInfomationClear.Size = new System.Drawing.Size(106, 34);
             this.btnMngStudnetInfomationClear.TabIndex = 108;
             this.btnMngStudnetInfomationClear.Text = "Clear";
             this.btnMngStudnetInfomationClear.UseVisualStyleBackColor = false;

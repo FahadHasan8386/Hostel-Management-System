@@ -235,9 +235,9 @@
             this.btnSearcByEmployeeSalariesPhone.ForeColor = System.Drawing.Color.White;
             this.btnSearcByEmployeeSalariesPhone.Image = ((System.Drawing.Image)(resources.GetObject("btnSearcByEmployeeSalariesPhone.Image")));
             this.btnSearcByEmployeeSalariesPhone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearcByEmployeeSalariesPhone.Location = new System.Drawing.Point(631, 60);
+            this.btnSearcByEmployeeSalariesPhone.Location = new System.Drawing.Point(631, 53);
             this.btnSearcByEmployeeSalariesPhone.Name = "btnSearcByEmployeeSalariesPhone";
-            this.btnSearcByEmployeeSalariesPhone.Size = new System.Drawing.Size(99, 22);
+            this.btnSearcByEmployeeSalariesPhone.Size = new System.Drawing.Size(99, 29);
             this.btnSearcByEmployeeSalariesPhone.TabIndex = 107;
             this.btnSearcByEmployeeSalariesPhone.Text = "Search";
             this.btnSearcByEmployeeSalariesPhone.UseVisualStyleBackColor = false;

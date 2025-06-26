@@ -68,14 +68,7 @@ namespace Hostel_Management_System
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormNewEmployee_Load(object sender, EventArgs e)
-        {
-
-        }
+        
+       
     }
 }

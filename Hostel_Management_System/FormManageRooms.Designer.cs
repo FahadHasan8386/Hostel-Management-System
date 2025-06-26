@@ -69,11 +69,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(375, 115);
+            this.label3.Location = new System.Drawing.Point(376, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 16);
+            this.label3.Size = new System.Drawing.Size(91, 16);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Room Status Active or Deactive";
+            this.label3.Text = "Room Status ";
             // 
             // label4
             // 
@@ -100,7 +100,7 @@
             this.chkRoomStatus.AutoSize = true;
             this.chkRoomStatus.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRoomStatus.ForeColor = System.Drawing.Color.Black;
-            this.chkRoomStatus.Location = new System.Drawing.Point(598, 115);
+            this.chkRoomStatus.Location = new System.Drawing.Point(482, 120);
             this.chkRoomStatus.Name = "chkRoomStatus";
             this.chkRoomStatus.Size = new System.Drawing.Size(46, 18);
             this.chkRoomStatus.TabIndex = 7;
@@ -112,7 +112,7 @@
             this.chkRoomBooked.AutoSize = true;
             this.chkRoomBooked.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRoomBooked.ForeColor = System.Drawing.Color.Black;
-            this.chkRoomBooked.Location = new System.Drawing.Point(663, 282);
+            this.chkRoomBooked.Location = new System.Drawing.Point(745, 248);
             this.chkRoomBooked.Name = "chkRoomBooked";
             this.chkRoomBooked.Size = new System.Drawing.Size(46, 18);
             this.chkRoomBooked.TabIndex = 8;
@@ -126,7 +126,7 @@
             this.btnSearchByRoomNumber.ForeColor = System.Drawing.Color.White;
             this.btnSearchByRoomNumber.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchByRoomNumber.Image")));
             this.btnSearchByRoomNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchByRoomNumber.Location = new System.Drawing.Point(235, 244);
+            this.btnSearchByRoomNumber.Location = new System.Drawing.Point(235, 242);
             this.btnSearchByRoomNumber.Name = "btnSearchByRoomNumber";
             this.btnSearchByRoomNumber.Size = new System.Drawing.Size(118, 30);
             this.btnSearchByRoomNumber.TabIndex = 10;
@@ -141,7 +141,7 @@
             this.btnStudentDeleteRoom.ForeColor = System.Drawing.Color.White;
             this.btnStudentDeleteRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentDeleteRoom.Image")));
             this.btnStudentDeleteRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentDeleteRoom.Location = new System.Drawing.Point(526, 242);
+            this.btnStudentDeleteRoom.Location = new System.Drawing.Point(508, 240);
             this.btnStudentDeleteRoom.Name = "btnStudentDeleteRoom";
             this.btnStudentDeleteRoom.Size = new System.Drawing.Size(118, 30);
             this.btnStudentDeleteRoom.TabIndex = 11;
@@ -157,7 +157,7 @@
             this.btnAddRooms.ForeColor = System.Drawing.Color.White;
             this.btnAddRooms.Image = ((System.Drawing.Image)(resources.GetObject("btnAddRooms.Image")));
             this.btnAddRooms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddRooms.Location = new System.Drawing.Point(235, 111);
+            this.btnAddRooms.Location = new System.Drawing.Point(235, 110);
             this.btnAddRooms.Name = "btnAddRooms";
             this.btnAddRooms.Size = new System.Drawing.Size(118, 31);
             this.btnAddRooms.TabIndex = 12;
@@ -172,7 +172,7 @@
             this.btnStudentInfoUdateRoom.ForeColor = System.Drawing.Color.White;
             this.btnStudentInfoUdateRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentInfoUdateRoom.Image")));
             this.btnStudentInfoUdateRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentInfoUdateRoom.Location = new System.Drawing.Point(378, 244);
+            this.btnStudentInfoUdateRoom.Location = new System.Drawing.Point(369, 242);
             this.btnStudentInfoUdateRoom.Name = "btnStudentInfoUdateRoom";
             this.btnStudentInfoUdateRoom.Size = new System.Drawing.Size(118, 30);
             this.btnStudentInfoUdateRoom.TabIndex = 13;
@@ -185,11 +185,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(660, 247);
+            this.label6.Location = new System.Drawing.Point(643, 247);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(206, 16);
+            this.label6.Size = new System.Drawing.Size(87, 16);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Room Status Active or Deactive";
+            this.label6.Text = "Room Status";
             // 
             // dgvManageRooms
             // 

@@ -343,7 +343,7 @@
             this.btnPaymentSearcByPhoneNumber.ForeColor = System.Drawing.Color.White;
             this.btnPaymentSearcByPhoneNumber.Image = ((System.Drawing.Image)(resources.GetObject("btnPaymentSearcByPhoneNumber.Image")));
             this.btnPaymentSearcByPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPaymentSearcByPhoneNumber.Location = new System.Drawing.Point(284, 61);
+            this.btnPaymentSearcByPhoneNumber.Location = new System.Drawing.Point(270, 57);
             this.btnPaymentSearcByPhoneNumber.Name = "btnPaymentSearcByPhoneNumber";
             this.btnPaymentSearcByPhoneNumber.Size = new System.Drawing.Size(116, 27);
             this.btnPaymentSearcByPhoneNumber.TabIndex = 83;

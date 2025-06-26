@@ -158,7 +158,6 @@
             this.lblHms.Size = new System.Drawing.Size(332, 32);
             this.lblHms.TabIndex = 9;
             this.lblHms.Text = "Hostel Management System";
-            this.lblHms.Click += new System.EventHandler(this.lblHms_Click);
             // 
             // btnExit
             // 
@@ -208,7 +207,6 @@
             this.picHostelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHostelLogo.TabIndex = 20;
             this.picHostelLogo.TabStop = false;
-            this.picHostelLogo.Click += new System.EventHandler(this.picHostelLogo_Click);
             // 
             // tmrHostelLogo
             // 
@@ -293,6 +291,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(919, 52);
             this.panel2.TabIndex = 33;
+           
             // 
             // lableInfo
             // 
@@ -327,7 +326,7 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(919, 527);
             this.panelContainer.TabIndex = 34;
-            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
+            
             // 
             // tmrSidebarTransition
             // 

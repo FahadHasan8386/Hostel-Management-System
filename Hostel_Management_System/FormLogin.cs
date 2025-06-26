@@ -1,5 +1,6 @@
 ﻿using Hostel_Management_System;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,8 @@ namespace HostelManagementSystem
 {
     public partial class Login : Form
     {
+        DataFunction fn = new DataFunction();
+        string query;
         public Login()
         {
             InitializeComponent();
@@ -21,19 +24,13 @@ namespace HostelManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            String connectionstring = "data source=FAHAD\\SQLEXPRESS;database=HMS;Integrated Security=True";
-
-            string sql = "SELECT * FROM Userinfo WHERE Id = '"
+            query = "SELECT * FROM Userinfo WHERE Id = '"
             + textUserId.Text + "' AND Password = '"
             + txtPassword.Text + "';";
 
+            DataSet ds = fn.getData(query);
 
-            SqlConnection sqlcon = new SqlConnection(connectionstring);
-            sqlcon.Open();
-            SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
-            SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
+
 
             if (ds.Tables[0].Rows.Count == 1)
             {
@@ -44,24 +41,33 @@ namespace HostelManagementSystem
                 if (ds.Tables[0].Rows[0][0].ToString().Equals("u-001") && ds.Tables[0].Rows[0][1].ToString().Equals("123"))
                 {
                     new FormStudentDashboard(this).Show();
+                    ClearAll();
                 }
                 else if (ds.Tables[0].Rows[0][0].ToString().Equals("u-002") && ds.Tables[0].Rows[0][1].ToString().Equals("456"))
                 {
                     new FormEmployeeDashboard(this).Show();
+                    ClearAll();
                 }
             }
             else
             {
-                MessageBox.Show("Invalid User" , "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Invalid User", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            sqlcon.Close();
+
 
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            txtPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
+            if (chkShowPassword.Checked == true)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
         }
 
         private void btnExitFormFormLogin_Click(object sender, EventArgs e)
@@ -69,9 +75,16 @@ namespace HostelManagementSystem
             Application.Exit();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+       
+        public void ClearAll()
         {
-
+            textUserId.Clear();
+            txtPassword.Clear();
         }
-    }
+
+        private void btnLoginFromClear_Click(object sender, EventArgs e)
+        {
+            ClearAll();
+        }
+    } 
 }

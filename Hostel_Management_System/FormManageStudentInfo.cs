@@ -25,11 +25,7 @@ namespace Hostel_Management_System
         private void FormManageStudentInfo_Load(object sender, EventArgs e)
         {
             this.Location = new Point(450, 180);
-            this.Location = new Point(450, 180);
-            this.Location = new Point(450, 180);
-
-           
-
+            
         }
 
         private void btnMngStudnetInfomationClear_Click(object sender, EventArgs e)
@@ -57,7 +53,7 @@ namespace Hostel_Management_System
 
 
             /// newStudent is table name and mobile is column name
-            // ✅ Correct SQL
+           
             query = "SELECT * FROM newStudent WHERE Phone_Number = " + phone;
 
             DataSet ds = fn.getData(query);
@@ -85,26 +81,37 @@ namespace Hostel_Management_System
 
         private void btnStudentInfomationUpdate_Click(object sender, EventArgs e)
         {
+            try
+            {
 
-            Int64 mobile = Int64.Parse(txtMngStudentSearchByPhoneNumber.Text);
-            string firstName = txtMngStudentFirstName.Text;
-            string lastName = txtMngStudentLastName.Text;
-            string email = txtMngStudentEmail.Text;
-            string address = txtMngStudentAddress.Text;
-            string nid = txtMngStudentNid.Text;
-            Int64 roomNum = Int64.Parse(txtManageStudnetRoomNum.Text);
-            string livingStatus = chkMngkStudentLivingStatus.Text;
+                Int64 mobile = Int64.Parse(txtMngStudentSearchByPhoneNumber.Text);
+                string firstName = txtMngStudentFirstName.Text;
+                string lastName = txtMngStudentLastName.Text;
+                string email = txtMngStudentEmail.Text;
+                string address = txtMngStudentAddress.Text;
+                string nid = txtMngStudentNid.Text;
+                Int64 roomNum = Int64.Parse(txtManageStudnetRoomNum.Text);
+                string livingStatus = chkMngkStudentLivingStatus.Text;
 
 
-            /// here set same column name as Table column name. If i don,t write where cluse then if i not found the mobile number then every textfield  is fill with this data
-            // ✅ Correct SQL query with proper column names, spacing, and semicolon
-            query = "UPDATE newStudent SET First_name = '" + firstName + "', Last_name = '" + lastName + "', " +
-                    "Email = '" + email + "', Address = '" + address + "', Nid = '" + nid + "', " +
-                    "Room_Number = " + roomNum + ", Living_Status = '" + livingStatus + "' " +
-                    "WHERE Phone_Number = " + mobile + "; " +
-                    "UPDATE rooms SET Booked = '" + livingStatus + "' WHERE roomNo = " + roomNum;
+                /// here set same column name as Table column name. If i don,t write where cluse then if i not found the mobile number then every textfield  is fill with this data
 
-            fn.setData(query, "Data Updation Successful");
+                query = "UPDATE newStudent SET First_name = '" + firstName + "', Last_name = '" + lastName + "', " +
+                        "Email = '" + email + "', Address = '" + address + "', Nid = '" + nid + "', " +
+                        "Room_Number = " + roomNum + ", Living_Status = '" + livingStatus + "' " +
+                        "WHERE Phone_Number = " + mobile + "; " +
+                        "UPDATE rooms SET Booked = '" + livingStatus + "' WHERE roomNo = " + roomNum;
+
+                fn.setData(query, "Data Updation Successful");
+
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("please At first Search with valid Phone Number", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+           
+
         }
 
         private void btnStudentInformationDelete_Click(object sender, EventArgs e)
@@ -119,10 +126,7 @@ namespace Hostel_Management_System
             }
         }
 
-        private void txtMngStudentAddress_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnExitFormManageRooms_Enter(object sender, EventArgs e)
         {
@@ -142,9 +146,6 @@ namespace Hostel_Management_System
             }
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

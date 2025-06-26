@@ -258,7 +258,7 @@
             this.txtEmployeeInformationNID.Size = new System.Drawing.Size(205, 21);
             this.txtEmployeeInformationNID.TabIndex = 114;
             this.txtEmployeeInformationNID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtEmployeeInformationNID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // FormNewEmployee
             // 
@@ -289,7 +289,7 @@
             this.Name = "FormNewEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewEmployee";
-            this.Load += new System.EventHandler(this.FormNewEmployee_Load);
+           
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
