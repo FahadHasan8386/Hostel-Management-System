@@ -106,7 +106,7 @@ namespace Hostel_Management_System
             {
                 string phone = txtStudentPhoneNumber.Text.Trim();
 
-                // FIXED: Use .Text properly here
+               
                 query = "SELECT First_name, Last_name, Email, Room_Number FROM newStudent WHERE Phone_Number = " + phone;
 
                 DataSet ds = fn.getData(query);
@@ -131,23 +131,23 @@ namespace Hostel_Management_System
         {
             if (txtStudentPhoneNumber.Text != "" && txtAmount.Text != "")
             {
-                /// here i want check that if student paid or not for a specific month , if he paid then he can,t able to paid
-                /// here in the query statement if any student already paid then Dataset ds object has store mobile num and month data from data base , if not paid then Dataset ds is empty because no data in fees table , no data is return . so i checked it if ds is empty then i store this data in database click in pay button
+                
+                
                 query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
                 DataSet ds = fn.getData(query);
 
-                /// here in the query statement if any student already paid then Dataset ds object has store mobile num and month data from data base ,
-                /// if not paid then Dataset ds is empty because no data in fees table , no data is return . so i checked it if ds is empty then i store this data in database click in pay button
+               
+                
                 query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
                 if (ds.Tables[0].Rows.Count == 0)
                 {
-                    /// if fees not paid means if Row count == 0 then store the text field data in variables
+                    
                     Int64 mobile = Int64.Parse(txtStudentPhoneNumber.Text);
                     string month = dtpPaymentDate.Text;
                     Int64 amount = Int64.Parse(txtAmount.Text);
-                    ///then insert the data in database
-                    query = "insert into fees values(" + mobile + ", '" + month + "', " + amount + ")"; /// i am not mentioned column name because i insert data in each three column
-                                                                                                        ///finally executed with the help of the method that is setData();
+                    
+                    query = "insert into fees values(" + mobile + ", '" + month + "', " + amount + ")"; 
+                                                                                                        
                     fn.setData(query, "Fees paid.");
 
                     clearAll();

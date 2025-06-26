@@ -46,7 +46,7 @@
             this.btnEmployeeDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployeeDetails.Location = new System.Drawing.Point(6, 82);
             this.btnEmployeeDetails.Name = "btnEmployeeDetails";
-            this.btnEmployeeDetails.Size = new System.Drawing.Size(160, 29);
+            this.btnEmployeeDetails.Size = new System.Drawing.Size(160, 26);
             this.btnEmployeeDetails.TabIndex = 103;
             this.btnEmployeeDetails.Text = "Show Details >>";
             this.btnEmployeeDetails.UseVisualStyleBackColor = false;
@@ -73,7 +73,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 101;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+          
             // 
             // label1
             // 

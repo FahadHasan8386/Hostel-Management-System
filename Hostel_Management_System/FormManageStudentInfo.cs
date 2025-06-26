@@ -52,7 +52,7 @@ namespace Hostel_Management_System
             string phone = txtMngStudentSearchByPhoneNumber.Text.Trim();
 
 
-            /// newStudent is table name and mobile is column name
+          
            
             query = "SELECT * FROM newStudent WHERE Phone_Number = " + phone;
 
@@ -63,11 +63,11 @@ namespace Hostel_Management_System
             /// At first we check that the phone number exist or not,
             if (ds.Tables[0].Rows.Count != 0)  /// != 0 means it / tables contails some data
             {
-                txtMngStudentFirstName.Text = ds.Tables[0].Rows[0][2].ToString();  /// if i found search by mobile number then tables data first name will show in the First name text box
+                txtMngStudentFirstName.Text = ds.Tables[0].Rows[0][2].ToString(); 
                 txtMngStudentLastName.Text = ds.Tables[0].Rows[0][3].ToString();
                 txtMngStudentEmail.Text = ds.Tables[0].Rows[0][4].ToString();
                 txtMngStudentAddress.Text = ds.Tables[0].Rows[0][5].ToString();
-                txtMngStudentNid.Text = ds.Tables[0].Rows[0][6].ToString(); /// idProof mean Nid
+                txtMngStudentNid.Text = ds.Tables[0].Rows[0][6].ToString(); 
                 txtManageStudnetRoomNum.Text = ds.Tables[0].Rows[0][7].ToString();
                 chkMngkStudentLivingStatus.Text = ds.Tables[0].Rows[0][8].ToString();
                  

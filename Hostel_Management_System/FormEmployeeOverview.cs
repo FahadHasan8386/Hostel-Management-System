@@ -21,10 +21,7 @@ namespace Hostel_Management_System
             InitializeComponent();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnEmployeeDetails_Click(object sender, EventArgs e)
         {

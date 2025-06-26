@@ -55,7 +55,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(263, 6);
+            this.label2.Location = new System.Drawing.Point(277, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(335, 25);
             this.label2.TabIndex = 127;
@@ -81,7 +81,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(208, 294);
+            this.label1.Location = new System.Drawing.Point(225, 297);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 125;
@@ -105,7 +105,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(208, 147);
+            this.label12.Location = new System.Drawing.Point(225, 147);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(29, 13);
@@ -144,7 +144,7 @@
             this.btnManageEmployeeUpdate.ForeColor = System.Drawing.Color.White;
             this.btnManageEmployeeUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnManageEmployeeUpdate.Image")));
             this.btnManageEmployeeUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageEmployeeUpdate.Location = new System.Drawing.Point(211, 395);
+            this.btnManageEmployeeUpdate.Location = new System.Drawing.Point(228, 395);
             this.btnManageEmployeeUpdate.Name = "btnManageEmployeeUpdate";
             this.btnManageEmployeeUpdate.Size = new System.Drawing.Size(118, 34);
             this.btnManageEmployeeUpdate.TabIndex = 117;
@@ -166,7 +166,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(208, 103);
+            this.label3.Location = new System.Drawing.Point(225, 103);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 13);
@@ -178,7 +178,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(208, 60);
+            this.label5.Location = new System.Drawing.Point(225, 61);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 13);
@@ -224,7 +224,7 @@
             this.lblManageEmpoyeeAddress.AutoSize = true;
             this.lblManageEmpoyeeAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManageEmpoyeeAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblManageEmpoyeeAddress.Location = new System.Drawing.Point(208, 247);
+            this.lblManageEmpoyeeAddress.Location = new System.Drawing.Point(225, 248);
             this.lblManageEmpoyeeAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblManageEmpoyeeAddress.Name = "lblManageEmpoyeeAddress";
             this.lblManageEmpoyeeAddress.Size = new System.Drawing.Size(52, 13);
@@ -246,7 +246,7 @@
             this.lblManageEmployeeEmail.AutoSize = true;
             this.lblManageEmployeeEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManageEmployeeEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblManageEmployeeEmail.Location = new System.Drawing.Point(208, 196);
+            this.lblManageEmployeeEmail.Location = new System.Drawing.Point(225, 196);
             this.lblManageEmployeeEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblManageEmployeeEmail.Name = "lblManageEmployeeEmail";
             this.lblManageEmployeeEmail.Size = new System.Drawing.Size(37, 13);
@@ -258,7 +258,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(208, 358);
+            this.label4.Location = new System.Drawing.Point(225, 352);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 13);
             this.label4.TabIndex = 133;
@@ -301,7 +301,7 @@
             this.Controls.Add(this.btnManageNumSearch);
             this.Controls.Add(this.txtManageEmployeePhone);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormManageEmployeeInfo";
             this.Text = "FormManageEmployee";
             this.Load += new System.EventHandler(this.FormManageEmployeeInfo_Load);

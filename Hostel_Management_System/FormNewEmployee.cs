@@ -38,7 +38,7 @@ namespace Hostel_Management_System
                 Int64 nid = Int64.Parse(txtEmployeeInformationNID.Text);
                 string designation = cmbEmployeeDesignattion.Text;
 
-                // Correct SQL: insert + update (2 statements separated by semicolon)
+               
                 query = "INSERT INTO newEmployee ( mobile, name, email, address ,nid, designation) " +
                         "VALUES ( '" + phone + "', '" + name + "', '" + email + "', '" + address + "', '" + nid + "', '" + designation + "')"; 
                        
