@@ -25,6 +25,7 @@ namespace HostelManagementSystem
             TotalStudents();
             TotalRooms();
             BedAssign();
+            PendingFees();
         }
 
 
@@ -43,11 +44,14 @@ namespace HostelManagementSystem
         {
             lblBedAssign.Text = fn.Count("SELECT COUNT(*) FROM newStudent WHERE Living_Status = 'Yes'");
         }
-        private void FormDashBoard_Load(object sender, EventArgs e)
+
+        public void PendingFees()
         {
-            TotalStudents();
-            TotalRooms();
-            BedAssign();
+
+            lblPaidStudents.Text = fn.Count("SELECT COUNT(*) FROM fees");
         }
+      
+
+       
     }
 }

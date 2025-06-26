@@ -78,9 +78,9 @@
             this.btnCrntShowDetails.ForeColor = System.Drawing.Color.White;
             this.btnCrntShowDetails.Image = ((System.Drawing.Image)(resources.GetObject("btnCrntShowDetails.Image")));
             this.btnCrntShowDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrntShowDetails.Location = new System.Drawing.Point(6, 88);
+            this.btnCrntShowDetails.Location = new System.Drawing.Point(6, 91);
             this.btnCrntShowDetails.Name = "btnCrntShowDetails";
-            this.btnCrntShowDetails.Size = new System.Drawing.Size(160, 29);
+            this.btnCrntShowDetails.Size = new System.Drawing.Size(160, 26);
             this.btnCrntShowDetails.TabIndex = 99;
             this.btnCrntShowDetails.Text = "Show Details >>";
             this.btnCrntShowDetails.UseVisualStyleBackColor = false;

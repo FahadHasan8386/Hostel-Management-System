@@ -15,12 +15,7 @@ namespace HostelManagementSystem
     {
         private Login login;
         private Form activeForm = null;
-        //private FormManageRooms manageRooms;
-        //private FormNewStudent newStudent;
-        //private FormManageStudentInfo manageStudentInfo;
-        //private FormStudentPayment studentPayment;
-        //private FormCurrentResidents currentResidents;
-        //private FormFormerResidents formerResidents;
+        
 
         public FormStudentDashboard()
         {
@@ -130,10 +125,7 @@ namespace HostelManagementSystem
             UpdateHeaderInfo("Student Payment");
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void picCloseButton_Click(object sender, EventArgs e)
         {
@@ -144,18 +136,16 @@ namespace HostelManagementSystem
         {
             this.login.Visible = true;
             this.Hide();
+
         }
 
         
-        private void panelContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void btnStudentDashboard_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormStatusOverview());
-            UpdateHeaderInfo("Dashboard");
+            UpdateHeaderInfo("Status Overview");
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -186,17 +176,7 @@ namespace HostelManagementSystem
                 }
             }
         }
-      
-        private void lblHms_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void picHostelLogo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
+       
     }
 }

@@ -119,9 +119,9 @@
             this.label9.Location = new System.Drawing.Point(214, 156);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(17, 13);
+            this.label9.Size = new System.Drawing.Size(26, 13);
             this.label9.TabIndex = 85;
-            this.label9.Text = "Id";
+            this.label9.Text = "Nid";
             // 
             // label10
             // 
@@ -144,7 +144,6 @@
             this.txtStudentInfromationAddress.Size = new System.Drawing.Size(388, 24);
             this.txtStudentInfromationAddress.TabIndex = 83;
             this.txtStudentInfromationAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtStudentInfromationAddress.TextChanged += new System.EventHandler(this.txtStudentInfromationAddress_TextChanged);
             // 
             // label11
             // 
