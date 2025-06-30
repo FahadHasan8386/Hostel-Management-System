@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmployeeSalaries));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblEmployeeSalariesPayment = new System.Windows.Forms.Label();
@@ -47,8 +48,12 @@
             this.btnSearcByEmployeeSalariesPhone = new System.Windows.Forms.Button();
             this.txtEmployeeSalariesPhoneNumber = new System.Windows.Forms.TextBox();
             this.cmbEmployeeSalariesDesignattion = new System.Windows.Forms.ComboBox();
+            this.empPaymetEmailErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderEmployeeSalary = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeePayment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empPaymetEmailErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderEmployeeSalary)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -148,9 +153,9 @@
             this.lblEmployeeSalariesNetSelery.Location = new System.Drawing.Point(235, 253);
             this.lblEmployeeSalariesNetSelery.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeSalariesNetSelery.Name = "lblEmployeeSalariesNetSelery";
-            this.lblEmployeeSalariesNetSelery.Size = new System.Drawing.Size(66, 13);
+            this.lblEmployeeSalariesNetSelery.Size = new System.Drawing.Size(46, 13);
             this.lblEmployeeSalariesNetSelery.TabIndex = 118;
-            this.lblEmployeeSalariesNetSelery.Text = "Net Selery";
+            this.lblEmployeeSalariesNetSelery.Text = " Salary";
             // 
             // txtEmployeeSalariesNetSelery
             // 
@@ -159,7 +164,9 @@
             this.txtEmployeeSalariesNetSelery.Name = "txtEmployeeSalariesNetSelery";
             this.txtEmployeeSalariesNetSelery.Size = new System.Drawing.Size(220, 20);
             this.txtEmployeeSalariesNetSelery.TabIndex = 117;
+            this.txtEmployeeSalariesNetSelery.Text = "e";
             this.txtEmployeeSalariesNetSelery.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmployeeSalariesNetSelery.TextChanged += new System.EventHandler(this.txtEmployeeSalariesNetSelery_TextChanged);
             // 
             // lblEmployeeDesignation
             // 
@@ -182,6 +189,7 @@
             this.txtEmployeeSalariesEmail.Size = new System.Drawing.Size(220, 20);
             this.txtEmployeeSalariesEmail.TabIndex = 114;
             this.txtEmployeeSalariesEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmployeeSalariesEmail.TextChanged += new System.EventHandler(this.txtEmployeeSalariesEmail_TextChanged);
             // 
             // lblEmployeeSalariesEmail
             // 
@@ -266,6 +274,14 @@
             this.cmbEmployeeSalariesDesignattion.Size = new System.Drawing.Size(220, 21);
             this.cmbEmployeeSalariesDesignattion.TabIndex = 130;
             // 
+            // empPaymetEmailErrorProvider
+            // 
+            this.empPaymetEmailErrorProvider.ContainerControl = this;
+            // 
+            // errorProviderEmployeeSalary
+            // 
+            this.errorProviderEmployeeSalary.ContainerControl = this;
+            // 
             // FormEmployeeSalaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +312,8 @@
             this.Load += new System.EventHandler(this.FormEmployeeSalaries_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeePayment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empPaymetEmailErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderEmployeeSalary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,5 +339,7 @@
         private System.Windows.Forms.Button btnSearcByEmployeeSalariesPhone;
         private System.Windows.Forms.TextBox txtEmployeeSalariesPhoneNumber;
         private System.Windows.Forms.ComboBox cmbEmployeeSalariesDesignattion;
+        private System.Windows.Forms.ErrorProvider empPaymetEmailErrorProvider;
+        private System.Windows.Forms.ErrorProvider errorProviderEmployeeSalary;
     }
 }

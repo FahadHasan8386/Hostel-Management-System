@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions; /// Email validation
+
 
 namespace Hostel_Management_System
 {
@@ -108,6 +110,43 @@ namespace Hostel_Management_System
         {
             dtpEmployeeSalariesPaymentDate.Format = DateTimePickerFormat.Custom;
             dtpEmployeeSalariesPaymentDate.CustomFormat = "MMMM yyyy";
+        }
+
+        string expression = " ^([0 - 9a - zA - Z]([-\\.\\w] * [0 - 9a - zA - Z]) *@([0 - 9a - zA - Z][-\\w]*[0 - 9a - zA - Z]\\.)+[a-zA-Z]{2,9})$";
+        private void txtEmployeeSalariesEmail_TextChanged(object sender, EventArgs e)
+        {
+            ///Email Validation
+            
+            if(Regex.IsMatch(txtEmployeeSalariesEmail.Text,expression) == false)
+            {
+                txtEmployeeSalariesEmail.Focus();
+                empPaymetEmailErrorProvider.SetError(this.txtEmployeeSalariesEmail, "Invalid Email Adderss");
+            }
+            else
+            {
+                empPaymetEmailErrorProvider.Clear();
+            }
+        }
+
+        private void txtEmployeeSalariesNetSelery_TextChanged(object sender, EventArgs e)
+        {
+
+           
+            if (double.TryParse(txtEmployeeSalariesNetSelery.Text, out double amount))
+            {
+                if (amount <= 0)
+                {
+                    errorProviderEmployeeSalary.SetError(txtEmployeeSalariesNetSelery, "Amount must be greater than 0.");
+                }
+                else
+                {
+                    errorProviderEmployeeSalary.Clear();
+                }
+            }
+            else
+            {
+                errorProviderEmployeeSalary.SetError(txtEmployeeSalariesNetSelery, "Please enter a valid number.");
+            }
         }
     }
 }

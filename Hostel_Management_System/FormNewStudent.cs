@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Drawing;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace HostelManagementSystem
@@ -77,6 +78,25 @@ namespace HostelManagementSystem
             txtStudentInformationEmail.Clear();
             txtStudentInfromationAddress.Clear();
             cmbStudentInformationRoomNum.SelectedIndex = -1; 
+        }
+
+
+        string expression = " ^([0 - 9a - zA - Z]([-\\.\\w] * [0 - 9a - zA - Z]) *@([0 - 9a - zA - Z][-\\w]*[0 - 9a - zA - Z]\\.)+[a-zA-Z]{2,9})$";
+        
+
+        private void txtStudentInformationEmail_TextChanged(object sender, EventArgs e)
+        {
+            ///Email Validation
+
+            if (Regex.IsMatch(txtStudentInformationEmail.Text, expression) == false)
+            {
+                txtStudentInformationEmail.Focus();
+                errorProviderAddNewStudents.SetError(this.txtStudentInformationEmail, "Invalid Email Adderss");
+            }
+            else
+            {
+                errorProviderAddNewStudents.Clear();
+            }
         }
     }
 }

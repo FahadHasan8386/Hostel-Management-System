@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNewStudent));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +48,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btnStudentInformationClear = new System.Windows.Forms.Button();
             this.btnStudentInfomationSave = new System.Windows.Forms.Button();
+            this.errorProviderAddNewStudents = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAddNewStudents)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -110,6 +113,7 @@
             this.txtStudentInformationEmail.Size = new System.Drawing.Size(388, 24);
             this.txtStudentInformationEmail.TabIndex = 86;
             this.txtStudentInformationEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStudentInformationEmail.TextChanged += new System.EventHandler(this.txtStudentInformationEmail_TextChanged);
             // 
             // label9
             // 
@@ -253,6 +257,10 @@
             this.btnStudentInfomationSave.UseVisualStyleBackColor = false;
             this.btnStudentInfomationSave.Click += new System.EventHandler(this.btnStudentInfomationSave_Click);
             // 
+            // errorProviderAddNewStudents
+            // 
+            this.errorProviderAddNewStudents.ContainerControl = this;
+            // 
             // FormNewStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,6 +291,7 @@
             this.Text = "FormNewStudent";
             this.Load += new System.EventHandler(this.FormEnrollStudent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAddNewStudents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,5 +317,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnStudentInformationClear;
         private System.Windows.Forms.Button btnStudentInfomationSave;
+        private System.Windows.Forms.ErrorProvider errorProviderAddNewStudents;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormManageStudentInfo));
             this.txtMngStudentFirstName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,7 +54,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtManageStudnetRoomNum = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.errorProviderManageStudentInfo = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderManageStudentInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMngStudentFirstName
@@ -168,6 +171,7 @@
             this.txtMngStudentEmail.Size = new System.Drawing.Size(367, 24);
             this.txtMngStudentEmail.TabIndex = 105;
             this.txtMngStudentEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMngStudentEmail.TextChanged += new System.EventHandler(this.txtMngStudentEmail_TextChanged);
             // 
             // label9
             // 
@@ -330,6 +334,10 @@
             this.label6.TabIndex = 112;
             this.label6.Text = "Living Status";
             // 
+            // errorProviderManageStudentInfo
+            // 
+            this.errorProviderManageStudentInfo.ContainerControl = this;
+            // 
             // FormManageStudentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,6 +374,7 @@
             this.Text = "FormManageStudentInfo";
             this.Load += new System.EventHandler(this.FormManageStudentInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderManageStudentInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,5 +406,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtManageStudnetRoomNum;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ErrorProvider errorProviderManageStudentInfo;
     }
 }

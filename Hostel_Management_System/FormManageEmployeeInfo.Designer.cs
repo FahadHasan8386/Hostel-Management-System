@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormManageEmployeeInfo));
             this.label2 = new System.Windows.Forms.Label();
             this.btnManageEmployeeClear = new System.Windows.Forms.Button();
@@ -48,6 +49,8 @@
             this.lblManageEmployeeEmail = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbMangeEWorkingStatus = new System.Windows.Forms.ComboBox();
+            this.errorProviderManageEmployee = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderManageEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -218,6 +221,7 @@
             this.txtManageEmpployeeEmail.Size = new System.Drawing.Size(388, 21);
             this.txtManageEmpployeeEmail.TabIndex = 131;
             this.txtManageEmpployeeEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtManageEmpployeeEmail.TextChanged += new System.EventHandler(this.txtManageEmpployeeEmail_TextChanged);
             // 
             // lblManageEmpoyeeAddress
             // 
@@ -275,6 +279,10 @@
             this.cmbMangeEWorkingStatus.Size = new System.Drawing.Size(388, 21);
             this.cmbMangeEWorkingStatus.TabIndex = 132;
             // 
+            // errorProviderManageEmployee
+            // 
+            this.errorProviderManageEmployee.ContainerControl = this;
+            // 
             // FormManageEmployeeInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,6 +313,7 @@
             this.Name = "FormManageEmployeeInfo";
             this.Text = "FormManageEmployee";
             this.Load += new System.EventHandler(this.FormManageEmployeeInfo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderManageEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,5 +340,6 @@
         private System.Windows.Forms.Label lblManageEmployeeEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbMangeEWorkingStatus;
+        private System.Windows.Forms.ErrorProvider errorProviderManageEmployee;
     }
 }
