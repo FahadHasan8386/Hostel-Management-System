@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNewEmployee));
             this.PictureBoxEmployee = new System.Windows.Forms.PictureBox();
             this.lblEmployeeInfo = new System.Windows.Forms.Label();
@@ -47,7 +48,9 @@
             this.dtpEmpoyeeoJoiningDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEmployeeInformationNID = new System.Windows.Forms.TextBox();
+            this.errorProviderAddStudentInformation = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAddStudentInformation)).BeginInit();
             this.SuspendLayout();
             // 
             // PictureBoxEmployee
@@ -91,6 +94,7 @@
             this.txtEmpployeeInformationEmail.Size = new System.Drawing.Size(461, 21);
             this.txtEmpployeeInformationEmail.TabIndex = 103;
             this.txtEmpployeeInformationEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmpployeeInformationEmail.TextChanged += new System.EventHandler(this.txtEmpployeeInformationEmail_TextChanged);
             // 
             // lblEmpoyeeAddress
             // 
@@ -258,7 +262,10 @@
             this.txtEmployeeInformationNID.Size = new System.Drawing.Size(205, 21);
             this.txtEmployeeInformationNID.TabIndex = 114;
             this.txtEmployeeInformationNID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            // 
+            // errorProviderAddStudentInformation
+            // 
+            this.errorProviderAddStudentInformation.ContainerControl = this;
             // 
             // FormNewEmployee
             // 
@@ -289,8 +296,8 @@
             this.Name = "FormNewEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewEmployee";
-           
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAddStudentInformation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +323,6 @@
         private System.Windows.Forms.DateTimePicker dtpEmpoyeeoJoiningDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtEmployeeInformationNID;
+        private System.Windows.Forms.ErrorProvider errorProviderAddStudentInformation;
     }
 }

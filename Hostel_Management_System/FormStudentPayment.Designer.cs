@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStudentPayment));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,8 +57,10 @@
             this.txtStudentPhoneNumber = new System.Windows.Forms.TextBox();
             this.pdoSudentReceipt = new System.Drawing.Printing.PrintDocument();
             this.PrintPreviewDialogStudent = new System.Windows.Forms.PrintPreviewDialog();
+            this.errorProviderAmount = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentPayment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -212,11 +215,12 @@
             // 
             this.dtpPaymentDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpPaymentDate.Location = new System.Drawing.Point(12, 190);
-            this.dtpPaymentDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
+            this.dtpPaymentDate.MaxDate = new System.DateTime(2025, 1, 30, 0, 0, 0, 0);
             this.dtpPaymentDate.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
             this.dtpPaymentDate.Name = "dtpPaymentDate";
             this.dtpPaymentDate.Size = new System.Drawing.Size(388, 20);
             this.dtpPaymentDate.TabIndex = 95;
+            this.dtpPaymentDate.Value = new System.DateTime(2025, 1, 30, 0, 0, 0, 0);
             // 
             // label2
             // 
@@ -226,9 +230,9 @@
             this.label2.Location = new System.Drawing.Point(222, 273);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 94;
-            this.label2.Text = "Dues Amount";
+            this.label2.Text = " Amount";
             // 
             // txtAmount
             // 
@@ -238,6 +242,7 @@
             this.txtAmount.Size = new System.Drawing.Size(175, 20);
             this.txtAmount.TabIndex = 93;
             this.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAmount.TextChanged += new System.EventHandler(this.txtAmount_TextChanged);
             // 
             // txtStudentRoomNumber
             // 
@@ -379,6 +384,10 @@
             this.PrintPreviewDialogStudent.Visible = false;
             this.PrintPreviewDialogStudent.Load += new System.EventHandler(this.PrintPreviewDialogStudent_Load);
             // 
+            // errorProviderAmount
+            // 
+            this.errorProviderAmount.ContainerControl = this;
+            // 
             // FormStudentPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,6 +425,7 @@
             this.Load += new System.EventHandler(this.FormStudentPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentPayment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAmount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,5 +459,6 @@
         private System.Windows.Forms.TextBox txtStudentPhoneNumber;
         private System.Drawing.Printing.PrintDocument pdoSudentReceipt;
         private System.Windows.Forms.PrintPreviewDialog PrintPreviewDialogStudent;
+        private System.Windows.Forms.ErrorProvider errorProviderAmount;
     }
 }

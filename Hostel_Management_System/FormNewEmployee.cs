@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -67,8 +68,20 @@ namespace Hostel_Management_System
             cmbEmployeeDesignattion.SelectedIndex = -1;
 
         }
+        string expression = " ^([0 - 9a - zA - Z]([-\\.\\w] * [0 - 9a - zA - Z]) *@([0 - 9a - zA - Z][-\\w]*[0 - 9a - zA - Z]\\.)+[a-zA-Z]{2,9})$";
+        private void txtEmpployeeInformationEmail_TextChanged(object sender, EventArgs e)
+        {
+            ///Email Validation
 
-        
-       
+            if (Regex.IsMatch(txtEmpployeeInformationEmail.Text, expression) == false)
+            {
+                txtEmpployeeInformationEmail.Focus();
+                errorProviderAddStudentInformation.SetError(this.txtEmpployeeInformationEmail, "Invalid Email Adderss");
+            }
+            else
+            {
+                errorProviderAddStudentInformation.Clear();
+            }
+        }
     }
 }

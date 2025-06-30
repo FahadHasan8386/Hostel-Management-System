@@ -31,6 +31,7 @@ namespace Hostel_Management_System
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            if(txtStudentFirstName.Text != "" && txtStudentLastName.Text != "" && txtStudentEmail.Text != "" && txtStudentRoomNumber.Text != "" && txtAmount.Text != "" && txtStudentLastName.Text != "" && txtStudentPhoneNumber.Text != "")
             rtbStudentReceipt.Clear();
             rtbStudentReceipt.Text += "*********************************************************\n";
             rtbStudentReceipt.Text += "\n****             Payment Receipt                     ****\n";
@@ -102,61 +103,75 @@ namespace Hostel_Management_System
         }
         private void btnPaymentSearcByPhoneNumber_Click(object sender, EventArgs e)
         {
-            if (txtStudentPhoneNumber.Text != "")
+            try
             {
-                string phone = txtStudentPhoneNumber.Text.Trim();
-
-               
-                query = "SELECT First_name, Last_name, Email, Room_Number FROM newStudent WHERE Phone_Number = " + phone;
-
-                DataSet ds = fn.getData(query);
-
-                if (ds.Tables[0].Rows.Count != 0)
+                if (txtStudentPhoneNumber.Text != "")
                 {
-                    txtStudentFirstName.Text = ds.Tables[0].Rows[0][0].ToString();
-                    txtStudentLastName.Text = ds.Tables[0].Rows[0][1].ToString();
-                    txtStudentEmail.Text = ds.Tables[0].Rows[0][2].ToString();
-                    txtStudentRoomNumber.Text = ds.Tables[0].Rows[0][3].ToString();
+                    string phone = txtStudentPhoneNumber.Text.Trim();
 
-                    setDataGrid(Int64.Parse(phone));  // Safer to use the trimmed string variable
+
+                    query = "SELECT First_name, Last_name, Email, Room_Number FROM newStudent WHERE Phone_Number = " + phone;
+
+                    DataSet ds = fn.getData(query);
+
+                    if (ds.Tables[0].Rows.Count != 0)
+                    {
+                        txtStudentFirstName.Text = ds.Tables[0].Rows[0][0].ToString();
+                        txtStudentLastName.Text = ds.Tables[0].Rows[0][1].ToString();
+                        txtStudentEmail.Text = ds.Tables[0].Rows[0][2].ToString();
+                        txtStudentRoomNumber.Text = ds.Tables[0].Rows[0][3].ToString();
+
+                        setDataGrid(Int64.Parse(phone));  // Safer to use the trimmed string variable
+                    }
+                    else
+                    {
+                        MessageBox.Show("No Record Exist", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("No Record Exist", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Enter a Valid Phone number: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            if (txtStudentPhoneNumber.Text != "" && txtAmount.Text != "")
+            try
             {
-                
-                
-                query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
-                DataSet ds = fn.getData(query);
-
-               
-                
-                query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
-                if (ds.Tables[0].Rows.Count == 0)
+                if (txtStudentPhoneNumber.Text != "" && txtAmount.Text != "")
                 {
-                    
-                    Int64 mobile = Int64.Parse(txtStudentPhoneNumber.Text);
-                    string month = dtpPaymentDate.Text;
-                    Int64 amount = Int64.Parse(txtAmount.Text);
-                    
-                    query = "insert into fees values(" + mobile + ", '" + month + "', " + amount + ")"; 
-                                                                                                        
-                    fn.setData(query, "Fees paid.");
 
-                    clearAll();
-                }
-                else
-                {
-                    MessageBox.Show("No dues of " + dtpPaymentDate.Text + " Left.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
+                    DataSet ds = fn.getData(query);
+
+
+
+                    query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
+                    if (ds.Tables[0].Rows.Count == 0)
+                    {
+
+                        Int64 mobile = Int64.Parse(txtStudentPhoneNumber.Text);
+                        string month = dtpPaymentDate.Text;
+                        Int64 amount = Int64.Parse(txtAmount.Text);
+
+                        query = "insert into fees values(" + mobile + ", '" + month + "', " + amount + ")";
+
+                        fn.setData(query, "Fees paid.");
+
+                        clearAll();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No dues of " + dtpPaymentDate.Text + " Left.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fill all the valid information " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -174,6 +189,29 @@ namespace Hostel_Management_System
         private void btnStudentInfoClear_Click(object sender, EventArgs e)
         {
             clearAll();
+        }
+
+        /// <summary>
+        /// Amount can not be 0
+        /// </summary>
+       
+        private void txtAmount_TextChanged(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtAmount.Text, out double amount))
+            {
+                if (amount <= 0)
+                {
+                    errorProviderAmount.SetError(txtAmount, "Amount must be greater than 0.");
+                }
+                else
+                {
+                    errorProviderAmount.Clear();
+                }
+            }
+            else
+            {
+                errorProviderAmount.SetError(txtAmount, "Please enter a valid number.");
+            }
         }
     }
 }
