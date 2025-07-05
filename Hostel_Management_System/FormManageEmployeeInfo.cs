@@ -140,6 +140,9 @@ namespace Hostel_Management_System
 
         }
 
+<<<<<<< HEAD
+
+=======
         string expression = " ^([0 - 9a - zA - Z]([-\\.\\w] * [0 - 9a - zA - Z]) *@([0 - 9a - zA - Z][-\\w]*[0 - 9a - zA - Z]\\.)+[a-zA-Z]{2,9})$";
         private void txtManageEmpployeeEmail_TextChanged(object sender, EventArgs e)
         {
@@ -155,5 +158,6 @@ namespace Hostel_Management_System
                 errorProviderManageEmployee.Clear();
             }
         }
+>>>>>>> 22ca07958437da8d935ed285d48767b5120c19cc
     }
 }
