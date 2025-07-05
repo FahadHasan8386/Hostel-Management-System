@@ -18,7 +18,7 @@ namespace Hostel_Management_System
             SqlConnection con = new SqlConnection();
 
             
-            con.ConnectionString = "data source=WIN11\\SQLEXPRESS;database=HMS;Integrated Security=True";
+            con.ConnectionString = "data source=FAHAD\\SQLEXPRESS;database=HMS;Integrated Security=True";
 
             // Returns the configured SqlConnection object.
             // This object can then be used to open a connection, execute commands, and close the connection.

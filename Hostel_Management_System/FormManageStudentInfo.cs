@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -163,7 +164,20 @@ namespace Hostel_Management_System
                 txtMngStudentSearchByPhoneNumber.ForeColor = Color.Gray;
             }
         }
+        string expression = " ^([0 - 9a - zA - Z]([-\\.\\w] * [0 - 9a - zA - Z]) *@([0 - 9a - zA - Z][-\\w]*[0 - 9a - zA - Z]\\.)+[a-zA-Z]{2,9})$";
+        private void txtMngStudentEmail_TextChanged(object sender, EventArgs e)
+        {
+            ///Email Validation
 
-       
+            if (Regex.IsMatch(txtMngStudentEmail.Text, expression) == false)
+            {
+                txtMngStudentEmail.Focus();
+                errorProviderManageStudentInfo.SetError(this.txtMngStudentEmail, "Invalid Email Adderss");
+            }
+            else
+            {
+                errorProviderManageStudentInfo.Clear();
+            }
+        }
     }
 }

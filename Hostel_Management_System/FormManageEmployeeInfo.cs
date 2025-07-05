@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -138,6 +140,24 @@ namespace Hostel_Management_System
 
         }
 
+<<<<<<< HEAD
 
+=======
+        string expression = " ^([0 - 9a - zA - Z]([-\\.\\w] * [0 - 9a - zA - Z]) *@([0 - 9a - zA - Z][-\\w]*[0 - 9a - zA - Z]\\.)+[a-zA-Z]{2,9})$";
+        private void txtManageEmpployeeEmail_TextChanged(object sender, EventArgs e)
+        {
+            ///Email Validation
+
+            if (Regex.IsMatch(txtManageEmpployeeEmail.Text, expression) == false)
+            {
+                txtManageEmpployeeEmail.Focus();
+                errorProviderManageEmployee.SetError(this.txtManageEmpployeeEmail, "Invalid Email Adderss");
+            }
+            else
+            {
+                errorProviderManageEmployee.Clear();
+            }
+        }
+>>>>>>> 22ca07958437da8d935ed285d48767b5120c19cc
     }
 }

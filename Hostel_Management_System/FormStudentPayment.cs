@@ -31,6 +31,7 @@ namespace Hostel_Management_System
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            if(txtStudentFirstName.Text != "" && txtStudentLastName.Text != "" && txtStudentEmail.Text != "" && txtStudentRoomNumber.Text != "" && txtAmount.Text != "" && txtStudentLastName.Text != "" && txtStudentPhoneNumber.Text != "")
             rtbStudentReceipt.Clear();
             rtbStudentReceipt.Text += "*********************************************************\n";
             rtbStudentReceipt.Text += "\n****             Payment Receipt                     ****\n";
@@ -136,34 +137,41 @@ namespace Hostel_Management_System
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            if (txtStudentPhoneNumber.Text != "" && txtAmount.Text != "")
+            try
             {
-                
-                
-                query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
-                DataSet ds = fn.getData(query);
-
-               
-                
-                query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
-                if (ds.Tables[0].Rows.Count == 0)
+                if (txtStudentPhoneNumber.Text != "" && txtAmount.Text != "")
                 {
-                    
-                    Int64 mobile = Int64.Parse(txtStudentPhoneNumber.Text);
-                    string month = dtpPaymentDate.Text;
-                    Int64 amount = Int64.Parse(txtAmount.Text);
-                    
-                    query = "insert into fees values(" + mobile + ", '" + month + "', " + amount + ")"; 
-                                                                                                        
-                    fn.setData(query, "Fees paid.");
 
-                    clearAll();
-                }
-                else
-                {
-                    MessageBox.Show("No dues of " + dtpPaymentDate.Text + " Left.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
+                    DataSet ds = fn.getData(query);
+
+
+
+                    query = "select * from fees where mobileNo = " + Int64.Parse(txtStudentPhoneNumber.Text) + " and fmonth = '" + dtpPaymentDate.Text + "' ";  ///date time picker.
+                    if (ds.Tables[0].Rows.Count == 0)
+                    {
+
+                        Int64 mobile = Int64.Parse(txtStudentPhoneNumber.Text);
+                        string month = dtpPaymentDate.Text;
+                        Int64 amount = Int64.Parse(txtAmount.Text);
+
+                        query = "insert into fees values(" + mobile + ", '" + month + "', " + amount + ")";
+
+                        fn.setData(query, "Fees paid.");
+
+                        clearAll();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No dues of " + dtpPaymentDate.Text + " Left.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fill all the valid information " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -181,6 +189,29 @@ namespace Hostel_Management_System
         private void btnStudentInfoClear_Click(object sender, EventArgs e)
         {
             clearAll();
+        }
+
+        /// <summary>
+        /// Amount can not be 0
+        /// </summary>
+       
+        private void txtAmount_TextChanged(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtAmount.Text, out double amount))
+            {
+                if (amount <= 0)
+                {
+                    errorProviderAmount.SetError(txtAmount, "Amount must be greater than 0.");
+                }
+                else
+                {
+                    errorProviderAmount.Clear();
+                }
+            }
+            else
+            {
+                errorProviderAmount.SetError(txtAmount, "Please enter a valid number.");
+            }
         }
     }
 }
